@@ -41,7 +41,7 @@ h3 {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"] {
+textarea, input[type="submit"], .menu-primary a {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -93,6 +93,7 @@ p {
 
 a {
   color: #333333;
+  text-decoration: none;
 }
 a:link {
   color: #333333;
@@ -103,6 +104,7 @@ a:visited, a:hover, a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -492,4 +494,42 @@ a img {
 
 .gallery-col-30 .gallery-item {
   width: 3.33%;
+}
+
+.site-header {
+  padding: 0 6.25%;
+  text-align: center;
+}
+
+.toggle-navigation {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.menu-primary {
+  padding: 2.25em 0;
+}
+.menu-primary ul {
+  list-style: none;
+  margin: 0 auto;
+}
+.menu-primary li {
+  margin-bottom: 0.75em;
+}
+.menu-primary li.current-menu-item {
+  font-weight: 700;
+}
+.menu-primary li.current-menu-item a {
+  color: #333333;
+}
+.menu-primary li.current-menu-item a:link, .menu-primary li.current-menu-item a:visited, .menu-primary li.current-menu-item a:hover, .menu-primary li.current-menu-item a:active, .menu-primary li.current-menu-item a:focus {
+  color: #333333;
+}
+.menu-primary a {
+  color: #6b6b6b;
+}
+.menu-primary a:link, .menu-primary a:visited, .menu-primary a:hover, .menu-primary a:active, .menu-primary a:focus {
+  color: #6b6b6b;
 }

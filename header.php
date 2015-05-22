@@ -23,8 +23,15 @@
 	<div id="max-width" class="max-width">
 		<header class="site-header" id="site-header" role="banner">
 
+			<!-- Primary Menu -->
+			<?php get_template_part( 'menu', 'primary' ); ?>
+
+			<!-- Social Icons -->
 			<?php ct_apex_social_icons_output('header'); ?>
-			<?php get_template_part('content/search-bar'); ?>
+
+			<button id="toggle-navigation" class="toggle-navigation">
+				<?php echo ct_apex_svg_output( 'toggle-navigation' ); ?>
+			</button>
 
 			<div id="title-container" class="title-container">
 				<?php get_template_part('logo')  ?>
@@ -32,12 +39,5 @@
 					echo '<p class="site-description">' . get_bloginfo( 'description' ) .'</p>';
 				} ?>
 			</div>
-
-			<button id="toggle-navigation" class="toggle-navigation">
-				<i class="fa fa-bars"></i>
-			</button>
-
-			<?php get_template_part( 'menu', 'primary' ); ?>
-
 		</header>
 		<section id="main" class="main" role="main">

@@ -1,0 +1,39 @@
+.menu-primary {
+  padding: $baseline-height * 1.5 0;
+
+  ul {
+    list-style: none;
+    margin: 0 auto;
+  }
+  li {
+    margin-bottom: $baseline-height / 2;
+
+    &.current-menu-item {
+      font-weight: 700;
+
+      a {
+        color: $color-gray-20;
+
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color-gray-20;
+        }
+      }
+    }
+  }
+  a {
+    @extend %twelve-pixels;
+    color: $color-gray-42;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-42;
+    }
+  }
+}
