@@ -84,7 +84,7 @@ module.exports = function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: '/Users/bensibley/Desktop/unlimited.zip'
+                    archive: '/Users/bensibley/Desktop/apex.zip'
                 },
                 files: [
                     {
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
                 options: {
                     domainPath: '/languages',
                     exclude: ['library/.*/.*'],
-                    potFilename: 'unlimited.pot',
+                    potFilename: 'apex.pot',
                     type: 'wp-theme'
                 }
             }

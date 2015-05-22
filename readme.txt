@@ -1,5 +1,5 @@
 -------------------------------------------------------
-    Thank you for downloading Unlimited!
+    Thank you for downloading Apex!
 -------------------------------------------------------
 If you need help getting setup, you can find
 documentation here:
@@ -10,13 +10,13 @@ https://www.competethemes.com/documentation/unlimited-support-center/
     Licenses:
 -------------------------------------------------------
 
-Unlimited WordPress Theme, Copyright 2015 Compete Themes
-Unlimited is distributed under the terms of the GNU GPL
+Apex WordPress Theme, Copyright 2015 Compete Themes
+Apex is distributed under the terms of the GNU GPL
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Unlimited also uses:
+Apex also uses:
 
 * Hybrid Core by Justin Tadlock, http://themehybrid.com/hybrid-core, licensed under the GPL license.
 * Fitvids, by Chris Coyier & Dave Rupert, https://github.com/davatron5000/FitVids.js/, licensed under the WTFPL license.

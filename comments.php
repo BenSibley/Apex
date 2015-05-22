@@ -23,11 +23,11 @@ if ( comments_open() ) { ?>
     <section id="comments" class="comments">
         <div class="comments-number">
             <h3>
-                <?php comments_number( __( 'Be First to Comment', 'unlimited' ), __( 'One Comment', 'unlimited'), __( '% Comments', 'unlimited' ) ); ?>
+                <?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex'), __( '% Comments', 'apex' ) ); ?>
             </h3>
         </div>
         <ol class="comment-list">
-            <?php wp_list_comments(array( 'callback'=>'ct_unlimited_customize_comments', 'max_depth'=>'3') ); ?>
+            <?php wp_list_comments(array( 'callback'=>'ct_apex_customize_comments', 'max_depth'=>'3') ); ?>
         </ol><!-- .comment-list -->
         <?php
         if( (get_option('page_comments') == 1) && (get_comment_pages_count() > 1) ) { ?>
@@ -42,11 +42,11 @@ if ( comments_open() ) { ?>
     <section id="comments" class="comments">
         <div class="comments-number">
             <h3>
-                <?php comments_number( __( 'Be First to Comment', 'unlimited' ), __( 'One Comment', 'unlimited'), __( '% Comments', 'unlimited' ) ); ?>
+                <?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex'), __( '% Comments', 'apex' ) ); ?>
             </h3>
         </div>
         <ol class="comment-list">
-            <?php wp_list_comments(array( 'callback'=>'ct_unlimited_customize_comments', 'max_depth'=>'3') ); ?>
+            <?php wp_list_comments(array( 'callback'=>'ct_apex_customize_comments', 'max_depth'=>'3') ); ?>
         </ol><!-- .comment-list -->
         <?php
         if( (get_option('page_comments') == 1) && (get_comment_pages_count() > 1) ) { ?>
@@ -55,7 +55,7 @@ if ( comments_open() ) { ?>
             </nav>
         <?php } ?>
         <p class="comments-closed pings-open">
-            <?php printf( __( 'Comments are closed, but <a href="%s" title="Trackback URL for this post">trackbacks</a> and pingbacks are open.', 'unlimited' ), esc_url( get_trackback_url() ) ); ?>
+            <?php printf( __( 'Comments are closed, but <a href="%s" title="Trackback URL for this post">trackbacks</a> and pingbacks are open.', 'apex' ), esc_url( get_trackback_url() ) ); ?>
         </p><!-- .comments-closed .pings-open -->
     </section><!-- #comments -->
 <?php
@@ -63,11 +63,11 @@ if ( comments_open() ) { ?>
     <section id="comments" class="comments">
         <div class="comments-number">
             <h3>
-                <?php comments_number( __( 'Be First to Comment', 'unlimited' ), __( 'One Comment', 'unlimited'), __( '% Comments', 'unlimited' ) ); ?>
+                <?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex'), __( '% Comments', 'apex' ) ); ?>
             </h3>
         </div>
         <ol class="comment-list">
-            <?php wp_list_comments(array( 'callback'=>'ct_unlimited_customize_comments', 'max_depth'=>'3') ); ?>
+            <?php wp_list_comments(array( 'callback'=>'ct_apex_customize_comments', 'max_depth'=>'3') ); ?>
         </ol><!-- .comment-list -->
         <?php
         if( (get_option('page_comments') == 1) && (get_comment_pages_count() > 1) ) { ?>
@@ -76,12 +76,12 @@ if ( comments_open() ) { ?>
             </nav>
         <?php } ?>
         <p class="comments-closed">
-            <?php _e( 'Comments are closed.', 'unlimited' ); ?>
+            <?php _e( 'Comments are closed.', 'apex' ); ?>
         </p><!-- .comments-closed -->
     </section><!-- #comments -->
 <?php
 } else { ?>
     <p class="comments-closed">
-        <?php _e( 'Comments are closed.', 'unlimited' ); ?>
+        <?php _e( 'Comments are closed.', 'apex' ); ?>
     </p><!-- .comments-closed -->
 <?php } ?>

@@ -17,13 +17,13 @@
 <body id="<?php print get_stylesheet(); ?>" <?php body_class(); ?>>
 
 <!--skip to content link-->
-<a class="skip-content" href="#main"><?php _e('Skip to content', 'unlimited'); ?></a>
+<a class="skip-content" href="#main"><?php _e('Skip to content', 'apex'); ?></a>
 
 <div id="overflow-container" class="overflow-container">
 	<div id="max-width" class="max-width">
 		<header class="site-header" id="site-header" role="banner">
 
-			<?php ct_unlimited_social_icons_output('header'); ?>
+			<?php ct_apex_social_icons_output('header'); ?>
 			<?php get_template_part('content/search-bar'); ?>
 
 			<div id="title-container" class="title-container">

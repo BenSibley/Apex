@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 // Uploading files
     var file_frame;
 
-    $('#unlimited-user-profile-upload').on('click', function( event ){
+    $('#apex-user-profile-upload').on('click', function( event ){
 
         event.preventDefault();
 

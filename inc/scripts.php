@@ -3,15 +3,15 @@
 /*
  * Front-end scripts
  */
-function ct_unlimited_load_scripts_styles() {
+function ct_apex_load_scripts_styles() {
 
-	wp_register_style( 'ct-unlimited-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300');
+	wp_register_style( 'ct-apex-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300');
 
 	// main JS file
-//		wp_enqueue_script('ct-unlimited-js', get_template_directory_uri() . '/js/build/production.min.js#ct_unlimited_asyncload', array('jquery'),'', true);
+//		wp_enqueue_script('ct-apex-js', get_template_directory_uri() . '/js/build/production.min.js#ct_apex_asyncload', array('jquery'),'', true);
 
 	// Google Fonts
-	wp_enqueue_style('ct-unlimited-google-fonts');
+	wp_enqueue_style('ct-apex-google-fonts');
 
 	// Font Awesome
 	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
@@ -24,12 +24,12 @@ function ct_unlimited_load_scripts_styles() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action('wp_enqueue_scripts', 'ct_unlimited_load_scripts_styles' );
+add_action('wp_enqueue_scripts', 'ct_apex_load_scripts_styles' );
 
 /*
  * Back-end scripts
  */
-function ct_unlimited_enqueue_admin_styles($hook){
+function ct_apex_enqueue_admin_styles($hook){
 
 	// if is user profile page
 	if('profile.php' == $hook || 'user-edit.php' == $hook ){
@@ -38,45 +38,45 @@ function ct_unlimited_enqueue_admin_styles($hook){
 		wp_enqueue_media();
 
 		// enqueue the JS needed to utilize media uploader on profile image upload
-		wp_enqueue_script('ct-unlimited-profile-image-uploader', get_template_directory_uri() . '/js/build/profile-image-uploader.min.js');
+		wp_enqueue_script('ct-apex-profile-image-uploader', get_template_directory_uri() . '/js/build/profile-image-uploader.min.js');
 	}
 }
-add_action('admin_enqueue_scripts',	'ct_unlimited_enqueue_admin_styles' );
+add_action('admin_enqueue_scripts',	'ct_apex_enqueue_admin_styles' );
 
 /*
  * Customizer scripts
  */
-function ct_unlimited_enqueue_customizer_scripts(){
+function ct_apex_enqueue_customizer_scripts(){
 
 	// stylesheet for customizer
-	wp_enqueue_style('ct-unlimited-customizer-styles', get_template_directory_uri() . '/styles/customizer.min.css');
+	wp_enqueue_style('ct-apex-customizer-styles', get_template_directory_uri() . '/styles/customizer.min.css');
 
 	// JS for hiding/showing Customizer options
-	wp_enqueue_script('ct-unlimited-customizer-js', get_template_directory_uri() . '/js/build/customizer.min.js',array('jquery'),'',true);
+	wp_enqueue_script('ct-apex-customizer-js', get_template_directory_uri() . '/js/build/customizer.min.js',array('jquery'),'',true);
 
 }
-add_action('customize_controls_enqueue_scripts','ct_unlimited_enqueue_customizer_scripts');
+add_action('customize_controls_enqueue_scripts','ct_apex_enqueue_customizer_scripts');
 
 /*
  * Script for live updating with customizer options. Has to be loaded separately on customize_preview_init hook
  * transport => postMessage
  */
-function unlimited_enqueue_customizer_post_message_scripts(){
+function apex_enqueue_customizer_post_message_scripts(){
 
 	// JS for live updating with customizer input
-	wp_enqueue_script('ct-unlimited-customizer-post-message-js', get_template_directory_uri() . '/js/build/postMessage.min.js',array('jquery'),'',true);
+	wp_enqueue_script('ct-apex-customizer-post-message-js', get_template_directory_uri() . '/js/build/postMessage.min.js',array('jquery'),'',true);
 
 }
-add_action('customize_preview_init','unlimited_enqueue_customizer_post_message_scripts');
+add_action('customize_preview_init','apex_enqueue_customizer_post_message_scripts');
 
 // load scripts asynchronously
-function ct_unlimited_add_async_script($url) {
+function ct_apex_add_async_script($url) {
 
 	// if async parameter not present, do nothing
-	if (strpos($url, '#ct_unlimited_asyncload') === false){
+	if (strpos($url, '#ct_apex_asyncload') === false){
 		return $url;
 	}
 	// if async parameter present, add async attribute
-	return str_replace('#ct_unlimited_asyncload', '', $url)."' async='async";
+	return str_replace('#ct_apex_asyncload', '', $url)."' async='async";
 }
-add_filter('clean_url', 'ct_unlimited_add_async_script', 11, 1);
+add_filter('clean_url', 'ct_apex_add_async_script', 11, 1);
