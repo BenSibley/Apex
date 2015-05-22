@@ -7,7 +7,7 @@
 <head>
 
 	<!--[if IE 8 ]>
-	<script src="<?php echo trailingslashit( get_template_directory_uri() ) . 'js/build/html5shiv.min.js'; ?>"></script>
+	<script src="<?php echo get_template_directory_uri() . 'js/build/html5shiv.min.js'; ?>"></script>
 	<![endif]-->
 
     <?php wp_head(); ?>
