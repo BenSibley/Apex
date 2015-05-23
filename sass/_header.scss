@@ -3,8 +3,40 @@
   text-align: center;
 }
 .toggle-navigation {
+  font-size: 1em;
+  display: block;
   background: none;
-  margin: 0;
+  margin: $baseline-height * 1.5 auto $baseline-height * 2;
   padding: 0;
   border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.title-container {
+  margin: $baseline-height * 2 0;
+}
+.social-media-icons {
+  list-style: none;
+  margin: $baseline-height * 1.5 0;
+
+  li {
+    display: inline-block;
+  }
+  a {
+    color: $color-gray-42;
+    margin-right: 20px; // 4px from being inline-block
+    transition: color 0.1s ease-in-out;
+
+    &:link,
+    &:visited {
+      color: $color-gray-42;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-20;
+    }
+  }
 }

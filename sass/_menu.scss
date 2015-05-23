@@ -1,5 +1,14 @@
+.menu-primary-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+
+  &.open {
+    max-height: 999px;
+  }
+}
 .menu-primary {
-  padding: $baseline-height * 1.5 0;
+  margin: $baseline-height * 1.5 0;
 
   ul {
     list-style: none;
@@ -83,7 +92,7 @@
     // open dropdown menu
     &.open {
 
-      ul {
+      > ul {
         max-height: 999px;
       }
       // flip the caret

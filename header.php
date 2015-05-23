@@ -23,11 +23,15 @@
 	<div id="max-width" class="max-width">
 		<header class="site-header" id="site-header" role="banner">
 
-			<!-- Primary Menu -->
-			<?php get_template_part( 'menu', 'primary' ); ?>
+			<div id="menu-primary-container" class="menu-primary-container">
 
-			<!-- Social Icons -->
-			<?php ct_apex_social_icons_output('header'); ?>
+				<!-- Primary Menu -->
+				<?php get_template_part( 'menu', 'primary' ); ?>
+
+				<!-- Social Icons -->
+				<?php ct_apex_social_icons_output('header'); ?>
+
+			</div>
 
 			<button id="toggle-navigation" class="toggle-navigation">
 				<?php echo ct_apex_svg_output( 'toggle-navigation' ); ?>

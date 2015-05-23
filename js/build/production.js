@@ -91,11 +91,7 @@ jQuery(document).ready(function($){
     var menuPrimary = $('#menu-primary');
     var menuPrimaryItems = $('#menu-primary-items');
     var toggleDropdown = $('.toggle-dropdown');
-    //var toggleSidebar = $('#toggle-sidebar');
-    //var sidebarPrimary = $('#sidebar-primary');
-    //var sidebarPrimaryContent = $('#sidebar-primary-content');
-    //var sidebarWidgets = $('#sidebar-primary-widgets');
-    //var socialMediaIcons = siteHeader.find('.social-media-icons');
+    var socialMediaIcons = siteHeader.find('.social-media-icons');
     var menuLink = $('.menu-item').children('a');
 
     toggleNavigation.on('click', openPrimaryMenu);
@@ -106,6 +102,8 @@ jQuery(document).ready(function($){
             menuPrimaryContainer.removeClass('open');
             $(this).removeClass('open');
 
+            menuPrimaryContainer.css('max-height', 0);
+
             // change screen reader text
             //$(this).children('span').text(objectL10n.openMenu);
 
@@ -115,6 +113,10 @@ jQuery(document).ready(function($){
         } else {
             menuPrimaryContainer.addClass('open');
             $(this).addClass('open');
+
+            var menuHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight(true);
+
+            menuPrimaryContainer.css('max-height', menuHeight);
 
             // change screen reader text
             //$(this).children('span').text(objectL10n.closeMenu);
