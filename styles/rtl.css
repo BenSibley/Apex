@@ -26,7 +26,7 @@ h1 {
   /* 48px */
 }
 
-h2 {
+h2, .site-title {
   font-size: 1.75em;
   /* 28px / 16px */
   line-height: 1.321;
@@ -41,7 +41,7 @@ h3 {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .menu-primary a {
+textarea, input[type="submit"], .tagline, .menu-primary a {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -515,6 +515,15 @@ a img {
 
 .title-container {
   margin: 3em 0;
+}
+
+.site-title {
+  font-family: 'Satisfy', 'Open Sans', 'sans-serif';
+  margin: 0;
+}
+
+.tagline {
+  margin: 0;
 }
 
 .social-media-icons {

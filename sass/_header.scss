@@ -17,6 +17,15 @@
 .title-container {
   margin: $baseline-height * 2 0;
 }
+.site-title {
+  @extend %twenty-eight-pixels;
+  font-family: 'Satisfy', 'Open Sans', 'sans-serif';
+  margin: 0;
+}
+.tagline {
+  @extend %twelve-pixels;
+  margin: 0;
+}
 .social-media-icons {
   list-style: none;
   margin: $baseline-height * 1.5 0;

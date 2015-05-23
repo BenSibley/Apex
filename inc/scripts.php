@@ -5,7 +5,7 @@
  */
 function ct_apex_load_scripts_styles() {
 
-	wp_register_style( 'ct-apex-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700');
+	wp_register_style( 'ct-apex-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700|Satisfy');
 
 	// main JS file
 	wp_enqueue_script('ct-apex-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
