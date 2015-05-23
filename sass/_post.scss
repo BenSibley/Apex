@@ -1,0 +1,66 @@
+.featured-image {
+  position: relative;
+  height: 0;
+  padding-bottom: 50%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+    opacity: 0;
+  }
+}
+.post-container {
+  padding: $baseline-height $column * 2;
+}
+.post-title {
+ @extend %twenty-one-pixels;
+}
+.post-date {
+ @extend %twelve-pixels;
+}
+.more-link {
+  @extend %twelve-pixels;
+  display: inline-block;
+  padding: 8px 20px;
+  border: solid 1px $color-gray-20;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $color-gray-20;
+    color: white;
+  }
+}
+.comments-link {
+  @extend %twelve-pixels;
+  display: inline-block;
+  margin-left: 18px;
+  color: $color-gray-20;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+.blog,
+.archive,
+.search {
+
+  .post-content {
+
+    // allow comments to sit next to button
+    p:last-of-type {
+      display: inline-block;
+      margin: $baseline-height / 2 0 0;
+    }
+  }
+}
