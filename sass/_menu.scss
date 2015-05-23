@@ -22,6 +22,10 @@
           color: $color-gray-20;
         }
       }
+      // because the font weight will cascade
+      li {
+        font-weight: 400;
+      }
     }
   }
   a {
@@ -34,6 +38,58 @@
     &:active,
     &:focus {
       color: $color-gray-42;
+    }
+  }
+}
+.toggle-dropdown {
+  margin: 0 -16px 0 6px;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1;
+  background: none;
+  border: none;
+  color: $color-gray-42;
+  transition: transform 0.1s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+  }
+}
+.menu-primary-items {
+
+  ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+
+    li {
+      margin: $baseline-height / 2 0;
+
+      // no bottom margin on last one
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  li {
+
+    // open dropdown menu
+    &.open {
+
+      ul {
+        max-height: 999px;
+      }
+      // flip the caret
+      > button {
+        transform: rotate(180deg);
+      }
     }
   }
 }

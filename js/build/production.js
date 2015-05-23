@@ -138,6 +138,8 @@ jQuery(document).ready(function($){
             // remove open class
             menuItem.removeClass('open');
 
+            $(this).siblings('ul').css('max-height', 0);
+
             // change screen reader text
             //$(this).children('span').text(objectL10n.openMenu);
 
@@ -147,6 +149,14 @@ jQuery(document).ready(function($){
 
             // add class to open the menu
             menuItem.addClass('open');
+
+            var ulHeight = 0;
+
+            $(this).siblings('ul').find('li').each(function(){
+                ulHeight = ulHeight + $(this).height() + ( $(this).height() * 1.5 );
+            });
+
+            $(this).siblings('ul').css('max-height', ulHeight);
 
             // change screen reader text
             //$(this).children('span').text(objectL10n.closeMenu);

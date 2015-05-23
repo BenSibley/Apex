@@ -5,10 +5,10 @@
  */
 function ct_apex_load_scripts_styles() {
 
-	wp_register_style( 'ct-apex-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300');
+	wp_register_style( 'ct-apex-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 	// main JS file
-//		wp_enqueue_script('ct-apex-js', get_template_directory_uri() . '/js/build/production.min.js#ct_apex_asyncload', array('jquery'),'', true);
+	wp_enqueue_script('ct-apex-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
 
 	// Google Fonts
 	wp_enqueue_style('ct-apex-google-fonts');
@@ -68,15 +68,3 @@ function apex_enqueue_customizer_post_message_scripts(){
 
 }
 add_action('customize_preview_init','apex_enqueue_customizer_post_message_scripts');
-
-// load scripts asynchronously
-function ct_apex_add_async_script($url) {
-
-	// if async parameter not present, do nothing
-	if (strpos($url, '#ct_apex_asyncload') === false){
-		return $url;
-	}
-	// if async parameter present, add async attribute
-	return str_replace('#ct_apex_asyncload', '', $url)."' async='async";
-}
-add_filter('clean_url', 'ct_apex_add_async_script', 11, 1);
