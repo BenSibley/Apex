@@ -25,3 +25,18 @@
 .post-date {
  @extend %twelve-pixels;
 }
+.post-meta {
+  margin: $baseline-height * 2 0;
+}
+.post-categories {
+
+  a {
+    font-weight: 700;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-42;
+    }
+  }
+}

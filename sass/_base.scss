@@ -94,10 +94,10 @@ pre {
   word-wrap: break-word;
   background: $color-gray-95;
   padding: $baseline-height / 2;
+  border: solid 1px $color-gray-91;
 }
 code {
   background: $color-gray-95;
-  border: solid 1px $color-gray-91;
   padding: 0 $baseline-height / 4;
 }
 blockquote {

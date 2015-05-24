@@ -13,6 +13,7 @@ $output = '';
 if($categories){
 
 	echo '<p class="post-categories">';
+		echo '<span>' . __("Published in", "apex") . ' </span>';
 		foreach($categories as $category) {
 			// if it's the last and not the first (only) category, pre-prend with "and"
 			if( $category === end($categories) && $category !== reset($categories) ) {

@@ -139,11 +139,11 @@ pre {
   word-wrap: break-word;
   background: #f2f2f2;
   padding: 0.75em;
+  border: solid 1px #e8e8e8;
 }
 
 code {
   background: #f2f2f2;
-  border: solid 1px #e8e8e8;
   padding: 0 0.375em;
 }
 
@@ -727,4 +727,15 @@ a img {
 
 .post-container {
   padding: 1.5em 6.25%;
+}
+
+.post-meta {
+  margin: 3em 0;
+}
+
+.post-categories a {
+  font-weight: 700;
+}
+.post-categories a:hover, .post-categories a:active, .post-categories a:focus {
+  color: #6b6b6b;
 }
