@@ -3,7 +3,6 @@ $tags = get_the_tags( $post->ID );
 $output = '';
 if($tags){
 	echo '<div class="post-tags">';
-		echo '<span>' . __("Tagged in", "apex") . '</span>';
 		echo '<ul>';
 			foreach($tags as $tag) {
 				echo '<li><a href="'.get_tag_link( $tag->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts tagged %s", 'apex' ), $tag->name ) ) . '">'.$tag->name.'</a></li>';
@@ -11,4 +10,3 @@ if($tags){
 		echo '</ul>';
 	echo '</div>';
 }
-?>

@@ -41,7 +41,7 @@ h3, .post-title {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .site-footer span, .tagline, .more-link, .comments-link, .post-date {
+textarea, input[type="submit"], .site-footer span, .tagline, .more-link, .comments-link, .post-date, .post-tags a {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -738,4 +738,26 @@ a img {
 }
 .post-categories a:hover, .post-categories a:active, .post-categories a:focus {
   color: #6b6b6b;
+}
+
+.post-tags ul {
+  list-style: none;
+  margin: 0;
+}
+.post-tags li {
+  display: inline-block;
+}
+.post-tags a {
+  display: inline-block;
+  padding: 2px 12px;
+  background: #e8e8e8;
+  margin: 0 0 12px 8px;
+  color: #6b6b6b;
+}
+.post-tags a:link, .post-tags a:visited {
+  color: #6b6b6b;
+}
+.post-tags a:hover, .post-tags a:active, .post-tags a:focus {
+  color: white;
+  background: #333333;
 }
