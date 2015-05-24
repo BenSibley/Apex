@@ -104,6 +104,9 @@ jQuery(document).ready(function($){
 
             menuPrimaryContainer.css('max-height', 0);
 
+            // scroll back up
+            $('html, body').animate({scrollTop: '0'}, 200);
+
             // change screen reader text
             $(this).children('span').text(objectL10n.openMenu);
 

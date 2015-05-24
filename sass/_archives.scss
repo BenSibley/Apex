@@ -1,0 +1,88 @@
+.post-title {
+
+  a {
+    transition: color 0.1s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-42;
+    }
+  }
+}
+.entry {
+  margin: $baseline-height * 2 0;
+}
+.more-link {
+  @extend %twelve-pixels;
+  display: inline-block;
+  padding: 8px 20px;
+  border: solid 1px $color-gray-20;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $color-gray-20;
+    color: white;
+  }
+}
+.comments-link {
+  color: $color-gray-20;
+  margin-left: 18px;
+  @extend %twelve-pixels;
+
+  i {
+    margin-right: 3px;
+  }
+  a {
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+.blog,
+.archive,
+.search {
+
+  .post-content {
+
+    // allow comments to sit next to button
+    p:last-of-type {
+      display: inline-block;
+      margin: $baseline-height / 2 0 0;
+    }
+  }
+}
+.loop-pagination {
+  margin: $baseline-height * 2 0;
+  padding: 0 $column * 2;
+  text-align: center;
+  color: $color-gray-42;
+
+  a,
+  span {
+    margin: 0 $baseline-height / 2;
+  }
+  a {
+    color: $color-gray-42;
+
+    &:link,
+    &:visited {
+      color: $color-gray-42;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-20;
+      text-decoration: underline;
+    }
+  }
+  .current {
+    color: $color-gray-20;
+    font-weight: 700;
+  }
+}
