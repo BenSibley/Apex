@@ -35,7 +35,7 @@
   }
   a {
     color: $color-gray-42;
-    margin-right: 20px; // 4px from being inline-block
+    margin: 0 10px; // 4px from being inline-block
     transition: color 0.1s ease-in-out;
 
     &:link,

@@ -535,7 +535,7 @@ a img {
 }
 .social-media-icons a {
   color: #6b6b6b;
-  margin-right: 20px;
+  margin: 0 10px;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }

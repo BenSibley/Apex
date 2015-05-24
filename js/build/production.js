@@ -114,7 +114,7 @@ jQuery(document).ready(function($){
             menuPrimaryContainer.addClass('open');
             $(this).addClass('open');
 
-            var menuHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight(true);
+            var menuHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight();
 
             menuPrimaryContainer.css('max-height', menuHeight);
 
@@ -159,6 +159,15 @@ jQuery(document).ready(function($){
             });
 
             $(this).siblings('ul').css('max-height', ulHeight);
+
+            // just needs long enough for the 0.2s animation fo play out
+            setTimeout(function () {
+
+                var newHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight();
+
+                menuPrimaryContainer.css('max-height', newHeight);
+
+            }, 250);
 
             // change screen reader text
             //$(this).children('span').text(objectL10n.closeMenu);
