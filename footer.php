@@ -4,12 +4,11 @@
 
 
 <footer class="site-footer" role="contentinfo">
-    <h4><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('title'); ?></a> <?php bloginfo('description'); ?></h4>
     <div class="design-credit">
         <span>
             <?php
                 $site_url = 'https://www.competethemes.com/apex/';
-                $footer_text = sprintf( __( '<a href="%s">Apex WordPress Theme</a> by Compete Themes.', 'apex' ), esc_url( $site_url ) );
+                $footer_text = sprintf( __( '<a href="%s">Apex WordPress Theme</a> by Compete Themes', 'apex' ), esc_url( $site_url ) );
                 echo $footer_text;
             ?>
         </span>

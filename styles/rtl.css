@@ -41,7 +41,7 @@ h3, .post-title {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .tagline, .more-link, .comments-link, .post-date {
+textarea, input[type="submit"], .site-footer span, .tagline, .more-link, .comments-link, .post-date {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -327,6 +327,18 @@ a img {
 .max-width {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 3em 6.25% 0.75em;
+  margin-top: 3em;
+}
+.site-footer a {
+  font-weight: 700;
+}
+.site-footer a:hover, .site-footer a:active, .site-footer a:focus {
+  color: #6b6b6b;
 }
 
 /* gallery styles copied from Hybrid Core */
