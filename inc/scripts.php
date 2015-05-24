@@ -9,6 +9,12 @@ function ct_apex_load_scripts_styles() {
 
 	// main JS file
 	wp_enqueue_script('ct-apex-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
+	wp_localize_script( 'ct-apex-js', 'objectL10n', array(
+		'openMenu'  => __( 'open menu', 'apex' ),
+		'closeMenu' => __( 'close menu', 'apex' ),
+		'openChildMenu'  => __( 'open dropdown menu', 'apex' ),
+		'closeChildMenu' => __( 'close dropdown menu', 'apex' )
+	) );
 
 	// Google Fonts
 	wp_enqueue_style('ct-apex-google-fonts');

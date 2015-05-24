@@ -41,7 +41,7 @@ h3, .post-title {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .tagline, .menu-primary a, .post-date, .more-link, .comments-link {
+textarea, input[type="submit"], .tagline, .post-date, .more-link, .comments-link {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -564,7 +564,7 @@ a img {
   margin: 0 auto;
 }
 .menu-primary li {
-  margin-bottom: 0.75em;
+  margin-bottom: 1.5em;
 }
 .menu-primary li.current-menu-item {
   font-weight: 700;
@@ -614,7 +614,7 @@ a img {
   transition: max-height 0.2s ease-in-out;
 }
 .menu-primary-items ul li {
-  margin: 0.75em 0;
+  margin: 1.5em 0;
 }
 .menu-primary-items ul li:last-child {
   margin-bottom: 0;

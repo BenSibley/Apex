@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
             menuPrimaryContainer.css('max-height', 0);
 
             // change screen reader text
-            //$(this).children('span').text(objectL10n.openMenu);
+            $(this).children('span').text(objectL10n.openMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'false');
@@ -36,7 +36,7 @@ jQuery(document).ready(function($){
             menuPrimaryContainer.css('max-height', menuHeight);
 
             // change screen reader text
-            //$(this).children('span').text(objectL10n.closeMenu);
+            $(this).children('span').text(objectL10n.closeMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'true');
@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
             $(this).siblings('ul').css('max-height', 0);
 
             // change screen reader text
-            //$(this).children('span').text(objectL10n.openMenu);
+            $(this).children('span').text(objectL10n.openChildMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'false');
@@ -77,17 +77,12 @@ jQuery(document).ready(function($){
 
             $(this).siblings('ul').css('max-height', ulHeight);
 
-            // just needs long enough for the 0.2s animation fo play out
-            setTimeout(function () {
-
-                var newHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight();
-
-                menuPrimaryContainer.css('max-height', newHeight);
-
-            }, 250);
+            // expand entire menu for dropdowns
+            // doesn't need to be precise. Just needs to allow the menu to get taller
+            menuPrimaryContainer.css('max-height', 9999);
 
             // change screen reader text
-            //$(this).children('span').text(objectL10n.closeMenu);
+            $(this).children('span').text(objectL10n.closeChildMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'true');

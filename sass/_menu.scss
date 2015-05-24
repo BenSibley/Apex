@@ -15,7 +15,7 @@
     margin: 0 auto;
   }
   li {
-    margin-bottom: $baseline-height / 2;
+    margin-bottom: $baseline-height;
 
     &.current-menu-item {
       font-weight: 700;
@@ -38,7 +38,6 @@
     }
   }
   a {
-    @extend %twelve-pixels;
     color: $color-gray-42;
 
     &:link,
@@ -79,7 +78,7 @@
     transition: max-height 0.2s ease-in-out;
 
     li {
-      margin: $baseline-height / 2 0;
+      margin: $baseline-height 0;
 
       // no bottom margin on last one
       &:last-child {

@@ -34,6 +34,7 @@
 			</div>
 
 			<button id="toggle-navigation" class="toggle-navigation">
+				<span class="screen-reader-text"><?php _e('open menu', 'apex'); ?></span>
 				<?php echo ct_apex_svg_output( 'toggle-navigation' ); ?>
 			</button>
 
