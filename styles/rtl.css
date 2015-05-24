@@ -343,6 +343,11 @@ a img {
 .comment-list ul, .comment-list ol {
   list-style: none;
 }
+.comment-list .children {
+  margin: 0;
+  padding: 0 1.5em 0 0;
+  border-right: solid 1px #d8d8d8;
+}
 
 .comment-author img {
   width: 48px;

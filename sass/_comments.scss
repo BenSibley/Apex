@@ -8,6 +8,12 @@
   ul, ol {
     list-style: none;
   }
+  // replies
+  .children {
+    margin: 0;
+    padding: 0 0 0 $baseline-height;
+    border-left: solid 1px $color-gray-85;
+  }
 }
 .comment-author {
 
