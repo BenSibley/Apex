@@ -32,12 +32,6 @@
 
   a {
     font-weight: 700;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $color-gray-42;
-    }
   }
 }
 .post-tags {

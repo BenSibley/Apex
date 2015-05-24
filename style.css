@@ -41,7 +41,8 @@ h3, .post-title {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .site-footer span, .tagline, .more-link, .comments-link, .post-date, .post-tags a, .further-reading span {
+textarea, input[type="submit"], .comment-footer a,
+.comment-footer span, .site-footer span, .tagline, .more-link, .comments-link, .post-date, .post-tags a, .further-reading span {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -101,7 +102,7 @@ a:link, a:visited {
   color: #333333;
 }
 a:hover, a:active, a:focus {
-  color: #333333;
+  color: #6b6b6b;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -335,6 +336,60 @@ a img {
   padding: 0 6.25%;
 }
 
+.comment-list {
+  list-style: none;
+  margin: 3em 0;
+}
+.comment-list ul, .comment-list ol {
+  list-style: none;
+}
+
+.comment-author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 0.75em;
+}
+.comment-author span {
+  line-height: 48px;
+}
+.comment-author a {
+  font-weight: 700;
+}
+
+li.comment,
+li.pingback {
+  margin: 3em 0;
+}
+
+.comment-footer a {
+  color: #6b6b6b;
+}
+.comment-footer a:link, .comment-footer a:visited {
+  color: #6b6b6b;
+}
+.comment-footer a:link:hover, .comment-footer a:link:active, .comment-footer a:link:focus, .comment-footer a:visited:hover, .comment-footer a:visited:active, .comment-footer a:visited:focus {
+  color: #333333;
+  text-decoration: underline;
+}
+
+.comment-reply-link,
+.comment-edit-link {
+  position: relative;
+  margin-left: 18px;
+}
+.comment-reply-link:after,
+.comment-edit-link:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -12px;
+  height: 100%;
+  width: 1px;
+  background: #d8d8d8;
+}
+
 .site-footer {
   text-align: center;
   padding: 3em 6.25% 0.75em;
@@ -342,9 +397,6 @@ a img {
 }
 .site-footer a {
   font-weight: 700;
-}
-.site-footer a:hover, .site-footer a:active, .site-footer a:focus {
-  color: #6b6b6b;
 }
 
 /* gallery styles copied from Hybrid Core */
@@ -553,7 +605,7 @@ a img {
 }
 .social-media-icons a {
   color: #6b6b6b;
-  margin: 0 10px;
+  margin: 0 0px;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
@@ -562,6 +614,31 @@ a img {
 }
 .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
   color: #333333;
+}
+
+.loop-pagination {
+  margin: 3em 0;
+  padding: 0 6.25%;
+  text-align: center;
+  color: #6b6b6b;
+}
+.loop-pagination a,
+.loop-pagination span {
+  margin: 0 0.75em;
+}
+.loop-pagination a {
+  color: #6b6b6b;
+}
+.loop-pagination a:link, .loop-pagination a:visited {
+  color: #6b6b6b;
+}
+.loop-pagination a:hover, .loop-pagination a:active, .loop-pagination a:focus {
+  color: #333333;
+  text-decoration: underline;
+}
+.loop-pagination .current {
+  color: #333333;
+  font-weight: 700;
 }
 
 .menu-primary-container {
@@ -646,14 +723,6 @@ a img {
   transform: rotate(180deg);
 }
 
-.post-title a {
-  -webkit-transition: color 0.1s ease-in-out;
-  transition: color 0.1s ease-in-out;
-}
-.post-title a:hover, .post-title a:active, .post-title a:focus {
-  color: #6b6b6b;
-}
-
 .entry {
   margin: 3em 0;
 }
@@ -679,6 +748,7 @@ a img {
 }
 .comments-link a:hover, .comments-link a:active, .comments-link a:focus {
   text-decoration: underline;
+  color: #333333;
 }
 
 .blog .post-content p:last-of-type,
@@ -686,31 +756,6 @@ a img {
 .search .post-content p:last-of-type {
   display: inline-block;
   margin: 0.75em 0 0;
-}
-
-.loop-pagination {
-  margin: 3em 0;
-  padding: 0 6.25%;
-  text-align: center;
-  color: #6b6b6b;
-}
-.loop-pagination a,
-.loop-pagination span {
-  margin: 0 0.75em;
-}
-.loop-pagination a {
-  color: #6b6b6b;
-}
-.loop-pagination a:link, .loop-pagination a:visited {
-  color: #6b6b6b;
-}
-.loop-pagination a:hover, .loop-pagination a:active, .loop-pagination a:focus {
-  color: #333333;
-  text-decoration: underline;
-}
-.loop-pagination .current {
-  color: #333333;
-  font-weight: 700;
 }
 
 .featured-image {
@@ -741,9 +786,6 @@ a img {
 
 .post-categories a {
   font-weight: 700;
-}
-.post-categories a:hover, .post-categories a:active, .post-categories a:focus {
-  color: #6b6b6b;
 }
 
 .post-tags ul {

@@ -87,19 +87,10 @@ if( ! function_exists( ( 'ct_apex_customize_comments' ) ) ) {
 					if ( $comment->user_id === $post->post_author ) {
 						ct_apex_profile_image_output();
 					} else {
-						echo get_avatar( get_comment_author_email(), 48 );
+						echo get_avatar( get_comment_author_email(), 48, '', get_comment_author() );
 					}
 					?>
-					<div>
-						<div class="author-name"><?php comment_author_link(); ?></div>
-						<div class="comment-date"><?php comment_date( 'n/j/Y' ); ?></div>
-						<?php comment_reply_link( array_merge( $args, array(
-							'reply_text' => __( 'Reply', 'apex' ),
-							'depth'      => $depth,
-							'max_depth'  => $args['max_depth']
-						) ) ); ?>
-						<?php edit_comment_link( 'edit' ); ?>
-					</div>
+					<span class="author-name"><?php comment_author_link(); ?></span>
 				</div>
 				<div class="comment-content">
 					<?php if ( $comment->comment_approved == '0' ) : ?>
@@ -107,6 +98,15 @@ if( ! function_exists( ( 'ct_apex_customize_comments' ) ) ) {
 						<br/>
 					<?php endif; ?>
 					<?php comment_text(); ?>
+				</div>
+				<div class="comment-footer">
+					<span class="comment-date"><?php comment_date( 'n/j/Y' ); ?></span>
+					<?php comment_reply_link( array_merge( $args, array(
+						'reply_text' => __( 'Reply', 'apex' ),
+						'depth'      => $depth,
+						'max_depth'  => $args['max_depth']
+					) ) ); ?>
+					<?php edit_comment_link( 'Edit' ); ?>
 				</div>
 			</article>
 	<?php
@@ -455,13 +455,13 @@ function ct_apex_profile_image_output(){
         $image_id = ct_apex_get_image_id(get_the_author_meta('apex_user_profile_image'));
 
         // retrieve the thumbnail size of profile image
-        $image_thumb = wp_get_attachment_image($image_id, 'thumbnail');
+        $image_thumb = wp_get_attachment_image($image_id, 'thumbnail', false, array('alt' => get_the_author() ));
 
         // display the image
         echo $image_thumb;
 
     } else {
-        echo get_avatar( get_the_author_meta( 'ID' ), 60 );
+        echo get_avatar( get_the_author_meta( 'ID' ), 48, '', get_the_author() );
     }
 }
 

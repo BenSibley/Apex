@@ -1,0 +1,29 @@
+.loop-pagination {
+  margin: $baseline-height * 2 0;
+  padding: 0 $column * 2;
+  text-align: center;
+  color: $color-gray-42;
+
+  a,
+  span {
+    margin: 0 $baseline-height / 2;
+  }
+  a {
+    color: $color-gray-42;
+
+    &:link,
+    &:visited {
+      color: $color-gray-42;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-20;
+      text-decoration: underline;
+    }
+  }
+  .current {
+    color: $color-gray-20;
+    font-weight: 700;
+  }
+}
