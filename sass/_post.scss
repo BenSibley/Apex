@@ -26,7 +26,7 @@
  @extend %twelve-pixels;
 }
 .post-meta {
-  margin: $baseline-height * 2 0;
+  margin: $baseline-height * 2 0 $baseline-height;
 }
 .post-categories {
 
@@ -67,5 +67,22 @@
       color: white;
       background: $color-gray-20;
     }
+  }
+}
+.further-reading {
+  margin: $baseline-height * 2 0 0;
+  padding: $baseline-height * 1.5 0;
+  border-top: solid 1px $color-gray-85;
+  border-bottom: solid 1px $color-gray-85;
+
+  .previous {
+    margin-bottom: $baseline-height;
+  }
+  span {
+    @extend %twelve-pixels;
+    display: block;
+  }
+  a {
+    font-weight: 700;
   }
 }

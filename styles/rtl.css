@@ -41,7 +41,7 @@ h3, .post-title {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .site-footer span, .tagline, .more-link, .comments-link, .post-date, .post-tags a {
+textarea, input[type="submit"], .site-footer span, .tagline, .more-link, .comments-link, .post-date, .post-tags a, .further-reading span {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -327,6 +327,10 @@ a img {
 .max-width {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.comments {
+  padding: 0 6.25%;
 }
 
 .site-footer {
@@ -730,7 +734,7 @@ a img {
 }
 
 .post-meta {
-  margin: 3em 0;
+  margin: 3em 0 1.5em;
 }
 
 .post-categories a {
@@ -760,4 +764,20 @@ a img {
 .post-tags a:hover, .post-tags a:active, .post-tags a:focus {
   color: white;
   background: #333333;
+}
+
+.further-reading {
+  margin: 3em 0 0;
+  padding: 2.25em 0;
+  border-top: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+}
+.further-reading .previous {
+  margin-bottom: 1.5em;
+}
+.further-reading span {
+  display: block;
+}
+.further-reading a {
+  font-weight: 700;
 }
