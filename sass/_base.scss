@@ -38,14 +38,15 @@ p {
 a {
   color: $color-gray-20;
   text-decoration: none;
+  transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
 
-
-  &:link {
+  &:link,
+  &:visited {
     color: $color-gray-20;
   }
-  &:visited,
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     color: $color-gray-20;
   }
 }

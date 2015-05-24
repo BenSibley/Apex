@@ -94,11 +94,13 @@ p {
 a {
   color: #333333;
   text-decoration: none;
+  -webkit-transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
 }
-a:link {
+a:link, a:visited {
   color: #333333;
 }
-a:visited, a:hover, a:active {
+a:hover, a:active, a:focus {
   color: #333333;
 }
 
@@ -780,4 +782,7 @@ a img {
 }
 .further-reading a {
   font-weight: 700;
+}
+.further-reading a:hover, .further-reading a:active, .further-reading a:focus {
+  color: #6b6b6b;
 }
