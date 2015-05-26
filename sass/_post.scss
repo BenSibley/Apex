@@ -17,7 +17,13 @@
   }
 }
 .post-container {
-  padding: $baseline-height $column * 2;
+  padding: 0 $column * 2;
+}
+.post-header {
+  margin: $baseline-height 0;
+}
+.post-content {
+  margin: $baseline-height 0;
 }
 .post-title {
  @extend %twenty-one-pixels;

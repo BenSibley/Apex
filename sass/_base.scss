@@ -147,7 +147,7 @@ th {
   display: block;
 }
 .alignnone {
-  margin: $baseline-height;
+  margin: $baseline-height 0;
 }
 img,
 .alignright,
@@ -208,7 +208,6 @@ input[type="submit"] {
   }
 }
 input[type="search"] {
-  margin-right: $baseline-height;
   padding-right: $baseline-height / 4; /* so safari 'x' doesn't get cut off */
 }
 ::-webkit-input-placeholder {

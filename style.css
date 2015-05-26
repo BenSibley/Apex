@@ -199,7 +199,7 @@ th {
 }
 
 .alignnone {
-  margin: 1.5em;
+  margin: 1.5em 0;
 }
 
 img,
@@ -263,7 +263,6 @@ input[type="submit"]:hover {
 }
 
 input[type="search"] {
-  margin-right: 1.5em;
   padding-right: 0.375em;
   /* so safari 'x' doesn't get cut off */
 }
@@ -339,6 +338,21 @@ a img {
   margin: 0 auto;
 }
 
+.archive-header {
+  margin: 3em 0 1.5em;
+  padding: 0 6.25%;
+}
+.archive-header h2 {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #6b6b6b;
+}
+.archive-header span {
+  font-weight: 700;
+  color: #333333;
+}
+
 .comment-respond {
   margin-top: 3em;
 }
@@ -353,6 +367,7 @@ a img {
 
 .comments {
   padding: 0 6.25%;
+  margin: 3em 0;
 }
 
 .comment-list {
@@ -764,7 +779,7 @@ li.pingback {
 }
 
 .entry {
-  margin: 3em 0;
+  margin: 3em 0 4.5em;
 }
 
 .more-link {
@@ -817,7 +832,15 @@ li.pingback {
 }
 
 .post-container {
-  padding: 1.5em 6.25%;
+  padding: 0 6.25%;
+}
+
+.post-header {
+  margin: 1.5em 0;
+}
+
+.post-content {
+  margin: 1.5em 0;
 }
 
 .post-meta {
@@ -867,4 +890,19 @@ li.pingback {
 }
 .further-reading a:hover, .further-reading a:active, .further-reading a:focus {
   color: #6b6b6b;
+}
+
+.search-form input[type="submit"] {
+  min-width: 100px;
+}
+.search-form input[type="search"] {
+  margin-bottom: 6px;
+}
+
+.search-box {
+  margin: 3em 0 1.5em;
+  padding: 0 6.25%;
+}
+.search-box h1 {
+  margin-bottom: 12px;
 }

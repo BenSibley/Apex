@@ -2,10 +2,8 @@
 /* Category header */
 if( is_category() ){ ?>
 	<div class='archive-header'>
-		<i class="fa fa-folder-open" title="<?php _e('archive icon', 'founder'); ?>"></i>
 		<h2>
-			<?php _e('Category archive for:', 'apex'); ?>
-			<?php single_cat_title(); ?>
+			<?php printf( __('You are viewing the <span>%s</span> category archive', 'apex'), single_cat_title('', false) ); ?>
 		</h2>
 	</div>
 <?php
@@ -13,7 +11,6 @@ if( is_category() ){ ?>
 /* Tag header */
 elseif( is_tag() ){ ?>
 	<div class='archive-header'>
-		<i class="fa fa-tag" title="<?php _e('tag icon', 'founder'); ?>"></i>
 		<h2>
 			<?php _e('Tag archive for:', 'apex'); ?>
 			<?php single_tag_title(); ?>
