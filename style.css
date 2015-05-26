@@ -41,7 +41,7 @@ h3, .post-title {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .comment-respond label, .comment-footer a,
+textarea, input[type="submit"], .comment-respond label, #cancel-comment-reply-link, .comment-footer a,
 .comment-footer span, .site-footer span, .tagline, .more-link, .comments-link, .post-date, .post-tags a, .further-reading span {
   font-size: 0.75em;
   /* 12px / 16px */
@@ -339,9 +339,16 @@ a img {
   margin: 0 auto;
 }
 
+.comment-respond {
+  margin-top: 3em;
+}
 .comment-respond label {
   display: block;
   margin-bottom: 6px;
+}
+
+#cancel-comment-reply-link {
+  margin-left: 12px;
 }
 
 .comments {

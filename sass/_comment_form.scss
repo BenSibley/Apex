@@ -1,8 +1,13 @@
 .comment-respond {
+  margin-top: $baseline-height * 2;
 
   label {
     @extend %twelve-pixels;
     display: block;
     margin-bottom: 6px;
   }
+}
+#cancel-comment-reply-link {
+  @extend %twelve-pixels;
+  margin-left: 12px;
 }
