@@ -1,0 +1,126 @@
+.widget {
+  margin-bottom: $baseline-height * 1.5;
+
+  // make everything 12px, but don't cascade the ems
+  > * {
+    @extend %twelve-pixels;
+  }
+  .widget-title {
+    margin-bottom: 2em;
+  }
+  ul {
+    list-style: none;
+    margin: $baseline-height 0;
+
+    ul {
+      margin: 1em $baseline-height;
+    }
+  }
+  li {
+    margin-bottom: 1em;
+  }
+  a {
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  .post-date {
+    display: block;
+  }
+}
+.widget_calendar {
+
+  caption {
+    margin-bottom: 12px;
+  }
+  tbody {
+
+    a {
+      background: $color-gray-91;
+      margin: -9px;
+      padding: 6px 10px 7px;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color-gray-85;
+        text-decoration: none;
+      }
+    }
+  }
+  #today {
+    background: $color-gray-20;
+    color: white;
+  }
+  #prev,
+  #next {
+    text-align: center;
+    padding: 0;
+
+    a {
+      display: inline-block;
+      background: $color-gray-91;
+      color: $color-gray-20;
+      padding: $baseline-height / 2 $baseline-height * 2;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color-gray-85;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.widget_recent_comments {
+
+  a {
+    text-decoration: underline;
+  }
+}
+.widget_rss {
+
+  .widget-title {
+
+    a {
+      border-color: transparent;
+
+      &:hover,
+      &:active,
+      &:focus {
+//        border-color: $color-orange;
+      }
+    }
+    img {
+      margin-right: 4px;
+    }
+  }
+  .rssSummary {
+    margin: $baseline-height / 2 $baseline-height;
+
+    + cite {
+      display: block;
+      margin: 0 0 $baseline-height $baseline-height;
+    }
+  }
+  .rss-date {
+    font-style: italic;
+  }
+  li {
+    display: block;
+  }
+  cite,
+  span {
+    margin-bottom: $baseline-height;
+    display: block;
+  }
+  span {
+
+    + cite {
+      margin-top: -$baseline-height;
+    }
+  }
+}

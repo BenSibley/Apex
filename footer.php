@@ -2,7 +2,6 @@
 
 <?php get_sidebar( 'primary' ); ?>
 
-
 <footer class="site-footer" role="contentinfo">
     <div class="design-credit">
         <span>
