@@ -72,3 +72,19 @@ li.pingback {
     background: $color-gray-85;
   }
 }
+.comment-pagination {
+  margin: $baseline-height * 2 0;
+
+  a {
+    font-weight: 700;
+  }
+  p {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin: 0;
+  }
+  .next-comment {
+    text-align: right;
+  }
+}

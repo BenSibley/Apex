@@ -407,6 +407,22 @@ li.pingback {
   background: #d8d8d8;
 }
 
+.comment-pagination {
+  margin: 3em 0;
+}
+.comment-pagination a {
+  font-weight: 700;
+}
+.comment-pagination p {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  margin: 0;
+}
+.comment-pagination .next-comment {
+  text-align: left;
+}
+
 .site-footer {
   text-align: center;
   padding: 3em 6.25% 0.75em;
