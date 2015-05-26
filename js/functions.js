@@ -11,6 +11,10 @@ jQuery(document).ready(function($){
     var socialMediaIcons = siteHeader.find('.social-media-icons');
     var menuLink = $('.menu-item').children('a');
 
+    $('.post-content').fitVids({
+        customSelector: 'iframe[src*="dailymotion.com"]'
+    });
+
     toggleNavigation.on('click', openPrimaryMenu);
 
     function openPrimaryMenu() {
