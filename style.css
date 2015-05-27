@@ -681,6 +681,9 @@ li.pingback {
     float: right;
     margin: 0;
   }
+  .social-media-icons li:last-child a {
+    margin-right: 0;
+  }
 }
 .loop-pagination {
   margin: 3em 0;
