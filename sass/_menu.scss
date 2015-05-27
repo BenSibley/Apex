@@ -128,6 +128,9 @@
       &:focus {
         color: $color-gray-20;
       }
+      &:focus {
+        text-decoration: underline;
+      }
     }
   }
   .menu-primary-items {
@@ -139,7 +142,7 @@
       overflow: visible;
       opacity: 0;
       top: 100%;
-      top: calc(100% + 12px);
+      top: calc(100% + 18px);
       left: 0;
       backface-visibility: hidden;
       background: white;
@@ -148,27 +151,80 @@
       transition: all 0.1s ease-in-out;
 
       &:hover,
-      &.focus {
+      &.focused {
         visibility: visible;
         opacity: 1;
         top: 100%;
-        top: calc(100% + 6px);
+        top: calc(100% + 12px);
       }
       li {
         display: block;
         margin: $baseline-height / 2 0;
+
+        &:hover {
+
+          > button {
+            transform: translate(2px, 0);
+          }
+        }
+      }
+      .toggle-dropdown {
+
+        &:after {
+          content: '\f105';
+        }
+      }
+      a {
+
+        &:hover,
+        &:active,
+        &:focus {
+
+          &:after {
+            top: 0;
+            height: 36px;
+            width: 72px;
+            left: 100%;
+          }
+          + button {
+            transform: translate(2px, 0);
+          }
+          ~ ul {
+            top: 0;
+          }
+        }
+      }
+      ul {
+        left: 100%;
+        left: calc(100% + 25px);
+        top: 0;
+
+        &:hover,
+        &.focused {
+          top: 0;
+        }
       }
     }
     li {
       position: relative;
+      z-index: 9;
       white-space: nowrap;
+
+      &:hover {
+
+        // to keep it down when hovering over submenu
+        > button {
+          transform: translate(0, 2px);
+        }
+      }
     }
     a {
+      position: relative;
+      z-index: 19;
 
       &:hover,
       &:active,
       &:focus {
-        position: relative;
 
         &:after {
           content: '';
@@ -178,11 +234,15 @@
           width: 100%;
           left: 0;
         }
+        // to move button via hover & keyboard
+        + button {
+          transform: translate(0, 2px);
+        }
         ~ ul {
           visibility: visible;
           opacity: 1;
           top: 100%;
-          top: calc(100% + 6px);
+          top: calc(100% + 12px);
         }
       }
     }
