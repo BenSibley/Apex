@@ -100,7 +100,7 @@ if( ! function_exists( ( 'ct_apex_customize_comments' ) ) ) {
 					<?php comment_text(); ?>
 				</div>
 				<div class="comment-footer">
-					<span class="comment-date"><?php comment_date( 'n/j/Y' ); ?></span>
+					<span class="comment-date"><?php comment_date(); ?></span>
 					<?php comment_reply_link( array_merge( $args, array(
 						'reply_text' => __( 'Reply', 'apex' ),
 						'depth'      => $depth,
