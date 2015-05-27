@@ -1,0 +1,14 @@
+@media all and (min-width: $nine-hundred) {
+
+  .overflow-container {
+    padding: 0 $column * 1.5;
+
+    &:after {
+      @include clearfix;
+    }
+  }
+  .main {
+    width: $column * 20 * 1.103;
+    float: left;
+  }
+}

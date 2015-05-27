@@ -45,4 +45,7 @@
 				} ?>
 			</div>
 		</header>
+		<div class="featured-image-large">
+			<?php if( is_singular() ) ct_apex_featured_image(); ?>
+		</div>
 		<section id="main" class="main" role="main">

@@ -89,3 +89,10 @@ li.pingback {
     text-align: right;
   }
 }
+
+@media all and (min-width: $six-hundred) {
+
+  .comments {
+    padding: 0;
+  }
+}

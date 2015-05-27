@@ -118,3 +118,10 @@
     }
   }
 }
+
+@media all and (min-width: $nine-hundred) {
+
+  .widget {
+    margin-bottom: $baseline-height * 2;
+  }
+}

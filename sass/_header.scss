@@ -55,6 +55,13 @@
   .toggle-navigation {
     display: none;
   }
+  .title-container {
+    margin: $baseline-height * 3 0 $baseline-height * 4;
+  }
+  .site-title {
+    font-size: 2.3125em; /* 37px / 16px */
+    line-height: 1.297; /* 48px */
+  }
   .social-media-icons {
     display: inline-block;
     float: right;
@@ -66,5 +73,22 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+@media all and (min-width: $nine-hundred) {
+
+  .site-header {
+    padding: 0;
+  }
+}
+@media all and (min-width: $one-thousand) {
+
+  .site-title {
+    font-size: 3.1875em; /* 51px / 16px */
+    line-height: 1.176; /* 60px */
+  }
+  .tagline {
+    margin-top: 1em;
   }
 }
