@@ -49,3 +49,15 @@
     }
   }
 }
+
+@media all and (min-width: $eight-hundred) {
+
+  .toggle-navigation {
+    display: none;
+  }
+  .social-media-icons {
+    display: inline-block;
+    float: right;
+    margin: 0;
+  }
+}

@@ -671,6 +671,17 @@ li.pingback {
   color: #333333;
 }
 
+@media all and (min-width: 50em) {
+  .toggle-navigation {
+    display: none;
+  }
+
+  .social-media-icons {
+    display: inline-block;
+    float: right;
+    margin: 0;
+  }
+}
 .loop-pagination {
   margin: 3em 0;
   padding: 0 6.25%;
@@ -778,6 +789,90 @@ li.pingback {
   transform: rotate(180deg);
 }
 
+@media all and (min-width: 50em) {
+  .menu-primary-container {
+    max-height: none;
+    text-align: left;
+    margin: 2.25em 0;
+    overflow: visible;
+  }
+
+  .menu-primary {
+    display: inline-block;
+    margin: 0;
+  }
+  .menu-primary li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+  }
+  .menu-primary a {
+    font-size: 0.75em;
+    /* 12px / 16px */
+    line-height: 1.5;
+    /* 18px */
+    display: inline-block;
+  }
+  .menu-primary a:hover, .menu-primary a:active, .menu-primary a:focus {
+    color: #333333;
+  }
+
+  .menu-primary-items ul {
+    max-height: none;
+    position: absolute;
+    visibility: hidden;
+    overflow: visible;
+    opacity: 0;
+    top: 100%;
+    top: calc(100% + 12px);
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: white;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+    padding: 0 1.5em 0.75em;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .menu-primary-items ul:hover, .menu-primary-items ul.focus {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+    top: calc(100% + 6px);
+  }
+  .menu-primary-items ul li {
+    display: block;
+    margin: 0.75em 0;
+  }
+  .menu-primary-items li {
+    position: relative;
+    white-space: nowrap;
+  }
+  .menu-primary-items a:hover, .menu-primary-items a:active, .menu-primary-items a:focus {
+    position: relative;
+  }
+  .menu-primary-items a:hover:after, .menu-primary-items a:active:after, .menu-primary-items a:focus:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    height: 36px;
+    width: 100%;
+    left: 0;
+  }
+  .menu-primary-items a:hover ~ ul, .menu-primary-items a:active ~ ul, .menu-primary-items a:focus ~ ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+    top: calc(100% + 6px);
+  }
+
+  .toggle-dropdown {
+    font-size: 0.75em;
+    /* 12px / 16px */
+    line-height: 1.5;
+    /* 18px */
+    margin: 0 0 0 6px;
+  }
+}
 .entry {
   margin: 3em 0 4.5em;
 }
