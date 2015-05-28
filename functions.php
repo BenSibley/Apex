@@ -598,3 +598,16 @@ function ct_apex_svg_output($type) {
 
 	return $svg;
 }
+
+// custom css output
+function ct_apex_custom_css_output(){
+
+	$custom_css = get_theme_mod('custom_css');
+
+	/* output custom css */
+	if( $custom_css ) {
+		wp_add_inline_style( 'ct-apex-style', $custom_css );
+		wp_add_inline_style( 'ct-apex-style-rtl', $custom_css );
+	}
+}
+add_action('wp_enqueue_scripts', 'ct_apex_custom_css_output', 20);
