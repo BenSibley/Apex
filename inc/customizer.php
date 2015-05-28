@@ -100,8 +100,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'default'           => '',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'esc_url_raw',
-		'transport'         => 'postMessage'
+		'sanitize_callback' => 'esc_url_raw'
 	) );
 	// control
 	$wp_customize->add_control( new WP_Customize_Image_Control(
@@ -134,8 +133,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 			$wp_customize->add_setting( "$social_site", array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'ct_apex_sanitize_email',
-				'transport'         => 'postMessage'
+				'sanitize_callback' => 'ct_apex_sanitize_email'
 			) );
 			// control
 			$wp_customize->add_control( $social_site, array(
@@ -148,8 +146,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 			$wp_customize->add_setting( $social_site, array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'esc_url_raw',
-				'transport'         => 'postMessage'
+				'sanitize_callback' => 'esc_url_raw'
 			) );
 			// control
 			$wp_customize->add_control( new ct_apex_url_input_control(
@@ -163,33 +160,6 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		// increment the priority for next site
 		$priority = $priority + 5;
 	}
-
-	/***** Search Bar *****/
-
-	// section
-	$wp_customize->add_section( 'ct_apex_search_bar', array(
-		'title'      => __( 'Search Bar', 'apex' ),
-		'priority'   => 40,
-		'capability' => 'edit_theme_options'
-	) );
-	// setting
-	$wp_customize->add_setting( 'search_bar', array(
-		'default'           => 'show',
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'ct_apex_sanitize_all_show_hide_settings'
-	) );
-	// control
-	$wp_customize->add_control( 'search_bar', array(
-		'type' => 'radio',
-		'label' => __('Show search bar at top of site?', 'apex'),
-		'section' => 'ct_apex_search_bar',
-		'setting' => 'search_bar',
-		'choices' => array(
-			'show' => __('Show', 'apex'),
-			'hide' => __('Hide', 'apex')
-		),
-	) );
 
 	/***** Blog *****/
 
