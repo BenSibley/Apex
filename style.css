@@ -1026,6 +1026,11 @@ li.pingback {
   color: #333333;
 }
 
+.full-post .comments-link {
+  display: block;
+  margin: 3em 0;
+}
+
 .blog .post-content p:last-of-type,
 .archive .post-content p:last-of-type,
 .search .post-content p:last-of-type {
