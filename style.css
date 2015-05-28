@@ -1156,17 +1156,21 @@ li.pingback {
     margin-top: 0;
   }
 
-  .singular .entry .featured-image {
+  .singular .entry .featured-image,
+  .error-404 .entry .featured-image {
     display: none;
   }
-  .singular .featured-image-large {
+  .singular .featured-image-large,
+  .error-404 .featured-image-large {
     display: block;
     margin-bottom: 3em;
   }
-  .singular .post-header {
+  .singular .post-header,
+  .error-404 .post-header {
     margin: 0 0 3em;
   }
-  .singular .post-title {
+  .singular .post-title,
+  .error-404 .post-title {
     font-size: 2.3125em;
     /* 37px / 16px */
     line-height: 1.297;
