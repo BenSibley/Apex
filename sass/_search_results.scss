@@ -5,5 +5,16 @@
   h1 {
     margin-bottom: 12px;
   }
+}
 
+@media all and (min-width: $nine-hundred) {
+
+  .search-box {
+    margin: 0 0 $baseline-height * 2;
+    padding: 0;
+
+    .search-form-container {
+      margin-top: $baseline-height;
+    }
+  }
 }

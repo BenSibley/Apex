@@ -1182,6 +1182,15 @@ li.pingback {
   margin-bottom: 12px;
 }
 
+@media all and (min-width: 56.25em) {
+  .search-box {
+    margin: 0 0 3em;
+    padding: 0;
+  }
+  .search-box .search-form-container {
+    margin-top: 1.5em;
+  }
+}
 .sidebar-primary {
   margin: 3em 0;
   padding: 3em 6.25%;
