@@ -415,16 +415,10 @@ if( ! function_exists('ct_apex_social_icons_output') ) {
                             <i class="fa fa-envelope" title="<?php _e('email icon', 'apex'); ?>"></i>
                         </a>
                     </li>
-                <?php } elseif ( $active_site == "flickr" || $active_site == "dribbble" || $active_site == "instagram" || $active_site == "soundcloud" || $active_site == "spotify" || $active_site == "vine" || $active_site == "yahoo" || $active_site == "codepen" || $active_site == "delicious" || $active_site == "stumbleupon" || $active_site == "deviantart" || $active_site == "digg" || $active_site == "hacker-news" || $active_site == "vk" || $active_site == 'weibo' || $active_site == 'tencent-weibo' ) { ?>
-                    <li>
-                        <a class="<?php echo $active_site; ?>" target="_blank" href="<?php echo esc_url( ct_apex_get_social_url( $source, $key ) ); ?>">
-                            <i class="fa fa-<?php echo esc_attr( $active_site ); ?>" title="<?php printf( __('%s icon', 'apex'), $active_site ); ?>"></i>
-                        </a>
-                    </li>
                 <?php } else { ?>
                     <li>
                         <a class="<?php echo $active_site; ?>" target="_blank" href="<?php echo esc_url( ct_apex_get_social_url( $source, $key ) ); ?>">
-                            <i class="fa fa-<?php echo esc_attr( $active_site ); ?>-square" title="<?php printf( __('%s icon', 'apex'), $active_site ); ?>"></i>
+                            <i class="fa fa-<?php echo esc_attr( $active_site ); ?>" title="<?php printf( __('%s icon', 'apex'), $active_site ); ?>"></i>
                         </a>
                     </li>
                 <?php
