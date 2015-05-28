@@ -311,6 +311,21 @@ function ct_apex_sanitize_comments_setting($input){
 	}
 }
 
+// sanitize yes/no settings
+function ct_apex_sanitize_yes_no_settings($input){
+
+	$valid = array(
+		'yes'   => __('Yes', 'apex'),
+		'no'  => __('No', 'apex'),
+	);
+
+	if ( array_key_exists( $input, $valid ) ) {
+		return $input;
+	} else {
+		return '';
+	}
+}
+
 /***** Helper Functions *****/
 
 function ct_apex_customize_preview_js() {
