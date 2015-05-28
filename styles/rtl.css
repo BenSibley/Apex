@@ -754,6 +754,12 @@ li.pingback {
 }
 
 @media all and (min-width: 56.25em) {
+  .loop-pagination {
+    text-align: right;
+    padding: 0;
+  }
+}
+@media all and (min-width: 56.25em) {
   .overflow-container {
     padding: 0 4.6875%;
   }

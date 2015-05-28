@@ -27,3 +27,11 @@
     font-weight: 700;
   }
 }
+
+@media all and (min-width: $nine-hundred) {
+
+  .loop-pagination {
+    text-align: left;
+    padding: 0;
+  }
+}
