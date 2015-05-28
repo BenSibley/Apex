@@ -1132,6 +1132,7 @@ li.pingback {
 
   .further-reading div {
     display: inline-block;
+    vertical-align: top;
     width: 49.5%;
   }
   .further-reading .previous {
