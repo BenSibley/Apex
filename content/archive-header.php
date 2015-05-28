@@ -3,7 +3,7 @@
 if( is_category() ){ ?>
 	<div class='archive-header'>
 		<h2>
-			<?php printf( __('You are viewing the <span>%s</span> category archive', 'apex'), single_cat_title('', false) ); ?>
+			<?php printf( __('You are viewing the <span>%s</span> category archive.', 'apex'), single_cat_title('', false) ); ?>
 		</h2>
 	</div>
 <?php
@@ -12,8 +12,7 @@ if( is_category() ){ ?>
 elseif( is_tag() ){ ?>
 	<div class='archive-header'>
 		<h2>
-			<?php _e('Tag archive for:', 'apex'); ?>
-			<?php single_tag_title(); ?>
+			<?php printf( __('You are viewing the <span>%s</span> tag archive.', 'apex'), single_tag_title('', false) ); ?>
 		</h2>
 	</div>
 <?php
@@ -22,10 +21,8 @@ elseif( is_tag() ){ ?>
 elseif( is_author() ){
 	$author = get_userdata(get_query_var('author')); ?>
 	<div class='archive-header'>
-		<i class="fa fa-user" title="<?php _e('author icon', 'founder'); ?>"></i>
 		<h2>
-			<?php _e('Author archive for:', 'apex'); ?>
-			<?php echo $author->nickname; ?>
+			<?php printf( __("You are viewing <span>%s</span>'s post archive.", "apex"), $author->nickname ); ?>
 		</h2>
 	</div>
 <?php
@@ -33,10 +30,8 @@ elseif( is_author() ){
 /* Date header */
 elseif( is_date() ){ ?>
 	<div class='archive-header'>
-		<i class="fa fa-calendar" title="<?php _e('calendar icon', 'founder'); ?>"></i>
 		<h2>
-			<?php _e('Date archive for:', 'apex'); ?>
-			<?php single_month_title(' '); ?>
+			<?php printf( __('You are viewing the date archive for <span>%s</span>.', 'apex'), single_month_title('', false) ); ?>
 		</h2>
 	</div>
 <?php

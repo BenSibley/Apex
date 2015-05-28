@@ -13,3 +13,11 @@
     color: $color-gray-20;
   }
 }
+
+@media all and (min-width: $nine-hundred) {
+
+  .archive-header {
+    padding: 0;
+    margin: 0 0 $baseline-height * 2;
+  }
+}

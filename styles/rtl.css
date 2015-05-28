@@ -353,6 +353,12 @@ a img {
   color: #333333;
 }
 
+@media all and (min-width: 56.25em) {
+  .archive-header {
+    padding: 0;
+    margin: 0 0 3em;
+  }
+}
 .comment-respond {
   margin-top: 3em;
 }
