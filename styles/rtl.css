@@ -705,7 +705,6 @@ li.pingback {
 
   .social-media-icons {
     display: inline-block;
-    float: left;
     margin: 0;
   }
   .social-media-icons li:last-child a {
@@ -857,14 +856,23 @@ li.pingback {
 @media all and (min-width: 50em) {
   .menu-primary-container {
     max-height: none;
-    text-align: right;
+    text-align: left;
     margin: 2.25em 0;
     overflow: visible;
+  }
+  .menu-primary-container:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
   }
 
   .menu-primary {
     display: inline-block;
     margin: 0;
+    float: right;
   }
   .menu-primary li {
     display: inline-block;

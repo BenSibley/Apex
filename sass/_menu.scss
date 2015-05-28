@@ -106,13 +106,18 @@
 
   .menu-primary-container {
     max-height: none;
-    text-align: left;
+    text-align: right;
     margin: $baseline-height * 1.5 0;
     overflow: visible;
+
+    &:after {
+      @include clearfix;
+    }
   }
   .menu-primary {
     display: inline-block;
     margin: 0;
+    float: left;
 
     li {
       display: inline-block;

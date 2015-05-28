@@ -106,7 +106,7 @@ jQuery(document).ready(function($){
             menuPrimaryContainer.removeClass('open');
             $(this).removeClass('open');
 
-            menuPrimaryContainer.css('max-height', 0);
+            menuPrimaryContainer.css('max-height', '');
 
             // scroll back up
             $('html, body').animate({scrollTop: '0'}, 200);
