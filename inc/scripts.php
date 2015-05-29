@@ -10,8 +10,8 @@ function ct_apex_load_scripts_styles() {
 	// main JS file
 	wp_enqueue_script('ct-apex-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
 	wp_localize_script( 'ct-apex-js', 'objectL10n', array(
-		'openMenu'  => __( 'open menu', 'apex' ),
-		'closeMenu' => __( 'close menu', 'apex' ),
+		'openMenu'       => __( 'open menu', 'apex' ),
+		'closeMenu'      => __( 'close menu', 'apex' ),
 		'openChildMenu'  => __( 'open dropdown menu', 'apex' ),
 		'closeChildMenu' => __( 'close dropdown menu', 'apex' )
 	) );
@@ -33,6 +33,16 @@ function ct_apex_load_scripts_styles() {
 	if( is_singular() && comments_open() && get_option('thread_comments') ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	/* Load Polyfills */
+
+	// HTML5 shiv
+	wp_enqueue_script('ct-apex-html5-shiv', get_template_directory_uri() . '/js/build/html5shiv.min.js');
+	wp_script_add_data( 'ct-apex-html5-shiv', 'conditional', 'if IE 8' );
+
+	// respond.js - media query support
+	wp_enqueue_script('ct-apex-respond', get_template_directory_uri() . '/js/build/respond.min.js', '', '', true);
+	wp_script_add_data( 'ct-apex-respond', 'conditional', 'if IE 8' );
 }
 add_action('wp_enqueue_scripts', 'ct_apex_load_scripts_styles' );
 
