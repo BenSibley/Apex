@@ -8,6 +8,15 @@ add_action( 'admin_menu', 'ct_apex_register_theme_page' );
 
 /* callback used to add content to options page */
 function ct_apex_options_content(){
+
+	$customizer_url = add_query_arg(
+		array(
+			'url'    => site_url(),
+			'return' => admin_url('themes.php?page=apex-options')
+		),
+		admin_url('customize.php')
+	);
+
 	?>
 	<div id="apex-dashboard-wrap" class="wrap">
 		<h2><?php _e('Apex Dashboard', 'apex'); ?></h2>
@@ -16,7 +25,7 @@ function ct_apex_options_content(){
 			<h3><?php _e('Customization', 'apex'); ?></h3>
 			<p><?php _e('Click the "Customize" link in your menu, or use the button below to get started customizing Apex', 'apex'); ?>.</p>
 			<p>
-				<a class="button-primary" href="<?php echo admin_url('customize.php'); ?>"><?php _e('Use Customizer', 'apex') ?></a>
+				<a class="button-primary" href="<?php echo esc_url( $customizer_url ); ?>"><?php _e('Use Customizer', 'apex') ?></a>
 			</p>
 		</div>
 		<div class="content content-support">
