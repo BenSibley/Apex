@@ -1,8 +1,10 @@
+<?php hybrid_do_atomic( 'main_bottom' ); ?>
 </section> <!-- .main -->
 
 <?php get_sidebar( 'primary' ); ?>
 
 <footer class="site-footer" role="contentinfo">
+	<?php hybrid_do_atomic( 'footer_top' ); ?>
     <div class="design-credit">
         <span>
             <?php
@@ -15,6 +17,8 @@
 </footer>
 </div>
 </div><!-- .overflow-container -->
+
+<?php hybrid_do_atomic( 'body_bottom' ); ?>
 
 <?php wp_footer(); ?>
 

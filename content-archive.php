@@ -1,4 +1,5 @@
 <div <?php post_class(); ?>>
+	<?php hybrid_do_atomic( 'archive_post_before' ); ?>
 	<article>
 		<?php ct_apex_featured_image(); ?>
 		<div class="post-container">
@@ -19,4 +20,5 @@
 			</div>
 		</div>
 	</article>
+	<?php hybrid_do_atomic( 'archive_post_after' ); ?>
 </div>
