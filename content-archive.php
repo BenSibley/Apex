@@ -4,6 +4,7 @@
 		<?php ct_apex_featured_image(); ?>
 		<div class="post-container">
 			<div class='post-header'>
+				<?php hybrid_do_atomic( 'sticky_post_status' ); ?>
 				<h1 class='post-title'>
 					<a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
 				</h1>

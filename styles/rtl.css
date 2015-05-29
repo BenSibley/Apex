@@ -42,7 +42,7 @@ h3, .post-title {
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
 textarea, input[type="submit"], .comment-respond label, #cancel-comment-reply-link, .comment-footer a,
-.comment-footer span, .site-footer span, .tagline, .more-link, .comments-link, .post-date, .post-tags a, .further-reading span, .widget > * {
+.comment-footer span, .site-footer span, .tagline, .more-link, .comments-link, .sticky-status, .post-date, .post-tags a, .further-reading span, .widget > * {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -1036,6 +1036,23 @@ li.pingback {
 .search .post-content p:last-of-type {
   display: inline-block;
   margin: 0.75em 0 0;
+}
+
+.sticky-status {
+  display: inline-block;
+  background: #333333;
+  color: white;
+  padding: 9px 1.5em;
+  margin-bottom: 2.25em;
+}
+
+.has-post-thumbnail {
+  position: relative;
+}
+.has-post-thumbnail .sticky-status {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .featured-image {

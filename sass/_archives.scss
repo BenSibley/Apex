@@ -53,3 +53,20 @@
     }
   }
 }
+.sticky-status {
+  @extend %twelve-pixels;
+  display: inline-block;
+  background: $color-gray-20;
+  color: white;
+  padding: 9px $baseline-height;
+  margin-bottom: $baseline-height * 1.5;
+}
+.has-post-thumbnail {
+  position: relative;
+
+  .sticky-status {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

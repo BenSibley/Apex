@@ -518,6 +518,7 @@ add_filter( 'walker_nav_menu_start_el', 'ct_apex_nav_dropdown_buttons', 10, 4 );
 
 function ct_apex_sticky_post_marker() {
 
+	// sticky_post_status only included in content-archive, so it will only show on the blog
 	if( is_sticky() && !is_archive() ) {
 		echo '<div class="sticky-status"><span>' . __("Featured Post", "apex") . '</span></div>';
 	}
