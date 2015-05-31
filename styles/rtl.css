@@ -1046,7 +1046,7 @@ li.pingback {
   margin-bottom: 2.25em;
 }
 
-.has-post-thumbnail {
+.has-post-thumbnail article {
   position: relative;
 }
 .has-post-thumbnail .sticky-status {

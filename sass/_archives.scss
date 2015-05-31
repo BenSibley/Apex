@@ -62,8 +62,10 @@
   margin-bottom: $baseline-height * 1.5;
 }
 .has-post-thumbnail {
-  position: relative;
 
+  article {
+    position: relative;
+  }
   .sticky-status {
     position: absolute;
     top: 0;
