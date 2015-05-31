@@ -879,6 +879,7 @@ li.pingback {
     display: inline-block;
     margin: 0;
     float: right;
+    text-align: right;
   }
   .menu-primary li {
     display: inline-block;
