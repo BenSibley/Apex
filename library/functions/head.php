@@ -21,7 +21,7 @@ add_action( 'wp_head', 'hybrid_link_pingback', 3 );
 add_filter( 'wp_title', 'hybrid_wp_title', 1, 3 );
 
 /**
- * Generates the relevant template info.  Adds template meta with theme version.  Uses the theme 
+ * Generates the relevant template info.  Adds template meta with theme version.  Uses the theme
  * name and version from style.css.
  * filter hook.
  *
@@ -90,7 +90,7 @@ function hybrid_wp_title( $doctitle, $separator, $seplocation ) {
 	elseif ( is_home() || is_singular() )
 		$doctitle = single_post_title( '', false );
 
-	elseif ( is_category() ) 
+	elseif ( is_category() )
 		$doctitle = single_cat_title( '', false );
 
 	elseif ( is_tag() )
