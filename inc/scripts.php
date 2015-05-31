@@ -38,11 +38,11 @@ function ct_apex_load_scripts_styles() {
 
 	// HTML5 shiv
 	wp_enqueue_script('ct-apex-html5-shiv', get_template_directory_uri() . '/js/build/html5shiv.min.js');
-	wp_script_add_data( 'ct-apex-html5-shiv', 'conditional', 'if IE 8' );
+	wp_script_add_data( 'ct-apex-html5-shiv', 'conditional', 'IE 8' );
 
 	// respond.js - media query support
 	wp_enqueue_script('ct-apex-respond', get_template_directory_uri() . '/js/build/respond.min.js', '', '', true);
-	wp_script_add_data( 'ct-apex-respond', 'conditional', 'if IE 8' );
+	wp_script_add_data( 'ct-apex-respond', 'conditional', 'IE 8' );
 }
 add_action('wp_enqueue_scripts', 'ct_apex_load_scripts_styles' );
 
