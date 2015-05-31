@@ -907,12 +907,11 @@ li.pingback {
     overflow: visible;
     opacity: 0;
     top: 100%;
-    top: calc(100% + 18px);
-    right: 0;
+    top: calc(100% + 6px);
+    right: -1.5em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: white;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
     padding: 0 1.5em 0.75em;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
@@ -921,7 +920,6 @@ li.pingback {
     visibility: visible;
     opacity: 1;
     top: 100%;
-    top: calc(100% + 12px);
   }
   .menu-primary-items ul li {
     display: block;
@@ -988,7 +986,6 @@ li.pingback {
     visibility: visible;
     opacity: 1;
     top: 100%;
-    top: calc(100% + 12px);
   }
 
   .toggle-dropdown {

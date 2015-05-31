@@ -149,11 +149,10 @@
       overflow: visible;
       opacity: 0;
       top: 100%;
-      top: calc(100% + 18px);
-      left: 0;
+      top: calc(100% + 6px);
+      left: -$baseline-height;
       backface-visibility: hidden;
       background: white;
-      box-shadow: 0 0 1px 0 rgba(0,0,0,0.3);
       padding: 0 $baseline-height $baseline-height / 2;
       transition: all 0.1s ease-in-out;
 
@@ -162,7 +161,6 @@
         visibility: visible;
         opacity: 1;
         top: 100%;
-        top: calc(100% + 12px);
       }
       li {
         display: block;
@@ -249,7 +247,6 @@
           visibility: visible;
           opacity: 1;
           top: 100%;
-          top: calc(100% + 12px);
         }
       }
     }
