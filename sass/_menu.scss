@@ -123,11 +123,13 @@
     li {
       display: inline-block;
       margin: 0 20px 0 0;
+      transform-style: preserve-3d;
     }
     a {
       font-size: 0.75em; /* 12px / 16px */
       line-height: 1.5; /* 18px */
       display: inline-block;
+      backface-visibility: hidden;
 
       &:hover,
       &:active,

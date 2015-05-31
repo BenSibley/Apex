@@ -884,6 +884,8 @@ li.pingback {
   .menu-primary li {
     display: inline-block;
     margin: 0 20px 0 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
   }
   .menu-primary a {
     font-size: 0.75em;
@@ -891,6 +893,8 @@ li.pingback {
     line-height: 1.5;
     /* 18px */
     display: inline-block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .menu-primary a:hover, .menu-primary a:active, .menu-primary a:focus {
     color: #333333;
