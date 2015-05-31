@@ -197,18 +197,20 @@
             transform: translate(2px, 0);
           }
           ~ ul {
-            top: 0;
+            top: -12px;
+            left: calc(100% - 24px);
           }
         }
       }
       ul {
         left: 100%;
-        left: calc(100% + 25px);
-        top: 0;
+        left: calc(100% - 18px);
+        top: -12px;
 
         &:hover,
         &.focused {
-          top: 0;
+          top: -12px;
+          left: calc(100% - 24px);
         }
       }
     }

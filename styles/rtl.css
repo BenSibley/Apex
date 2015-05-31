@@ -949,15 +949,17 @@ li.pingback {
     transform: translate(2px, 0);
   }
   .menu-primary-items ul a:hover ~ ul, .menu-primary-items ul a:active ~ ul, .menu-primary-items ul a:focus ~ ul {
-    top: 0;
+    top: -12px;
+    right: calc(100% - 24px);
   }
   .menu-primary-items ul ul {
     right: 100%;
-    right: calc(100% + 25px);
-    top: 0;
+    right: calc(100% - 18px);
+    top: -12px;
   }
   .menu-primary-items ul ul:hover, .menu-primary-items ul ul.focused {
-    top: 0;
+    top: -12px;
+    right: calc(100% - 24px);
   }
   .menu-primary-items li {
     position: relative;
