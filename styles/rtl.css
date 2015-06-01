@@ -1069,14 +1069,13 @@ li.pingback {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.featured-image a {
+.featured-image > a {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   font-size: 0;
-  opacity: 0;
 }
 
 .featured-image-large {
