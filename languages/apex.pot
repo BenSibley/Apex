@@ -1,0 +1,442 @@
+# Copyright (C) 2015 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Apex 1.01\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-06-01 16:04:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+
+#: 404.php:7
+msgid "404: Page Not Found"
+msgstr ""
+
+#: 404.php:10
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "Be First to Comment"
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66 content/comments-link.php:5
+#: content/comments-link.php:8
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:58
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this "
+"post\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: comments.php:79 comments.php:85
+msgid "Comments are closed."
+msgstr ""
+
+#: content/archive-header.php:6
+msgid "You are viewing the <span>%s</span> category archive."
+msgstr ""
+
+#: content/archive-header.php:15
+msgid "You are viewing the <span>%s</span> tag archive."
+msgstr ""
+
+#: content/archive-header.php:25
+msgid "You are viewing <span>%s</span>'s post archive."
+msgstr ""
+
+#: content/archive-header.php:34
+msgid "You are viewing the date archive for <span>%s</span>."
+msgstr ""
+
+#: content/comments-link.php:2
+msgid "comment icon"
+msgstr ""
+
+#: content/comments-link.php:5
+msgid "Comments closed"
+msgstr ""
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "1 Comment"
+msgstr ""
+
+#: content/comments-link.php:8
+msgid "Leave a Comment"
+msgstr ""
+
+#: content/post-categories.php:16
+msgid "Published in"
+msgstr ""
+
+#: content/post-categories.php:24
+msgid "View all posts in %s"
+msgstr ""
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr ""
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr ""
+
+#: content/post-nav.php:11
+msgid "Previous Post"
+msgstr ""
+
+#: content/post-nav.php:13
+msgid "The Previous Post"
+msgstr ""
+
+#: content/post-nav.php:20
+msgid "No Older Posts"
+msgstr ""
+
+#: content/post-nav.php:22 content/post-nav.php:44
+msgid "Return to Blog"
+msgstr ""
+
+#: content/post-nav.php:33
+msgid "Next Post"
+msgstr ""
+
+#: content/post-nav.php:35
+msgid "The Next Post"
+msgstr ""
+
+#: content/post-nav.php:42
+msgid "No Newer Posts"
+msgstr ""
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr ""
+
+#: content-archive.php:14 content.php:11
+msgid "Published %s"
+msgstr ""
+
+#: content-page.php:11 content.php:17
+msgid "Pages:"
+msgstr ""
+
+#: footer.php:12
+msgid "<a href=\"%s\">Apex WordPress Theme</a> by Compete Themes"
+msgstr ""
+
+#: functions.php:42
+msgid "Primary"
+msgstr ""
+
+#: functions.php:74
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions.php:76
+msgid ""
+"Widgets in this area will be shown in the sidebar next to the main post "
+"content"
+msgstr ""
+
+#: functions.php:102
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:110
+msgid "Reply"
+msgstr ""
+
+#: functions.php:135
+msgid "optional"
+msgstr ""
+
+#: functions.php:143
+msgid "Name"
+msgstr ""
+
+#: functions.php:150
+msgid "Email"
+msgstr ""
+
+#: functions.php:157
+msgid "Website"
+msgstr ""
+
+#: functions.php:172
+msgid "Comment"
+msgstr ""
+
+#: functions.php:220 functions.php:233
+msgid "Continue reading"
+msgstr ""
+
+#: functions.php:420
+msgid "email icon"
+msgstr ""
+
+#: functions.php:426
+msgid "%s icon"
+msgstr ""
+
+#: functions.php:516 inc/scripts.php:15
+msgid "open dropdown menu"
+msgstr ""
+
+#: functions.php:528
+msgid "Featured Post"
+msgstr ""
+
+#: functions.php:563
+msgid "Customizer settings deleted"
+msgstr ""
+
+#: header.php:16
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:34 inc/scripts.php:13
+msgid "open menu"
+msgstr ""
+
+#: inc/customizer.php:12
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer.php:14
+msgid "Menus"
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "Logo Upload"
+msgstr ""
+
+#: inc/customizer.php:108
+msgid "Upload custom logo."
+msgstr ""
+
+#: inc/customizer.php:124
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "address:"
+msgstr ""
+
+#: inc/customizer.php:154
+msgid "url:"
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:181
+msgid "Show full posts on blog?"
+msgstr ""
+
+#: inc/customizer.php:186 inc/customizer.php:318
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:187 inc/customizer.php:319
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:200
+msgid "Excerpt length"
+msgstr ""
+
+#: inc/customizer.php:211
+msgid "Comment Display"
+msgstr ""
+
+#: inc/customizer.php:225
+msgid "Show comments on:"
+msgstr ""
+
+#: inc/customizer.php:230 inc/customizer.php:296
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer.php:231 inc/customizer.php:297
+msgid "Pages"
+msgstr ""
+
+#: inc/customizer.php:232 inc/customizer.php:298
+msgid "Attachments"
+msgstr ""
+
+#: inc/customizer.php:233 inc/customizer.php:299
+msgid "Do not show"
+msgstr ""
+
+#: inc/customizer.php:242
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:255
+msgid "Add Custom CSS Here:"
+msgstr ""
+
+#: inc/customizer.php:271
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:272
+msgid "Hide"
+msgstr ""
+
+#: inc/scripts.php:14
+msgid "close menu"
+msgstr ""
+
+#: inc/scripts.php:16
+msgid "close dropdown menu"
+msgstr ""
+
+#: inc/user-profile.php:14
+msgid "Profile image"
+msgstr ""
+
+#: inc/user-profile.php:21
+msgid "Upload Image"
+msgstr ""
+
+#: inc/user-profile.php:22
+msgid "Upload an image here to use instead of your Gravatar."
+msgstr ""
+
+#: search.php:9
+msgid "%d search result for \"%s\""
+msgid_plural "%d search results for \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:11
+msgid "No search results for \"%s\""
+msgstr ""
+
+#: search.php:36
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:5
+msgid "Go"
+msgstr ""
+
+#: theme-options.php:22
+msgid "Apex Dashboard"
+msgstr ""
+
+#: theme-options.php:25
+msgid "Customization"
+msgstr ""
+
+#: theme-options.php:26
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Apex"
+msgstr ""
+
+#: theme-options.php:28
+msgid "Use Customizer"
+msgstr ""
+
+#: theme-options.php:32
+msgid "Support"
+msgstr ""
+
+#: theme-options.php:33
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"Apex Support Center"
+msgstr ""
+
+#: theme-options.php:35
+msgid "Visit Support Center"
+msgstr ""
+
+#: theme-options.php:39
+msgid "Upgrade to Apex Pro"
+msgstr ""
+
+#: theme-options.php:40
+msgid ""
+"Apex Pro is the premium upgrade for Apex. It has custom colors, new "
+"layouts, a flexible header image, and more"
+msgstr ""
+
+#: theme-options.php:42
+msgid "See Full Feature List"
+msgstr ""
+
+#: theme-options.php:46
+msgid "WordPress Resources"
+msgstr ""
+
+#: theme-options.php:47
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr ""
+
+#: theme-options.php:49
+msgid "View Resources"
+msgstr ""
+
+#: theme-options.php:53 theme-options.php:65
+msgid "Reset Customizer Settings"
+msgstr ""
+
+#: theme-options.php:57
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase your current "
+"settings in the <a href=\"%s\">Customizer</a>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Apex"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://competethemes.com/apex/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Apex is a sophisticated, minimalist theme. It looks great and performs "
+"wonderfully on phones, tablets, laptops, and everything in between. As a "
+"fast, responsive, accessibility-ready, and translation-ready theme, Apex is "
+"a theme you can trust to present your content to the world. See our fully "
+"setup demo here: https://www.competethemes.com/apex-live-demo/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Compete Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://competethemes.com/"
+msgstr ""
