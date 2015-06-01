@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Reviewer note:
+ * ct in function prefix = Compete Themes. Added to lessen chance of conflict.
+ */
+
 // Load the core theme framework.
 require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
 new Hybrid();
