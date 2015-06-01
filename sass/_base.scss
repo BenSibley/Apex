@@ -204,6 +204,10 @@ input[type="submit"] {
 
   &:hover {
     cursor: pointer;
+  }
+  &:hover,
+  &:active,
+  &:focus {
     background: $color-gray-42;
   }
 }
