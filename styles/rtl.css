@@ -937,12 +937,6 @@ li.pingback {
   .menu-primary-items ul .toggle-dropdown:after {
     content: '\f105';
   }
-  .menu-primary-items ul a:hover:after, .menu-primary-items ul a:active:after, .menu-primary-items ul a:focus:after {
-    top: 0;
-    height: 36px;
-    width: 72px;
-    right: 100%;
-  }
   .menu-primary-items ul a:hover + button, .menu-primary-items ul a:active + button, .menu-primary-items ul a:focus + button {
     -webkit-transform: translate(2px, 0);
     -ms-transform: translate(2px, 0);
@@ -951,6 +945,12 @@ li.pingback {
   .menu-primary-items ul a:hover ~ ul, .menu-primary-items ul a:active ~ ul, .menu-primary-items ul a:focus ~ ul {
     top: -12px;
     right: calc(100% - 24px);
+  }
+  .menu-primary-items ul a:hover:after, .menu-primary-items ul a:active:after {
+    top: 0;
+    height: 36px;
+    width: 72px;
+    right: 100%;
   }
   .menu-primary-items ul ul {
     right: 100%;
@@ -975,14 +975,6 @@ li.pingback {
     position: relative;
     z-index: 19;
   }
-  .menu-primary-items a:hover:after, .menu-primary-items a:active:after, .menu-primary-items a:focus:after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    height: 36px;
-    width: 100%;
-    right: 0;
-  }
   .menu-primary-items a:hover + button, .menu-primary-items a:active + button, .menu-primary-items a:focus + button {
     -webkit-transform: translate(0, 2px);
     -ms-transform: translate(0, 2px);
@@ -992,6 +984,14 @@ li.pingback {
     visibility: visible;
     opacity: 1;
     top: 100%;
+  }
+  .menu-primary-items a:hover:after, .menu-primary-items a:active:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    height: 36px;
+    width: 100%;
+    right: 0;
   }
 
   .toggle-dropdown {
