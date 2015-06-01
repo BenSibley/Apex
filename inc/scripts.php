@@ -24,9 +24,9 @@ function ct_apex_load_scripts_styles() {
 
 	// Stylesheet
 	if( is_rtl() ) {
-		wp_enqueue_style('ct-apex-style-rtl', get_stylesheet_uri() . '/styles/rtl.min.css');
+		wp_enqueue_style('ct-apex-style-rtl', get_template_directory_uri() . '/styles/rtl.min.css');
 	} else {
-		wp_enqueue_style('ct-apex-style', get_stylesheet_uri() . '/style.min.css');
+		wp_enqueue_style('ct-apex-style', get_stylesheet_uri() );
 	}
 
 	// enqueue comment-reply script only on posts & pages with comments open ( included in WP core )
