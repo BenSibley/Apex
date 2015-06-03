@@ -19,6 +19,7 @@
   color: $color-gray-20;
   margin-left: 18px;
   @extend %twelve-pixels;
+  transition: color 0.1s ease-in-out;
 
   i {
     margin-right: 3px;

@@ -1026,6 +1026,8 @@ li.pingback {
 .comments-link {
   color: #333333;
   margin-left: 18px;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 .comments-link i {
   margin-right: 3px;
