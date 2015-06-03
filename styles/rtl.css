@@ -1190,7 +1190,9 @@ li.pingback {
   }
 
   .singular .entry .featured-image,
-  .error-404 .entry .featured-image {
+  .singular .entry .featured-video,
+  .error-404 .entry .featured-image,
+  .error-404 .entry .featured-video {
     display: none;
   }
   .singular .featured-image-large,
