@@ -43,8 +43,5 @@
 				</div>
 			</header>
 			<?php hybrid_do_atomic( 'after_header' ); ?>
-			<div class="featured-image-large">
-				<?php if( is_singular() ) ct_apex_featured_image(); ?>
-			</div>
 			<section id="main" class="main" role="main">
 				<?php hybrid_do_atomic( 'main_top' ); ?>
