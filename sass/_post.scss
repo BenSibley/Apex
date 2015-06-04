@@ -136,19 +136,19 @@
       margin-top: 0;
     }
   }
+  .post-title {
+    font-size: 2.3125em; /* 37px / 16px */
+    line-height: 1.297; /* 48px */
+  }
   .singular,
   .error-404 {
 
     .post-header {
-      margin: $baseline-height * 1.5 0;
+      margin: 0 0 $baseline-height * 1.5;
     }
-    .post-title {
-      font-size: 2.3125em; /* 37px / 16px */
-      line-height: 1.297; /* 48px */
+    .featured-image,
+    .featured-video {
+      margin-bottom: $baseline-height * 1.5;
     }
-  }
-  .post-title {
-    font-size: 2.3125em; /* 37px / 16px */
-    line-height: 1.297; /* 48px */
   }
 }

@@ -1185,23 +1185,22 @@ li.pingback {
     margin-top: 0;
   }
 
-  .singular .post-header,
-  .error-404 .post-header {
-    margin: 2.25em 0;
-  }
-  .singular .post-title,
-  .error-404 .post-title {
+  .post-title {
     font-size: 2.3125em;
     /* 37px / 16px */
     line-height: 1.297;
     /* 48px */
   }
 
-  .post-title {
-    font-size: 2.3125em;
-    /* 37px / 16px */
-    line-height: 1.297;
-    /* 48px */
+  .singular .post-header,
+  .error-404 .post-header {
+    margin: 0 0 2.25em;
+  }
+  .singular .featured-image,
+  .singular .featured-video,
+  .error-404 .featured-image,
+  .error-404 .featured-video {
+    margin-bottom: 2.25em;
   }
 }
 .search-form input[type="submit"] {
