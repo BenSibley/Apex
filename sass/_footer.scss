@@ -1,13 +1,16 @@
 .site-footer {
-  text-align: center;
   padding: $baseline-height * 2 $column * 2 $baseline-height / 2;
-  margin-top: $baseline-height * 2;
 
-  span {
-    @extend %twelve-pixels;
-  }
-  a {
-    font-weight: 700;
+  .design-credit {
+    text-align: center;
+    margin-top: $baseline-height * 2;
+
+    span {
+      @extend %twelve-pixels;
+    }
+    a {
+      font-weight: 700;
+    }
   }
 }
 
