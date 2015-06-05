@@ -1017,6 +1017,7 @@ li.pingback {
 .more-link {
   display: inline-block;
   padding: 8px 20px;
+  margin-right: 18px;
   border: solid 1px #333333;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -1028,7 +1029,6 @@ li.pingback {
 
 .comments-link {
   color: #333333;
-  margin-left: 18px;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
