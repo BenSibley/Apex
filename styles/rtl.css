@@ -471,6 +471,7 @@ li.pingback {
 
 @media all and (min-width: 56.25em) {
   .site-footer {
+    padding: 3em 0 0.75em;
     clear: both;
   }
 }

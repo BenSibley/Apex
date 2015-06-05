@@ -17,6 +17,7 @@
 @media all and (min-width: $nine-hundred) {
 
   .site-footer {
+    padding: $baseline-height * 2 0 $baseline-height / 2;
     clear: both;
   }
 }
