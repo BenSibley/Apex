@@ -122,7 +122,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_apex_social_media_icons', array(
 		'title'          => __('Social Media Icons', 'apex'),
-		'priority'       => 25,
+		'priority'       => 35,
 	) );
 
 	// create a setting and control for each social site
@@ -209,7 +209,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_apex_comments_display', array(
 		'title'      => __( 'Comment Display', 'apex' ),
-		'priority'   => 65,
+		'priority'   => 55,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
@@ -240,7 +240,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'apex_custom_css', array(
 		'title'      => __( 'Custom CSS', 'apex' ),
-		'priority'   => 65,
+		'priority'   => 70,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
