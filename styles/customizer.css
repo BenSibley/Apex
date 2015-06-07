@@ -32,6 +32,42 @@
   transition: right 0.15s ease-in-out;
 }
 
+/* Locked Sections */
+#accordion-section-apex_colors .accordion-section-title,
+#accordion-section-apex_colors .accordion-section-title:hover,
+#accordion-section-apex_header_image .accordion-section-title,
+#accordion-section-apex_header_image .accordion-section-title:hover,
+#accordion-section-apex_background .accordion-section-title,
+#accordion-section-apex_background .accordion-section-title:hover,
+#accordion-section-apex_font .accordion-section-title,
+#accordion-section-apex_font .accordion-section-title:hover,
+#accordion-section-apex_display_control .accordion-section-title,
+#accordion-section-apex_display_control .accordion-section-title:hover,
+#accordion-section-apex_footer_text .accordion-section-title,
+#accordion-section-apex_footer_text .accordion-section-title:hover,
+#accordion-section-apex_layout .accordion-section-title,
+#accordion-section-apex_layout .accordion-section-title:hover {
+  background-image: url("../assets/images/gray-lines.png");
+  background-size: 100%;
+}
+#accordion-section-apex_colors .accordion-section-title:after,
+#accordion-section-apex_colors .accordion-section-title:hover:after,
+#accordion-section-apex_header_image .accordion-section-title:after,
+#accordion-section-apex_header_image .accordion-section-title:hover:after,
+#accordion-section-apex_background .accordion-section-title:after,
+#accordion-section-apex_background .accordion-section-title:hover:after,
+#accordion-section-apex_font .accordion-section-title:after,
+#accordion-section-apex_font .accordion-section-title:hover:after,
+#accordion-section-apex_display_control .accordion-section-title:after,
+#accordion-section-apex_display_control .accordion-section-title:hover:after,
+#accordion-section-apex_footer_text .accordion-section-title:after,
+#accordion-section-apex_footer_text .accordion-section-title:hover:after,
+#accordion-section-apex_layout .accordion-section-title:after,
+#accordion-section-apex_layout .accordion-section-title:hover:after {
+  content: '\f023';
+  font-family: 'FontAwesome';
+}
+
 /* Multiple select styles (for comments dropdown */
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
