@@ -87,6 +87,50 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		}
 	}
 
+	/* Ad Controls */
+	class apex_description_header_image_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/apex-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> for advanced header image functionality.', 'apex'), $link ) . "</p>";
+		}
+	}
+	class apex_description_color_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/apex-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to change your colors.', 'apex'), $link ) . "</p>";
+		}
+	}
+	class apex_description_font_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/apex-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to change your font.', 'apex'), $link ) . "</p>";
+		}
+	}
+	class apex_description_display_control_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/apex-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to get hide/show controls.', 'apex'), $link ) . "</p>";
+		}
+	}
+	class apex_description_footer_text_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/apex-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to customize the footer text.', 'apex'), $link ) . "</p>";
+		}
+	}
+	class apex_description_layout_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/apex-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to change your layout.', 'apex'), $link ) . "</p>";
+		}
+	}
+
 	/***** Logo Upload *****/
 
 	// section
