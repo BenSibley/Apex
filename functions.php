@@ -88,12 +88,7 @@ if( ! function_exists( ( 'ct_apex_customize_comments' ) ) ) {
 			<article id="comment-<?php comment_ID(); ?>" class="comment">
 				<div class="comment-author">
 					<?php
-					// if is post author
-					if ( $comment->user_id === $post->post_author ) {
-						ct_apex_profile_image_output();
-					} else {
-						echo get_avatar( get_comment_author_email(), 48, '', get_comment_author() );
-					}
+						get_avatar( get_comment_author_email(), 48, '', get_comment_author() );
 					?>
 					<span class="author-name"><?php comment_author_link(); ?></span>
 				</div>
@@ -457,25 +452,6 @@ function ct_apex_get_image_id($url) {
 
     // Returns null if no attachment is found
     return $attachment[0];
-}
-
-function ct_apex_profile_image_output(){
-
-    // use User's profile image, else default to their Gravatar
-    if(get_the_author_meta('apex_user_profile_image')){
-
-        // get the id based on the image's URL
-        $image_id = ct_apex_get_image_id(get_the_author_meta('apex_user_profile_image'));
-
-        // retrieve the thumbnail size of profile image
-        $image_thumb = wp_get_attachment_image($image_id, 'thumbnail', false, array('alt' => get_the_author() ));
-
-        // display the image
-        echo $image_thumb;
-
-    } else {
-        echo get_avatar( get_the_author_meta( 'ID' ), 48, '', get_the_author() );
-    }
 }
 
 /*
