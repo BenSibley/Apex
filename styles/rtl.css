@@ -1337,6 +1337,10 @@ li.pingback {
   margin-top: -1.5em;
 }
 
+.widget_nav_menu ul ul ul ul {
+  margin-right: 0;
+}
+
 @media all and (min-width: 56.25em) {
   .widget {
     margin-bottom: 3em;
