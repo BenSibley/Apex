@@ -1,10 +1,54 @@
--------------------------------------------------------
-    Thank you for downloading Apex!
--------------------------------------------------------
-If you need help getting setup, you can find
-documentation here:
-https://www.competethemes.com/documentation/unlimited-support-center/
 
+Thanks for downloading Apex!
+
+-------------------------------------------------------
+    Support
+-------------------------------------------------------
+
+You can find tutorials and other support resources for Apex in the Apex Support Center:
+https://www.competethemes.com/documentation/apex-support-center/
+
+Additional support resources:
+
+Support forum: http://wordpress.org/support/theme/apex
+Changelog: https://www.competethemes.com/apex-changelog
+Apex on Github: https://github.com/BenSibley/apex
+
+-------------------------------------------------------
+    Features
+-------------------------------------------------------
+
+Apex includes the following features:
+
+    * Custom logo
+    * Social media icons
+    * Show full posts or experts
+    * Custom excerpt length
+    * Turn comment display on/off by post type (Posts, Pages, and Attachments)
+    * Custom CSS
+
+Apex also has a premium plugin upgrade called Apex Pro that includes the following features:
+
+    * Custom colors
+    * Featured sliders
+    * Featured videos
+    * Additional layouts
+    * Flexible header image
+    * Google fonts
+    * More widget areas
+    * Display controls
+    * Custom footer text
+
+Apex Pro: https://www.competethemes.com/apex-pro/
+
+-------------------------------------------------------
+    Additional Info:
+-------------------------------------------------------
+
+    * All menus in Apex can have 1-3 tiers
+    * Featured Images have a 2x1 ratio at all screen sizes
+    * Apex is child theme compatible. Download a starter child theme here:
+        https://www.competethemes.com/help/how-child-theme-apex/
 
 -------------------------------------------------------
     Licenses:
@@ -25,4 +69,4 @@ Apex also uses:
 * HTML5shiv by Alexander Farkas, Jonathan Neal, Paul Irish, John-David Dalton, and Remy Sharp, licensed under MIT/GPL2, see: https://github.com/aFarkas/html5shiv
 * Multiple Select by zhixin wen, licensed under MIT, see: http://wenzhixin.net.cn/p/multiple-select/
 * Respond.js by Scott Jehl, licensed under MIT, see: https://github.com/scottjehl/Respond
-* Raspberry image in screenshot.png from http://unsplash.com, licensed under Public Domain
+* Golden Gate Bridge image in screenshot.png from http://unsplash.com, licensed under Public Domain
