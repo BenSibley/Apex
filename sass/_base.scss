@@ -93,6 +93,7 @@ li li {
 
 pre {
   word-wrap: break-word;
+  white-space: pre-wrap;
   background: $color-gray-95;
   padding: $baseline-height / 2;
   border: solid 1px $color-gray-91;
