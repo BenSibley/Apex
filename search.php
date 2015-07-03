@@ -6,9 +6,9 @@
 	        global $wp_query;
 	        $total_results = $wp_query->found_posts;
 	        if($total_results) {
-		        printf( _n('%d search result for "%s"', '%d search results for "%s"', $total_results, 'unlimited'), $total_results, $s );
+		        printf( _n('%d search result for "%s"', '%d search results for "%s"', $total_results, 'apex'), $total_results, $s );
 	        } else {
-		        printf( __('No search results for "%s"', 'unlimited'), $s );
+		        printf( __('No search results for "%s"', 'apex'), $s );
 	        }
 	        ?>
         </h1>
@@ -33,7 +33,7 @@
     if($total_results) {
         ?>
         <div class="search-bottom search-box">
-            <p><?php _e("Can't find what you're looking for?  Try refining your search:", "unlimited"); ?></p>
+            <p><?php _e("Can't find what you're looking for?  Try refining your search:", "apex"); ?></p>
             <?php get_search_form(); ?>
         </div>
     <?php } ?>
