@@ -24,7 +24,6 @@ Apex includes the following features:
     * Social media icons
     * Show full posts or experts
     * Custom excerpt length
-    * Turn comment display on/off by post type (Posts, Pages, and Attachments)
     * Custom CSS
 
 Apex also has a premium plugin upgrade called Apex Pro that includes the following features:
