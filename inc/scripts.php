@@ -77,9 +77,6 @@ function ct_apex_enqueue_customizer_scripts(){
 	// stylesheet for customizer
 	wp_enqueue_style('ct-apex-customizer-styles', get_template_directory_uri() . '/styles/customizer.min.css');
 
-	// JS for hiding/showing Customizer options
-	wp_enqueue_script('ct-apex-customizer-js', get_template_directory_uri() . '/js/build/customizer.min.js',array('jquery'),'',true);
-
 }
 add_action('customize_controls_enqueue_scripts','ct_apex_enqueue_customizer_scripts');
 
