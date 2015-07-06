@@ -5,9 +5,9 @@
 		<div class="post-container">
 			<div class='post-header'>
 				<?php hybrid_do_atomic( 'sticky_post_status' ); ?>
-				<h1 class='post-title'>
+				<h2 class='post-title'>
 					<a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-				</h1>
+				</h2>
 				<span class="post-date">
 					<?php
 					$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date('r') ) );

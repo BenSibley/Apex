@@ -4,7 +4,7 @@
 	    <?php ct_apex_featured_image(); ?>
 	    <div class="post-container">
 		    <div class='post-header'>
-		        <h1 class='post-title'><?php the_title(); ?></h1>
+		        <h2 class='post-title'><?php the_title(); ?></h2>
 			    <span class="post-date">
 					<?php
 					$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date('r') ) );
