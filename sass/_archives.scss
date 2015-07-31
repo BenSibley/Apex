@@ -36,9 +36,13 @@
 }
 .full-post {
 
-  .comments-link {
-    display: block;
-    margin: $baseline-height * 2 0;
+  // if more link, keep next to button
+  .entry:not(.has-more-link) {
+
+    .comments-link {
+      display: block;
+      margin: $baseline-height * 2 0;
+    }
   }
 }
 .blog,

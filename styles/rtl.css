@@ -1055,7 +1055,7 @@ li.pingback {
   color: #333333;
 }
 
-.full-post .comments-link {
+.full-post .entry:not(.has-more-link) .comments-link {
   display: block;
   margin: 3em 0;
 }
