@@ -92,42 +92,42 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> for advanced header image functionality.', 'apex'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> for advanced header image functionality.', 'apex'), $link ) . "</p>";
 		}
 	}
 	class apex_description_color_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to change your colors.', 'apex'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your colors.', 'apex'), $link ) . "</p>";
 		}
 	}
 	class apex_description_font_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to change your font.', 'apex'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your font.', 'apex'), $link ) . "</p>";
 		}
 	}
 	class apex_description_display_control_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to get hide/show controls.', 'apex'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to get hide/show controls.', 'apex'), $link ) . "</p>";
 		}
 	}
 	class apex_description_footer_text_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to customize the footer text.', 'apex'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to customize the footer text.', 'apex'), $link ) . "</p>";
 		}
 	}
 	class apex_description_layout_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Apex Pro</a> to change your layout.', 'apex'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your layout.', 'apex'), $link ) . "</p>";
 		}
 	}
 
@@ -479,7 +479,7 @@ function ct_apex_sanitize_yes_no_settings($input){
 
 function ct_apex_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/apex-pro/\" target=\"_blank\">View the Apex Pro Upgrade <span>&rarr;</span></a></div>')</script>";
+	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/apex-pro/\" target=\"_blank\">View the Apex Pro Plugin <span>&rarr;</span></a></div>')</script>";
 	echo apply_filters('ct_apex_customizer_ad', $content);
 }
 add_action('customize_controls_print_footer_scripts', 'ct_apex_customize_preview_js');

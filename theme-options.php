@@ -36,8 +36,8 @@ function ct_apex_options_content(){
 			</p>
 		</div>
 		<div class="content content-premium-upgrade">
-			<h3><?php _e('Upgrade to Apex Pro', 'apex'); ?></h3>
-			<p><?php _e('Apex Pro is the premium upgrade for Apex. It has custom colors, new layouts, a flexible header image, and more', 'apex'); ?>...</p>
+			<h3><?php _e('Get More Features & Flexibility', 'apex'); ?></h3>
+			<p><?php _e('Download the Apex Pro plugin and unlock custom colors, new layouts, a flexible header image, and more', 'apex'); ?>...</p>
 			<p>
 				<a target="_blank" class="button-primary" href="https://www.competethemes.com/apex-pro/"><?php _e('See Full Feature List', 'apex'); ?></a>
 			</p>
