@@ -1010,6 +1010,20 @@ li.pingback {
   .toggle-dropdown:focus {
     color: orange;
   }
+
+  .rtl .menu-primary-items ul .menu-item-has-children:hover > button {
+    -webkit-transform: translate(-2px, 0);
+    -ms-transform: translate(-2px, 0);
+    transform: translate(-2px, 0);
+  }
+  .rtl .menu-primary-items ul .menu-item-has-children .toggle-dropdown:after {
+    content: '\f104';
+  }
+  .rtl .menu-primary-items ul .menu-item-has-children a:hover + button, .rtl .menu-primary-items ul .menu-item-has-children a:active + button, .rtl .menu-primary-items ul .menu-item-has-children a:focus + button {
+    -webkit-transform: translate(-2px, 0);
+    -ms-transform: translate(-2px, 0);
+    transform: translate(-2px, 0);
+  }
 }
 .entry {
   margin: 3em 0 4.5em;

@@ -272,4 +272,37 @@
       color: orange;
     }
   }
+  .rtl {
+
+    .menu-primary-items ul {
+
+      .menu-item-has-children {
+
+        &:hover {
+
+          // to keep it down when hovering over submenu
+          > button {
+            transform: translate(-2px, 0);
+          }
+        }
+        .toggle-dropdown {
+
+          &:after {
+            content: '\f104';
+          }
+        }
+        a {
+
+          &:hover,
+          &:active,
+          &:focus {
+
+            + button {
+              transform: translate(-2px, 0);
+            }
+          }
+        }
+      }
+    }
+  }
 }
