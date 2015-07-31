@@ -135,7 +135,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'ct_apex_logo_upload', array(
-		'title'      => __( 'Logo Upload', 'apex' ),
+		'title'      => __( 'Logo', 'apex' ),
 		'priority'   => 30,
 		'capability' => 'edit_theme_options'
 	) );
