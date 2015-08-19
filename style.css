@@ -1112,6 +1112,9 @@ li.pingback {
 .post-content {
   margin: 1.5em 0;
 }
+.post-content iframe {
+  max-width: 100%;
+}
 
 .post-meta {
   margin: 3em 0 1.5em;
