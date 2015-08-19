@@ -377,7 +377,7 @@ if ( !function_exists( 'ct_apex_social_array' ) ) {
 			'email'         => 'apex_email_profile'
 		);
 
-		return apply_filters( 'ct_apex_social_array', $social_sites );
+		return apply_filters( 'ct_apex_social_array_filter', $social_sites );
 	}
 }
 
