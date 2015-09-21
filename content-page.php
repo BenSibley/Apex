@@ -1,5 +1,5 @@
 <div <?php post_class(); ?>>
-	<?php hybrid_do_atomic( 'page_before' ); ?>
+	<?php do_action( 'page_before' ); ?>
 	<article>
 		<?php ct_apex_featured_image(); ?>
 		<div class="post-container">
@@ -11,7 +11,7 @@
 				<?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','apex'), 'after' => '</p>', ) ); ?>
 			</div>
 		</div>
-		<?php hybrid_do_atomic( 'page_after' ); ?>
+		<?php do_action( 'page_after' ); ?>
 	</article>
 	<?php comments_template(); ?>
 </div>

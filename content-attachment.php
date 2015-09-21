@@ -1,5 +1,5 @@
 <div <?php post_class(); ?>>
-	<?php hybrid_do_atomic( 'attachment_before' ); ?>
+	<?php do_action( 'attachment_before' ); ?>
 	<article>
 		<div class="post-container">
 			<div class='post-header'>
@@ -11,6 +11,6 @@
 			<?php get_template_part('content/post-nav-attachment'); ?>
 		</div>
 	</article>
-	<?php hybrid_do_atomic( 'attachment_after' ); ?>
+	<?php do_action( 'attachment_after' ); ?>
 	<?php comments_template(); ?>
 </div>
