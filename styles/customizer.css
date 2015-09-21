@@ -67,3 +67,7 @@
   content: '\f023';
   font-family: 'FontAwesome';
 }
+
+#accordion-section-colors {
+  display: none !important;
+}
