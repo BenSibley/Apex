@@ -55,10 +55,6 @@ textarea, input[type="submit"], .comment-respond label, #cancel-comment-reply-li
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   height: 100%;
   font-size: 100%;
