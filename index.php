@@ -34,6 +34,6 @@ if ( have_posts() ) :
     endwhile;
 endif; ?>
 
-<?php if ( current_theme_supports( 'loop-pagination' ) ) loop_pagination(); ?>
+<?php echo ct_apex_loop_pagination(); ?>
 
 <?php get_footer(); ?>
