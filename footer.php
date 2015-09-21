@@ -11,7 +11,7 @@
                 $site_url = 'https://www.competethemes.com/apex/';
                 $footer_text = sprintf( __( '<a href="%s">Apex WordPress Theme</a> by Compete Themes', 'apex' ), esc_url( $site_url ) );
                 $footer_text = apply_filters( 'ct_apex_footer_text', $footer_text );
-                echo $footer_text;
+                echo wp_kses_post( $footer_text );
             ?>
         </span>
     </div>
