@@ -1115,6 +1115,9 @@ li.pingback {
 .post-content iframe {
   max-width: 100%;
 }
+.post-content a {
+  text-decoration: underline;
+}
 
 .post-meta {
   margin: 3em 0 1.5em;

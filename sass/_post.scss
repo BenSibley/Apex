@@ -27,6 +27,9 @@
   iframe {
     max-width: 100%;
   }
+  a {
+    text-decoration: underline;
+  }
 }
 .post-title {
  @extend %twenty-one-pixels;
