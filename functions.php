@@ -576,6 +576,7 @@ function ct_apex_custom_css_output(){
 
 	/* output custom css */
 	if( $custom_css ) {
+		$custom_css = wp_filter_nohtml_kses( $custom_css );
 		wp_add_inline_style( 'ct-apex-style', $custom_css );
 		wp_add_inline_style( 'ct-apex-style-rtl', $custom_css );
 	}
