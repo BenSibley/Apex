@@ -7,7 +7,7 @@
 
 // Load the core theme framework.
 //require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
-new Hybrid();
+//new Hybrid();
 
 // theme setup
 if( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
@@ -529,6 +529,8 @@ add_action( 'admin_notices', 'ct_apex_delete_settings_notice' );
 
 function ct_apex_body_class( $classes ) {
 
+	global $post;
+
 	/* get full post setting */
 	$full_post = get_theme_mod('full_post');
 
@@ -536,9 +538,34 @@ function ct_apex_body_class( $classes ) {
 	if( $full_post == 'yes' ) {
 		$classes[] = 'full-post';
 	}
+
+	// add all historic singular classes
+	if ( is_singular() ) {
+		$classes[] = 'singular';
+		if ( is_singular('page') ) {
+			$classes[] = 'singular-page';
+			$classes[] = 'singular-page-' . $post->ID;
+		} elseif ( is_singular('post') ) {
+			$classes[] = 'singular-post';
+			$classes[] = 'singular-post-' . $post->ID;
+		} elseif ( is_singular('attachment') ) {
+			$classes[] = 'singular-attachment';
+			$classes[] = 'singular-attachment-' . $post->ID;
+		}
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'ct_apex_body_class' );
+
+// add class to all posts that isn't on body
+function ct_apex_post_class( $classes ) {
+
+	$classes[] = 'entry';
+
+	return $classes;
+}
+add_filter( 'post_class', 'ct_apex_post_class' );
 
 function ct_apex_svg_output($type) {
 
