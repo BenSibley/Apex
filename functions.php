@@ -381,16 +381,6 @@ if ( !function_exists( 'ct_apex_social_array' ) ) {
 	}
 }
 
-// used in ct_apex_social_icons_output to return urls
-function ct_apex_get_social_url($source, $site){
-
-    if( $source == 'header' ) {
-        return get_theme_mod($site);
-    } elseif( $source == 'author' ) {
-        return get_the_author_meta($site);
-    }
-}
-
 // output social icons
 if( ! function_exists('ct_apex_social_icons_output') ) {
     function ct_apex_social_icons_output($source) {
@@ -398,20 +388,14 @@ if( ! function_exists('ct_apex_social_icons_output') ) {
         // get social sites array
         $social_sites = ct_apex_social_array();
 
+	    // icons that should use a special square icon
+	    $square_icons = array('linkedin', 'twitter', 'vimeo', 'youtube', 'pinterest', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook');
+
         // store the site name and url
         foreach ( $social_sites as $social_site => $profile ) {
 
-            if( $source == 'header') {
-
-                if ( strlen( get_theme_mod( $social_site ) ) > 0 ) {
-                    $active_sites[$social_site] = $social_site;
-                }
-            }
-            elseif( $source == 'author' ) {
-
-                if ( strlen( get_the_author_meta( $profile ) ) > 0 ) {
-                    $active_sites[$profile] = $social_site;
-                }
+            if ( strlen( get_theme_mod( $social_site ) ) > 0 ) {
+                $active_sites[$social_site] = $social_site;
             }
         }
 
@@ -422,17 +406,24 @@ if( ! function_exists('ct_apex_social_icons_output') ) {
 
             foreach ( $active_sites as $key => $active_site ) {
 
+	            // get the square or plain class
+	            if ( in_array( $active_site, $square_icons ) ) {
+		            $class = 'fa fa-' . $active_site . '-square';
+	            } else {
+		            $class = 'fa fa-' . $active_site;
+	            }
+
                 if ( $active_site == 'email' ) {
                     ?>
                     <li>
-                        <a class="email" target="_blank" href="mailto:<?php echo antispambot( is_email( ct_apex_get_social_url( $source, $key ) ) ); ?>">
+                        <a class="email" target="_blank" href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
                             <i class="fa fa-envelope" title="<?php _e('email icon', 'apex'); ?>"></i>
                         </a>
                     </li>
                 <?php } else { ?>
                     <li>
-                        <a class="<?php echo $active_site; ?>" target="_blank" href="<?php echo esc_url( ct_apex_get_social_url( $source, $key ) ); ?>">
-                            <i class="fa fa-<?php echo esc_attr( $active_site ); ?>" title="<?php printf( __('%s icon', 'apex'), $active_site ); ?>"></i>
+                        <a class="<?php echo $active_site; ?>" target="_blank" href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
+                            <i class="<?php echo esc_attr( $class ); ?>" title="<?php printf( __('%s icon', 'apex'), $active_site ); ?>"></i>
                         </a>
                     </li>
                 <?php
