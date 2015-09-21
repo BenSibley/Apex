@@ -5,6 +5,11 @@
  * ct in function prefix = Compete Themes. Added to lessen chance of conflict.
  */
 
+// set the content width
+if ( ! isset( $content_width ) ) {
+	$content_width = 882;
+}
+
 // Load the core theme framework.
 //require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
 //new Hybrid();
