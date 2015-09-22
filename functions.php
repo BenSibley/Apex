@@ -340,6 +340,10 @@ if ( !function_exists( 'ct_apex_social_array' ) ) {
 			'spotify'       => 'apex_spotify_profile',
 			'vine'          => 'apex_vine_profile',
 			'yahoo'         => 'apex_yahoo_profile',
+			'foursquare'    => 'apex_foursquare_profile',
+			'slack'         => 'apex_slack_profile',
+			'slideshare'    => 'apex_slideshare_profile',
+			'skype'         => 'apex_skype_profile',
 			'behance'       => 'apex_behance_profile',
 			'codepen'       => 'apex_codepen_profile',
 			'delicious'     => 'apex_delicious_profile',
@@ -348,10 +352,15 @@ if ( !function_exists( 'ct_apex_social_array' ) ) {
 			'digg'          => 'apex_digg_profile',
 			'git'           => 'apex_git_profile',
 			'hacker-news'   => 'apex_hacker-news_profile',
+			'whatsapp'      => 'apex_whatsapp_profile',
 			'steam'         => 'apex_steam_profile',
+			'qq'            => 'apex_qq_profile',
 			'vk'            => 'apex_vk_profile',
 			'weibo'         => 'apex_weibo_profile',
+			'wechat'        => 'apex_wechat_profile',
+			'xing'          => 'apex_xing_profile',
 			'tencent-weibo' => 'apex_tencent_weibo_profile',
+			'500px'         => 'apex_500px_profile',
 			'email'         => 'apex_email_profile'
 		);
 
