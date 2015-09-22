@@ -350,7 +350,7 @@ if ( !function_exists( 'ct_apex_social_array' ) ) {
 			'stumbleupon'   => 'apex_stumbleupon_profile',
 			'deviantart'    => 'apex_deviantart_profile',
 			'digg'          => 'apex_digg_profile',
-			'git'           => 'apex_git_profile',
+			'github'        => 'apex_github_profile',
 			'hacker-news'   => 'apex_hacker-news_profile',
 			'whatsapp'      => 'apex_whatsapp_profile',
 			'steam'         => 'apex_steam_profile',
@@ -367,6 +367,19 @@ if ( !function_exists( 'ct_apex_social_array' ) ) {
 		return apply_filters( 'ct_apex_social_array_filter', $social_sites );
 	}
 }
+
+// git icon was supposed to be for github, this is to transfer users saved data to github
+function ct_apex_switch_git_icon() {
+
+	// if there is an icon saved for git, but not github
+	if ( !empty( get_theme_mod( 'git' ) ) && empty( get_theme_mod( 'github' ) ) ) {
+		// give the github option the same value as the git option
+		set_theme_mod( 'github', get_theme_mod( 'git' ) );
+		// erase git option
+		remove_theme_mod( 'git' );
+	}
+}
+add_action('admin_init', 'ct_apex_switch_git_icon');
 
 // output social icons
 if( ! function_exists('ct_apex_social_icons_output') ) {
