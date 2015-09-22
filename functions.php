@@ -601,12 +601,15 @@ add_action('wp_enqueue_scripts', 'ct_apex_custom_css_output', 20);
 
 function ct_apex_loop_pagination(){
 
+	// don't output if Jetpack infinite scroll is being used
+	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) )
+		return;
+
 	global $wp_query;
 
 	// If there's not more than one page, return nothing.
-	if ( 1 >= $wp_query->max_num_pages ) {
+	if ( 1 >= $wp_query->max_num_pages )
 		return;
-	}
 
 	/* Set up some default arguments for the paginate_links() function. */
 	$defaults = array(
