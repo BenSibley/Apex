@@ -32,6 +32,10 @@
     font-weight: 700;
   }
 }
+.bypostauthor {
+  padding: $baseline-height;
+  outline: solid 3px $color-gray-91;
+}
 li.comment,
 li.pingback {
   margin: $baseline-height * 2 0;

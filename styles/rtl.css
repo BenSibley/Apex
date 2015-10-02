@@ -402,6 +402,11 @@ a img {
   font-weight: 700;
 }
 
+.bypostauthor {
+  padding: 1.5em;
+  outline: solid 3px #e8e8e8;
+}
+
 li.comment,
 li.pingback {
   margin: 3em 0;
