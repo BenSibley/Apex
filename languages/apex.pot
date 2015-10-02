@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Apex 1.09\n"
+"Project-Id-Version: Apex 1.10\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-08-19 18:09:12+00:00\n"
+"POT-Creation-Date: 2015-10-02 11:55:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -138,73 +138,73 @@ msgstr ""
 msgid "<a href=\"%s\">Apex WordPress Theme</a> by Compete Themes"
 msgstr ""
 
-#: functions.php:42
+#: functions.php:50
 msgid "Primary"
 msgstr ""
 
-#: functions.php:74
+#: functions.php:61
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:76
+#: functions.php:63
 msgid ""
 "Widgets in this area will be shown in the sidebar next to the main post "
 "content"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:88
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:105
+#: functions.php:96
 msgid "Reply"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:100
 msgid "Edit"
 msgstr ""
 
-#: functions.php:130
+#: functions.php:121
 msgid "optional"
 msgstr ""
 
-#: functions.php:138
+#: functions.php:129
 msgid "Name"
 msgstr ""
 
-#: functions.php:145
+#: functions.php:136
 msgid "Email"
 msgstr ""
 
-#: functions.php:152
+#: functions.php:143
 msgid "Website"
 msgstr ""
 
-#: functions.php:167
+#: functions.php:158
 msgid "Comment"
 msgstr ""
 
-#: functions.php:205 functions.php:211 functions.php:224
+#: functions.php:196 functions.php:202 functions.php:215
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:429
+#: functions.php:427
 msgid "email icon"
 msgstr ""
 
-#: functions.php:435
+#: functions.php:433
 msgid "%s icon"
 msgstr ""
 
-#: functions.php:481 inc/scripts.php:15
+#: functions.php:470 inc/scripts.php:15
 msgid "open dropdown menu"
 msgstr ""
 
-#: functions.php:493
+#: functions.php:482
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:528
+#: functions.php:517
 msgid "Customizer settings deleted"
 msgstr ""
 
@@ -268,87 +268,87 @@ msgstr ""
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:182
-msgid "address:"
+#: inc/customizer.php:168
+msgid "Add the URL for each of your social profiles."
 msgstr ""
 
-#: inc/customizer.php:196
-msgid "url:"
-msgstr ""
-
-#: inc/customizer.php:210
-msgid "Blog"
-msgstr ""
-
-#: inc/customizer.php:223
-msgid "Show full posts on blog?"
-msgstr ""
-
-#: inc/customizer.php:228 inc/customizer.php:465
-msgid "Yes"
-msgstr ""
-
-#: inc/customizer.php:229 inc/customizer.php:466
-msgid "No"
+#: inc/customizer.php:183
+msgid "Email Address:"
 msgstr ""
 
 #: inc/customizer.php:242
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:255
+msgid "Show full posts on blog?"
+msgstr ""
+
+#: inc/customizer.php:260 inc/customizer.php:497
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:261 inc/customizer.php:498
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:274
 msgid "Excerpt length"
 msgstr ""
 
-#: inc/customizer.php:253
+#: inc/customizer.php:285
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:266
+#: inc/customizer.php:298
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:280
+#: inc/customizer.php:312
 msgid "Header Image"
 msgstr ""
 
-#: inc/customizer.php:302
+#: inc/customizer.php:334
 msgid "Colors"
 msgstr ""
 
-#: inc/customizer.php:324
+#: inc/customizer.php:356
 msgid "Font"
 msgstr ""
 
-#: inc/customizer.php:346
+#: inc/customizer.php:378
 msgid "Display Controls"
 msgstr ""
 
-#: inc/customizer.php:368
+#: inc/customizer.php:400
 msgid "Footer Text"
 msgstr ""
 
-#: inc/customizer.php:390
+#: inc/customizer.php:422
 msgid "Layout"
 msgstr ""
 
-#: inc/customizer.php:418
+#: inc/customizer.php:450
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:419
+#: inc/customizer.php:451
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:443
+#: inc/customizer.php:475
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:444
+#: inc/customizer.php:476
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:445
+#: inc/customizer.php:477
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:446
+#: inc/customizer.php:478
 msgid "Do not show"
 msgstr ""
 
