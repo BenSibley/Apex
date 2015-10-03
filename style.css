@@ -4,7 +4,7 @@ Theme URI: https://www.competethemes.com/apex/
 Author: Compete Themes
 Author URI: https://www.competethemes.com/
 Description: Apex is a sophisticated, minimalist theme. It looks great and performs wonderfully on phones, tablets, laptops, and everything in between. As a fast, responsive, accessibility-ready, and translation-ready theme, Apex is a theme you can trust to present your content to the world. See our fully setup demo here: https://www.competethemes.com/apex-live-demo/
-Version: 1.10
+Version: 1.10.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: gray, silver, white, light, fluid-layout, responsive-layout, two-columns, right-sidebar, accessibility-ready, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -63,7 +63,7 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   background: white;
-  color: #6b6b6b;
+  color: #6B6B6B;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
@@ -98,7 +98,7 @@ a:link, a:visited {
   color: #333333;
 }
 a:hover, a:active, a:focus {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -137,13 +137,13 @@ li li {
 pre {
   word-wrap: break-word;
   white-space: pre-wrap;
-  background: #f2f2f2;
+  background: #F2F2F2;
   padding: 0.75em;
-  border: solid 1px #e8e8e8;
+  border: solid 1px #E8E8E8;
 }
 
 code {
-  background: #f2f2f2;
+  background: #F2F2F2;
   padding: 0 0.375em;
 }
 
@@ -224,8 +224,8 @@ textarea {
   font-family: "Open Sans", sans-serif;
   padding: 10px 12px;
   max-width: 27.75em;
-  border: solid 1px #e8e8e8;
-  background: #f2f2f2;
+  border: solid 1px #E8E8E8;
+  background: #F2F2F2;
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in-out;
@@ -258,7 +258,7 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  background: #6b6b6b;
+  background: #6B6B6B;
 }
 
 input[type="search"] {
@@ -267,19 +267,19 @@ input[type="search"] {
 }
 
 ::-webkit-input-placeholder {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 
 :-moz-placeholder {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 
 ::-moz-placeholder {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 
 :-ms-input-placeholder {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 
 /* ie image border fix */
@@ -345,7 +345,7 @@ a img {
   font-size: 1em;
   line-height: 1.5;
   font-weight: 400;
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .archive-header span {
   font-weight: 700;
@@ -385,7 +385,7 @@ a img {
 .comment-list .children {
   margin: 0;
   padding: 0 0 0 1.5em;
-  border-left: solid 1px #d8d8d8;
+  border-left: solid 1px #D8D8D8;
 }
 
 .comment-author img {
@@ -404,7 +404,7 @@ a img {
 
 .bypostauthor {
   padding: 1.5em;
-  outline: solid 3px #e8e8e8;
+  outline: solid 3px #E8E8E8;
 }
 
 li.comment,
@@ -413,10 +413,10 @@ li.pingback {
 }
 
 .comment-footer a {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .comment-footer a:link, .comment-footer a:visited {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .comment-footer a:link:hover, .comment-footer a:link:active, .comment-footer a:link:focus, .comment-footer a:visited:hover, .comment-footer a:visited:active, .comment-footer a:visited:focus {
   color: #333333;
@@ -436,7 +436,7 @@ li.pingback {
   left: -12px;
   height: 100%;
   width: 1px;
-  background: #d8d8d8;
+  background: #D8D8D8;
 }
 
 .comment-pagination {
@@ -537,7 +537,7 @@ li.pingback {
 }
 
 .gallery-caption {
-  color: #6b6b6b;
+  color: #6B6B6B;
   display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -598,13 +598,13 @@ li.pingback {
   display: inline-block;
 }
 .social-media-icons a {
-  color: #6b6b6b;
+  color: #6B6B6B;
   margin: 0 8px;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
 .social-media-icons a:link, .social-media-icons a:visited {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
   color: #333333;
@@ -655,17 +655,17 @@ li.pingback {
   margin: 3em 0;
   padding: 0 6.25%;
   text-align: center;
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .loop-pagination a,
 .loop-pagination span {
   margin: 0 0.75em;
 }
 .loop-pagination a {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .loop-pagination a:link, .loop-pagination a:visited {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .loop-pagination a:hover, .loop-pagination a:active, .loop-pagination a:focus {
   color: #333333;
@@ -733,10 +733,10 @@ li.pingback {
   font-weight: 400;
 }
 .menu-primary a {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .menu-primary a:link, .menu-primary a:visited, .menu-primary a:hover, .menu-primary a:active, .menu-primary a:focus {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 
 .toggle-dropdown {
@@ -746,7 +746,7 @@ li.pingback {
   line-height: 1;
   background: none;
   border: none;
-  color: #6b6b6b;
+  color: #6B6B6B;
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
   transition: transform 0.1s ease-in-out;
 }
@@ -1055,12 +1055,12 @@ li.pingback {
 .post-tags a {
   display: inline-block;
   padding: 2px 12px;
-  background: #e8e8e8;
+  background: #E8E8E8;
   margin: 0 8px 12px 0;
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .post-tags a:link, .post-tags a:visited {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 .post-tags a:hover, .post-tags a:active, .post-tags a:focus {
   color: white;
@@ -1070,8 +1070,8 @@ li.pingback {
 .further-reading {
   margin: 2.25em 0 0;
   padding: 2.25em 0;
-  border-top: solid 1px #d8d8d8;
-  border-bottom: solid 1px #d8d8d8;
+  border-top: solid 1px #D8D8D8;
+  border-bottom: solid 1px #D8D8D8;
 }
 .further-reading .previous {
   margin-bottom: 1.5em;
@@ -1083,7 +1083,7 @@ li.pingback {
   font-weight: 700;
 }
 .further-reading a:hover, .further-reading a:active, .further-reading a:focus {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 
 @media all and (min-width: 37.5em) {
@@ -1172,7 +1172,7 @@ li.pingback {
 .sidebar-primary {
   margin: 3em 0;
   padding: 3em 6.25%;
-  border-top: solid 1px #d8d8d8;
+  border-top: solid 1px #D8D8D8;
 }
 
 @media all and (min-width: 56.25em) {
@@ -1211,12 +1211,12 @@ li.pingback {
   margin-bottom: 12px;
 }
 .widget_calendar tbody a {
-  background: #e8e8e8;
+  background: #E8E8E8;
   margin: -9px;
   padding: 6px 10px 7px;
 }
 .widget_calendar tbody a:hover, .widget_calendar tbody a:active, .widget_calendar tbody a:focus {
-  background: #d8d8d8;
+  background: #D8D8D8;
   text-decoration: none;
 }
 .widget_calendar #today {
@@ -1231,7 +1231,7 @@ li.pingback {
 .widget_calendar #prev a,
 .widget_calendar #next a {
   display: inline-block;
-  background: #e8e8e8;
+  background: #E8E8E8;
   color: #333333;
   padding: 0.75em 3em;
 }
@@ -1239,7 +1239,7 @@ li.pingback {
 .widget_calendar #next a:hover,
 .widget_calendar #next a:active,
 .widget_calendar #next a:focus {
-  background: #d8d8d8;
+  background: #D8D8D8;
   text-decoration: none;
 }
 
@@ -1296,3 +1296,5 @@ If you want to make CSS edits to your site, use the "Custom CSS" section in the 
 If you want more information about customizing Apex with CSS, check out this guide: https://www.competethemes.com/help/custom-css-apex/
 
 */
+
+/*# sourceMappingURL=style.css.map */
