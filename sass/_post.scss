@@ -37,6 +37,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    min-height: 100%; // stretch if it doesn't fill the area
   }
 }
 .post-container {

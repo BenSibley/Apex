@@ -291,7 +291,7 @@ if( ! function_exists( 'ct_apex_featured_image' ) ) {
 		$featured_image = apply_filters( 'ct_apex_featured_image', $featured_image );
 
 		if( $featured_image ) {
-			echo wp_kses_post( $featured_image );
+			echo $featured_image;
 		}
 	}
 }
