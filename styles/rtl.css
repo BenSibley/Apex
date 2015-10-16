@@ -1032,7 +1032,8 @@ li.pingback {
 .featured-image > a:focus:after {
   opacity: 0.2;
 }
-.featured-image img {
+.featured-image > img,
+.featured-image > a > img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
