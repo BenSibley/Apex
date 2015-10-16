@@ -399,7 +399,7 @@ if( ! function_exists('ct_apex_social_icons_output') ) {
         $social_sites = ct_apex_social_array();
 
 	    // icons that should use a special square icon
-	    $square_icons = array('linkedin', 'twitter', 'vimeo', 'youtube', 'pinterest', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook');
+	    $square_icons = array('linkedin', 'twitter', 'vimeo', 'youtube', 'pinterest', 'rss', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook');
 
         // store the site name and url
         foreach ( $social_sites as $social_site => $profile ) {
