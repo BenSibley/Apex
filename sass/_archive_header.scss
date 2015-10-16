@@ -12,6 +12,9 @@
     font-weight: 700;
     color: $color-gray-20;
   }
+  p {
+    font-style: italic;
+  }
 }
 
 @media all and (min-width: $nine-hundred) {

@@ -5,6 +5,7 @@ if( is_category() ){ ?>
 		<h2>
 			<?php printf( __('You are viewing the <span>%s</span> category archive.', 'apex'), single_cat_title('', false) ); ?>
 		</h2>
+		<?php if ( category_description() ) echo category_description(); ?>
 	</div>
 <?php
 }
@@ -14,16 +15,17 @@ elseif( is_tag() ){ ?>
 		<h2>
 			<?php printf( __('You are viewing the <span>%s</span> tag archive.', 'apex'), single_tag_title('', false) ); ?>
 		</h2>
+		<?php if ( tag_description() ) echo tag_description(); ?>
 	</div>
 <?php
 }
 /* Author header */
-elseif( is_author() ){
-	$author = get_userdata(get_query_var('author')); ?>
+elseif( is_author() ){ ?>
 	<div class='archive-header'>
 		<h2>
-			<?php printf( __("You are viewing <span>%s</span>'s post archive.", "apex"), $author->nickname ); ?>
+			<?php printf( __("You are viewing <span>%s</span>'s post archive.", "apex"), get_the_author_meta( 'display_name' ) ); ?>
 		</h2>
+		<?php if ( get_the_author_meta( 'description' ) ) echo '<p>' . get_the_author_meta( 'description' ) . '</p>'; ?>
 	</div>
 <?php
 }

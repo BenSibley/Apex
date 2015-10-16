@@ -347,6 +347,9 @@ a img {
   font-weight: 700;
   color: #333333;
 }
+.archive-header p {
+  font-style: italic;
+}
 
 @media all and (min-width: 56.25em) {
   .archive-header {
