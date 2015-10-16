@@ -154,7 +154,7 @@ jQuery(document).ready(function($){
     // display the dropdown menus
     function openDropdownMenu() {
 
-        if( $(window).width() < 800 ) {
+        if( window.innerWidth < 800 ) {
 
             // get the buttons parent (li)
             var menuItem = $(this).parent();
@@ -200,8 +200,7 @@ jQuery(document).ready(function($){
 
     function removeToggleDropdownKeyboard() {
 
-        if( $(window).width() > 799 ) {
-
+        if( window.innerWidth > 799 ) {
             toggleDropdown.attr('tabindex', -1);
         } else {
             toggleDropdown.attr('tabindex', '');
