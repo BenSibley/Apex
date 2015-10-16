@@ -95,9 +95,14 @@ jQuery(document).ready(function($){
     var socialMediaIcons = siteHeader.find('.social-media-icons');
     var menuLink = $('.menu-item').children('a');
 
+    removeToggleDropdownKeyboard();
+
     $(window).resize(function(){
         removeToggleDropdownKeyboard();
     });
+
+    toggleNavigation.on('click', openPrimaryMenu);
+    toggleDropdown.on('click', openDropdownMenu);
 
     $('.post-content').fitVids({
         customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="wordpress.tv"]'
@@ -112,8 +117,6 @@ jQuery(document).ready(function($){
         }
 
     } );
-
-    toggleNavigation.on('click', openPrimaryMenu);
 
     function openPrimaryMenu() {
 
@@ -149,8 +152,6 @@ jQuery(document).ready(function($){
     }
 
     // display the dropdown menus
-    toggleDropdown.on('click', openDropdownMenu);
-
     function openDropdownMenu() {
 
         if( $(window).width() < 800 ) {
@@ -206,7 +207,6 @@ jQuery(document).ready(function($){
             toggleDropdown.attr('tabindex', '');
         }
     }
-    removeToggleDropdownKeyboard();
 
     /* allow keyboard access/visibility for dropdown menu items */
     menuLink.focus(function(){
