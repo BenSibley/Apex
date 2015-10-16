@@ -177,11 +177,12 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 			$wp_customize->add_setting( "$social_site", array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'ct_apex_sanitize_email'
+				'sanitize_callback' => 'ct_apex_sanitize_email',
+				'transport'         => 'postMessage'
 			) );
 			// control
 			$wp_customize->add_control( $social_site, array(
-				'label'   => __('Email Address:', 'apex' ),
+				'label'   => __('Email Address', 'apex' ),
 				'section' => 'ct_apex_social_media_icons',
 				'priority'=> $priority,
 			) );
@@ -223,7 +224,8 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 			$wp_customize->add_setting( $social_site, array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'esc_url_raw'
+				'sanitize_callback' => 'esc_url_raw',
+				'transport'         => 'postMessage'
 			) );
 			// control
 			$wp_customize->add_control( new ct_apex_url_input_control(
