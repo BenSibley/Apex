@@ -27,6 +27,9 @@
   iframe {
     max-width: 100%;
   }
+  &:after {
+    @include clearfix;
+  }
 }
 .singular .post-content a {
   text-decoration: underline;
