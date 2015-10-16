@@ -84,6 +84,7 @@
 jQuery(document).ready(function($){
 
     var body = $('body');
+    var main = $('#main');
     var siteHeader = $('#site-header');
     var titleContainer = $('#title-container');
     var toggleNavigation = $('#toggle-navigation');
@@ -101,6 +102,16 @@ jQuery(document).ready(function($){
     $('.post-content').fitVids({
         customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="wordpress.tv"]'
     });
+
+    // Jetpack infinite scroll event that reloads posts.
+    $( document.body ).on( 'post-load', function () {
+
+        // on search results page, move search bar to bottom of main when new posts loaded
+        if ( body.hasClass('search-results') ) {
+            $('.search-bottom').detach().appendTo( main );
+        }
+
+    } );
 
     toggleNavigation.on('click', openPrimaryMenu);
 
