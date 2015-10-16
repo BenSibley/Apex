@@ -339,6 +339,7 @@ if ( !function_exists( 'ct_apex_social_array' ) ) {
 			'xing'          => 'apex_xing_profile',
 			'tencent-weibo' => 'apex_tencent_weibo_profile',
 			'500px'         => 'apex_500px_profile',
+			'paypal'        => 'apex_paypal_profile',
 			'email'         => 'apex_email_profile'
 		);
 
