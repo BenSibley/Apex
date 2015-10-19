@@ -79,6 +79,9 @@
     // instantiate array
     var socialSitesArray = [];
 
+    // icons that should use a special square icon
+    var squareIcons = ['linkedin', 'twitter', 'vimeo', 'youtube', 'pinterest', 'rss', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook'];
+
     // create array from social site controls
     socialSites.each( function() {
         socialSitesArray.push( $(this).text() );
@@ -92,9 +95,6 @@
 
         // convert email-address to email
         if ( site === 'email-address') site = 'email';
-
-        // icons that should use a special square icon
-        var squareIcons = ['linkedin', 'twitter', 'vimeo', 'youtube', 'pinterest', 'rss', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook'];
 
         // when a social site value is updated
         wp.customize( site, function (value) {
