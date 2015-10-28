@@ -1203,6 +1203,7 @@ li.pingback {
 .search-box {
   margin: 3em 0 1.5em;
   padding: 0 6.25%;
+  clear: both;
 }
 .search-box h1 {
   margin-bottom: 12px;
