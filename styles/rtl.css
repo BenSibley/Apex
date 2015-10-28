@@ -1000,6 +1000,11 @@ li.pingback {
   right: 0;
 }
 
+#infinite-handle,
+.infinite-handle {
+  clear: both;
+}
+
 .featured-image {
   position: relative;
   height: 0;
