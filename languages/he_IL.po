@@ -1,0 +1,515 @@
+# Copyright (C) 2015 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Apex 1.10.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-10-20 16:39+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-10-21 07:59+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: he\n"
+
+#: 404.php:7
+msgid "404: Page Not Found"
+msgstr "אופס! לא הצלחנו למצוא את התוכן המבוקש...."
+
+#: 404.php:10
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"נראה כי לא נמצא דבר. אנא נסו לבדוק אם הכתובת שהקלדתם נכונה או הגדירו מחדש "
+"את החיפוש."
+
+#: comments.php:11 comments.php:30 comments.php:51
+msgid "Be First to Comment"
+msgstr "היה הראשון להגיב"
+
+#: comments.php:11 comments.php:30 comments.php:51
+msgid "One Comment"
+msgstr "תגובה אחת"
+
+#: comments.php:11 comments.php:30 comments.php:51 content/comments-link.php:5
+#: content/comments-link.php:8
+msgid "% Comments"
+msgstr "% תגובות"
+
+#: comments.php:43
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"התגובות סגורות, אבל <a href=\\”%1$s\\” title=\\”Trackback URLעבור כתבה זו "
+"\\”>trackbacks</a> ו pingbacks פתוחים."
+
+#: comments.php:64 comments.php:70
+msgid "Comments are closed."
+msgstr "לא ניתן להשאיר תגובה"
+
+#: content/archive-header.php:6
+msgid "You are viewing the <span>%s</span> category archive."
+msgstr "הצגת הארכיון קטגוריה ' <span>%s</span> '."
+
+#: content/archive-header.php:16
+msgid "You are viewing the <span>%s</span> tag archive."
+msgstr "הצגת הארכיון תג ' <span>%s</span> '."
+
+#: content/archive-header.php:26
+msgid "You are viewing <span>%s</span>'s post archive."
+msgstr "הצגת הארכיון הכתבות ' <span>%s</span> '."
+
+#: content/archive-header.php:36
+msgid "You are viewing the date archive for <span>%s</span>."
+msgstr "הצגת הארכיון תאריך עבור <span>%s</span>."
+
+#: content/comments-link.php:2
+msgid "comment icon"
+msgstr "אייקון תגובה"
+
+#: content/comments-link.php:5
+msgid "Comments closed"
+msgstr "לא ניתן להשאיר תגובה"
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "1 Comment"
+msgstr "תגובה 1"
+
+#: content/comments-link.php:8
+msgid "Leave a Comment"
+msgstr "השאר תגובה"
+
+#: content/post-categories.php:16
+msgid "Published in"
+msgstr "פורסם ב"
+
+#: content/post-categories.php:24
+msgid "View all posts in %s"
+msgstr "הצג את כל הכתבות ב s%"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "תמונה קודמת"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "תמונה הבאה"
+
+#: content/post-nav.php:11
+msgid "Previous Post"
+msgstr "כתבה קודמת"
+
+#: content/post-nav.php:13
+msgid "The Previous Post"
+msgstr "הכתבה הקודמת"
+
+#: content/post-nav.php:20
+msgid "No Older Posts"
+msgstr "לא נמצאו כתבות קודמות"
+
+#: content/post-nav.php:22 content/post-nav.php:48
+msgid "Return to Blog"
+msgstr "חזרה לדף ראשי"
+
+#: content/post-nav.php:37
+msgid "Next Post"
+msgstr "כתבה הבאה"
+
+#: content/post-nav.php:39
+msgid "The Next Post"
+msgstr "הכתבה הבאה"
+
+#: content/post-nav.php:46
+msgid "No Newer Posts"
+msgstr "לא נמצאו כתבות חדשות"
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr "הצג את כל הכתבות ב %s"
+
+#: content-archive.php:14 content.php:11
+msgid "Published %s"
+msgstr "פורסם ב-%s"
+
+#: content-page.php:11 content.php:17
+msgid "Pages:"
+msgstr "עמודים:"
+
+#: footer.php:12
+msgid "<a href=\"%s\">Apex WordPress Theme</a> by Compete Themes"
+msgstr "<a href=\"%s\">Apex WordPress Theme</a> by Compete Themes"
+
+#: functions.php:50
+msgid "Primary"
+msgstr "ראשי"
+
+#: functions.php:61
+msgid "Primary Sidebar"
+msgstr "סרגל צידי"
+
+#: functions.php:63
+msgid ""
+"Widgets in this area will be shown in the sidebar next to the main post "
+"content"
+msgstr "תוספים באזור זה יוצגו בסרגל צידי לצד התוכן"
+
+#: functions.php:88
+msgid "Your comment is awaiting moderation."
+msgstr "תגובתך מחכה לאישור"
+
+#: functions.php:96
+msgid "Reply"
+msgstr "השב"
+
+#: functions.php:100
+msgid "Edit"
+msgstr "עריכה"
+
+#: functions.php:121
+msgid "optional"
+msgstr "optional"
+
+#: functions.php:129
+msgid "Name"
+msgstr "שם"
+
+#: functions.php:136
+msgid "Email"
+msgstr "כתובת Email"
+
+#: functions.php:143
+msgid "Website"
+msgstr "אתר"
+
+#: functions.php:158
+msgid "Comment"
+msgstr "תגובה"
+
+#: functions.php:196 functions.php:202 functions.php:215
+msgid "Continue reading"
+msgstr "המשך קריאה"
+
+#: functions.php:402
+msgid "email icon"
+msgstr "email icon"
+
+#: functions.php:408
+msgid "%s icon"
+msgstr "%s icon"
+
+#: functions.php:445 inc/scripts.php:15
+msgid "open dropdown menu"
+msgstr "open dropdown menu"
+
+#: functions.php:457
+msgid "Featured Post"
+msgstr "כתבה מומלצת"
+
+#: functions.php:492
+msgid "Customizer settings deleted"
+msgstr "Customizer settings deleted"
+
+#: header.php:16
+msgid "Skip to content"
+msgstr "לעבור לתוכן"
+
+#: header.php:34 inc/scripts.php:13
+msgid "open menu"
+msgstr "פתח תפריט"
+
+#: inc/customizer.php:12
+msgid "Front Page"
+msgstr "Front Page"
+
+#: inc/customizer.php:93
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> for "
+"advanced header image functionality."
+msgstr ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> for "
+"advanced header image functionality."
+
+#: inc/customizer.php:100
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your colors."
+msgstr ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your colors."
+
+#: inc/customizer.php:107
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your font."
+msgstr ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your font."
+
+#: inc/customizer.php:114
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to get "
+"hide/show controls."
+msgstr ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to get "
+"hide/show controls."
+
+#: inc/customizer.php:121
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to "
+"customize the footer text."
+msgstr ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to "
+"customize the footer text."
+
+#: inc/customizer.php:128
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your layout."
+msgstr ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your layout."
+
+#: inc/customizer.php:136
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/customizer.php:151
+msgid "Upload custom logo."
+msgstr "Upload custom logo."
+
+#: inc/customizer.php:167
+msgid "Social Media Icons"
+msgstr "Social Media Icons"
+
+#: inc/customizer.php:169
+msgid "Add the URL for each of your social profiles."
+msgstr "Add the URL for each of your social profiles."
+
+#: inc/customizer.php:185
+msgid "Email Address"
+msgstr "Email Address"
+
+#: inc/customizer.php:247
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/customizer.php:260
+msgid "Show full posts on blog?"
+msgstr "Show full posts on blog?"
+
+#: inc/customizer.php:265 inc/customizer.php:503
+msgid "Yes"
+msgstr "לאשר"
+
+#: inc/customizer.php:266 inc/customizer.php:504
+msgid "No"
+msgstr "לדחות"
+
+#: inc/customizer.php:279
+msgid "Excerpt length"
+msgstr "Excerpt length"
+
+#: inc/customizer.php:290
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: inc/customizer.php:304
+msgid "Add Custom CSS Here:"
+msgstr "Add Custom CSS Here:"
+
+#: inc/customizer.php:318
+msgid "Header Image"
+msgstr "Header Image"
+
+#: inc/customizer.php:340
+msgid "Colors"
+msgstr "Colors"
+
+#: inc/customizer.php:362
+msgid "Font"
+msgstr "Font"
+
+#: inc/customizer.php:384
+msgid "Display Controls"
+msgstr "Display Controls"
+
+#: inc/customizer.php:406
+msgid "Footer Text"
+msgstr "Footer Text"
+
+#: inc/customizer.php:428
+msgid "Layout"
+msgstr "Layout"
+
+#: inc/customizer.php:456
+msgid "Show"
+msgstr "Show"
+
+#: inc/customizer.php:457
+msgid "Hide"
+msgstr "Hide"
+
+#: inc/customizer.php:481
+msgid "Posts"
+msgstr "Posts"
+
+#: inc/customizer.php:482
+msgid "Pages"
+msgstr "Pages"
+
+#: inc/customizer.php:483
+msgid "Attachments"
+msgstr "Attachments"
+
+#: inc/customizer.php:484
+msgid "Do not show"
+msgstr "Do not show"
+
+#: inc/scripts.php:14
+msgid "close menu"
+msgstr "סגור תפריט"
+
+#: inc/scripts.php:16
+msgid "close dropdown menu"
+msgstr "סגור את התפריט הנפתח"
+
+#: search.php:10
+msgid "%d search result for \"%s\""
+msgid_plural "%d search results for \"%s\""
+msgstr[0] "%d תוצאות חיפוש עבור \"%s\""
+msgstr[1] "אין תוצאות חיפוש עבור: %s"
+
+#: search.php:12
+msgid "No search results for \"%s\""
+msgstr "אין תוצאות חיפוש עבור: %s"
+
+#: search.php:37
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr "לא מצאתם את מבוקשכם? נסו להגדיר חיפוש מחדש:"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "חיפוש"
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr "חפש:"
+
+#: searchform.php:5
+msgid "Go"
+msgstr "חפש"
+
+#: theme-options.php:22
+msgid "Apex Dashboard"
+msgstr "Apex Dashboard"
+
+#: theme-options.php:25
+msgid "Customization"
+msgstr "Customization"
+
+#: theme-options.php:26
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Apex"
+msgstr ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Apex"
+
+#: theme-options.php:28
+msgid "Use Customizer"
+msgstr "הפעל Customizer"
+
+#: theme-options.php:32
+msgid "Support"
+msgstr "Support"
+
+#: theme-options.php:33
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"Apex Support Center"
+msgstr ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"Apex Support Center"
+
+#: theme-options.php:35
+msgid "Visit Support Center"
+msgstr "Visit Support Center"
+
+#: theme-options.php:39
+msgid "Get More Features & Flexibility"
+msgstr "Get More Features & Flexibility"
+
+#: theme-options.php:40
+msgid ""
+"Download the Apex Pro plugin and unlock custom colors, new layouts, a "
+"flexible header image, and more"
+msgstr ""
+"Download the Apex Pro plugin and unlock custom colors, new layouts, a "
+"flexible header image, and more"
+
+#: theme-options.php:42
+msgid "See Full Feature List"
+msgstr "See Full Feature List"
+
+#: theme-options.php:46
+msgid "WordPress Resources"
+msgstr "WordPress Resources"
+
+#: theme-options.php:47
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+
+#: theme-options.php:49
+msgid "View Resources"
+msgstr "View Resources"
+
+#: theme-options.php:53 theme-options.php:63
+msgid "Reset Customizer Settings"
+msgstr "Reset Customizer Settings"
+
+#: theme-options.php:56
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase your current "
+"settings in the <a href=\"%s\">Customizer</a>"
+msgstr ""
+"<strong>Warning:</strong> Clicking this button will erase your current "
+"settings in the <a href=\"%s\">Customizer</a>"
+
+#. Theme Name of the plugin/theme
+msgid "Apex"
+msgstr "Apex"
+
+#. Theme URI of the plugin/theme
+msgid "https://www.competethemes.com/apex/"
+msgstr "https://www.competethemes.com/apex/"
+
+#. Description of the plugin/theme
+msgid ""
+"Apex is a sophisticated, minimalist theme. It looks great and performs "
+"wonderfully on phones, tablets, laptops, and everything in between. As a "
+"fast, responsive, accessibility-ready, and translation-ready theme, Apex is "
+"a theme you can trust to present your content to the world. See our fully "
+"setup demo here: https://www.competethemes.com/apex-live-demo/"
+msgstr ""
+"Apex is a sophisticated, minimalist theme. It looks great and performs "
+"wonderfully on phones, tablets, laptops, and everything in between. As a "
+"fast, responsive, accessibility-ready, and translation-ready theme, Apex is "
+"a theme you can trust to present your content to the world. See our fully "
+"setup demo here: https://www.competethemes.com/apex-live-demo/"
+
+#. Author of the plugin/theme
+msgid "Compete Themes"
+msgstr "Compete Themes"
+
+#. Author URI of the plugin/theme
+msgid "https://www.competethemes.com/"
+msgstr "https://www.competethemes.com/"
