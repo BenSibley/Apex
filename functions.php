@@ -29,7 +29,7 @@ if( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
 
 		// adds support for Jetpack infinite scroll feature
 		add_theme_support( 'infinite-scroll', array(
-			'container' => 'main',
+			'container' => 'loop-container',
 			'footer'    => 'overflow-container',
 			'render'    => 'ct_apex_infinite_scroll_render'
 		) );
