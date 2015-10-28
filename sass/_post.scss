@@ -2,9 +2,6 @@
   position: relative;
   height: 0;
   padding-bottom: 50%;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   overflow: hidden;
 
   > a {
@@ -36,9 +33,10 @@
   > img,
   > a > img {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    min-height: 100%; // stretch if it doesn't fill the area
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 .post-container {
