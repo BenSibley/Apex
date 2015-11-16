@@ -137,35 +137,38 @@ jQuery(document).ready(function($){
 
             $('.featured-image').each(function () {
 
-                var image = $(this).children('img').add( $(this).children('a').children('img') );
+                if ( !$(this).parent().parent('.post').hasClass('ratio-natural') ) {
 
-                image.addClass('no-object-fit');
+                    var image = $(this).children('img').add($(this).children('a').children('img'));
 
-                // if the image is not tall enough to fill the space
-                if ( image.outerHeight() < $(this).outerHeight()) {
+                    image.addClass('no-object-fit');
 
-                    // is it also not wide enough?
-                    if ( image.outerWidth() < $(this).outerWidth()) {
+                    // if the image is not tall enough to fill the space
+                    if (image.outerHeight() < $(this).outerHeight()) {
+
+                        // is it also not wide enough?
+                        if (image.outerWidth() < $(this).outerWidth()) {
+                            image.css({
+                                'min-width': '100%',
+                                'min-height': '100%',
+                                'max-width': 'none',
+                                'max-height': 'none'
+                            });
+                        } else {
+                            image.css({
+                                'height': '100%',
+                                'max-width': 'none'
+                            });
+                        }
+                    }
+                    // if the image is not wide enough to fill the space
+                    else if (image.outerWidth() < $(this).outerWidth()) {
+
                         image.css({
-                            'min-width': '100%',
-                            'min-height': '100%',
-                            'max-width': 'none',
+                            'width': '100%',
                             'max-height': 'none'
                         });
-                    } else {
-                        image.css({
-                            'height': '100%',
-                            'max-width': 'none'
-                        });
                     }
-                }
-                // if the image is not wide enough to fill the space
-                else if ( image.outerWidth() < $(this).outerWidth()) {
-
-                    image.css({
-                        'width': '100%',
-                        'max-height': 'none'
-                    });
                 }
             });
         }
