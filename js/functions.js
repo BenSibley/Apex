@@ -143,30 +143,28 @@ jQuery(document).ready(function($){
 
                     image.addClass('no-object-fit');
 
-                    // if the image is not tall enough to fill the space
-                    if (image.outerHeight() < $(this).outerHeight()) {
-
-                        // is it also not wide enough?
-                        if (image.outerWidth() < $(this).outerWidth()) {
-                            image.css({
-                                'min-width': '100%',
-                                'min-height': '100%',
-                                'max-width': 'none',
-                                'max-height': 'none'
-                            });
-                        } else {
-                            image.css({
-                                'height': '100%',
-                                'max-width': 'none'
-                            });
-                        }
-                    }
                     // if the image is not wide enough to fill the space
-                    else if (image.outerWidth() < $(this).outerWidth()) {
+                    if (image.outerWidth() < $(this).outerWidth()) {
 
                         image.css({
                             'width': '100%',
+                            'min-width': '100%',
+                            'max-width': '100%',
+                            'height': 'auto',
+                            'min-height': '100%',
                             'max-height': 'none'
+                        });
+                    }
+                    // if the image is not tall enough to fill the space
+                    if (image.outerHeight() < $(this).outerHeight()) {
+
+                        image.css({
+                            'height': '100%',
+                            'min-height': '100%',
+                            'max-height': '100%',
+                            'width': 'auto',
+                            'min-width': '100%',
+                            'max-width': 'none'
                         });
                     }
                 }
