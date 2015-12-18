@@ -468,6 +468,12 @@ li.pingback {
     padding: 0;
   }
 }
+/* Disqus */
+@media all and (max-width: 600px) {
+  #disqus_thread {
+    padding: 0 6.25%;
+  }
+}
 .site-footer {
   padding: 3em 6.25% 0.75em;
 }

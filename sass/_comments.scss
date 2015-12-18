@@ -100,3 +100,12 @@ li.pingback {
     padding: 0;
   }
 }
+
+/* Disqus */
+
+@media all and (max-width: 600px) {
+
+  #disqus_thread {
+    padding: 0 $column * 2;
+  }
+}
