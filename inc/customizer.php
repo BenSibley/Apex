@@ -23,20 +23,6 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	
 	/***** Add Custom Controls *****/
 
-	// create textarea control
-	class ct_apex_textarea_control extends WP_Customize_Control {
-		public $type = 'textarea';
-
-		public function render_content() {
-			?>
-			<label>
-				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-				<textarea rows="8" style="width:100%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
-			</label>
-		<?php
-		}
-	}
-
 	/* Ad Controls */
 	class apex_description_header_image_control extends WP_Customize_Control {
 
@@ -248,12 +234,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'transport'         => 'postMessage'
 	) );
 	// control
-	$wp_customize->add_control( new ct_apex_textarea_control(
-		$wp_customize, 'custom_css', array(
-			'label'          => __( 'Add Custom CSS Here:', 'apex' ),
-			'section'        => 'apex_custom_css',
-			'settings'       => 'custom_css',
-		)
+	$wp_customize->add_control( 'custom_css', array(
+		'type'     => 'textarea',
+		'label'    => __( 'Add Custom CSS Here:', 'apex' ),
+		'section'  => 'apex_custom_css',
+		'settings' => 'custom_css'
 	) );
 
 	/*
