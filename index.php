@@ -15,6 +15,6 @@ get_template_part('content/archive-header');
     ?>
 </div>
 
-<?php echo ct_apex_loop_pagination(); ?>
+<?php the_posts_pagination(); ?>
 
 <?php get_footer(); ?>

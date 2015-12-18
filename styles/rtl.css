@@ -659,33 +659,33 @@ li.pingback {
     margin-top: 1em;
   }
 }
-.loop-pagination {
+.pagination {
   margin: 3em 0;
   padding: 0 6.25%;
   text-align: center;
   color: #6B6B6B;
 }
-.loop-pagination a,
-.loop-pagination span {
+.pagination a,
+.pagination span {
   margin: 0 0.75em;
 }
-.loop-pagination a {
+.pagination a {
   color: #6B6B6B;
 }
-.loop-pagination a:link, .loop-pagination a:visited {
+.pagination a:link, .pagination a:visited {
   color: #6B6B6B;
 }
-.loop-pagination a:hover, .loop-pagination a:active, .loop-pagination a:focus {
+.pagination a:hover, .pagination a:active, .pagination a:focus {
   color: #333333;
   text-decoration: underline;
 }
-.loop-pagination .current {
+.pagination .current {
   color: #333333;
   font-weight: 700;
 }
 
 @media all and (min-width: 56.25em) {
-  .loop-pagination {
+  .pagination {
     text-align: right;
     padding: 0;
   }
