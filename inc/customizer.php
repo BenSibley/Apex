@@ -280,7 +280,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	// control
 	$wp_customize->add_control( new ct_apex_number_input_control(
 		$wp_customize, 'excerpt_length', array(
-			'label'          => __( 'Excerpt length', 'apex' ),
+			'label'          => __( 'Excerpt word count', 'apex' ),
 			'section'        => 'apex_blog',
 			'settings'       => 'excerpt_length',
 			'type'           => 'number',
