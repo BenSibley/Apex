@@ -224,6 +224,11 @@ jQuery(document).ready(function($){
 
                     var image = $(this).children('img').add($(this).children('a').children('img'));
 
+                    // don't process images twice (relevant when using infinite scroll)
+                    if ( image.hasClass('no-object-fit') ) {
+                        return;
+                    }
+
                     image.addClass('no-object-fit');
 
                     // if the image is not wide enough to fill the space
