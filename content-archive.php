@@ -6,7 +6,7 @@
 			<div class='post-header'>
 				<?php do_action( 'sticky_post_status' ); ?>
 				<h2 class='post-title'>
-					<a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a>
 				</h2>
 				<span class="post-date">
 					<?php

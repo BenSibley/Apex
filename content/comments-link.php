@@ -4,7 +4,7 @@
 	if( ! comments_open() && get_comments_number() < 1 ) :
 		comments_number( __( 'Comments closed', 'apex' ), __( '1 Comment', 'apex'), __( '% Comments', 'apex' ) );
 	else :
-		echo '<a href="' . get_comments_link() . '">';
+		echo '<a href="' . esc_url( get_comments_link() ) . '">';
 			comments_number( __( 'Leave a Comment', 'apex' ), __( '1 Comment', 'apex'), __( '% Comments', 'apex' ) );
 		echo '</a>';
 	endif;

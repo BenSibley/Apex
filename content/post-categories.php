@@ -21,7 +21,7 @@ if($categories){
 				$output .= ' and ';
 			}
 			// output category name linked to the archive
-			$output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s", 'apex' ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
+			$output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s", 'apex' ), $category->name ) ) . '">' . $category->cat_name . '</a>' . $separator;
 		}
 		echo trim($output, $separator);
 	echo "</p>";
