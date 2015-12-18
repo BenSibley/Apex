@@ -23,21 +23,6 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	
 	/***** Add Custom Controls *****/
 
-	// create url input control
-	class ct_apex_url_input_control extends WP_Customize_Control {
-		// create new type called 'url'
-		public $type = 'url';
-		// the content to be output in the Customizer
-		public function render_content() {
-			?>
-			<label>
-				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-				<input type="url" <?php $this->link(); ?> value="<?php echo esc_url_raw( $this->value() ); ?>" />
-			</label>
-		<?php
-		}
-	}
-
 	// number input control
 	class ct_apex_number_input_control extends WP_Customize_Control {
 		public $type = 'number';
@@ -232,12 +217,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 				'transport'         => 'postMessage'
 			) );
 			// control
-			$wp_customize->add_control( new ct_apex_url_input_control(
-				$wp_customize, $social_site, array(
-					'label'   => $label,
-					'section' => 'ct_apex_social_media_icons',
-					'priority'=> $priority,
-				)
+			$wp_customize->add_control( $social_site, array(
+				'type'  => 'url',
+				'label'   => $label,
+				'section' => 'ct_apex_social_media_icons',
+				'priority'=> $priority,
 			) );
 		}
 		// increment the priority for next site
