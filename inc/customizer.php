@@ -23,43 +23,6 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	
 	/***** Add Custom Controls *****/
 
-	// number input control
-	class ct_apex_number_input_control extends WP_Customize_Control {
-		public $type = 'number';
-
-		public function render_content() {
-			?>
-			<label>
-				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-				<input type="number" <?php $this->link(); ?> value="<?php echo $this->value(); ?>" />
-			</label>
-		<?php
-		}
-	}
-
-	// create multi-checkbox/select control
-	class ct_apex_multi_checkbox_control extends WP_Customize_Control {
-		public $type = 'multi-checkbox';
-
-		public function render_content() {
-
-			if ( empty( $this->choices ) )
-				return;
-			?>
-			<label>
-				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-				<select id="comment-display-control" <?php $this->link(); ?> multiple="multiple" style="height: 100%;">
-					<?php
-					foreach ( $this->choices as $value => $label ) {
-						$selected = ( in_array( $value, $this->value() ) ) ? selected( 1, 1, false ) : '';
-						echo '<option value="' . esc_attr( $value ) . '"' . $selected . '>' . $label . '</option>';
-					}
-					?>
-				</select>
-			</label>
-		<?php }
-	}
-
 	// create textarea control
 	class ct_apex_textarea_control extends WP_Customize_Control {
 		public $type = 'textarea';
@@ -262,13 +225,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'absint',
 	) );
 	// control
-	$wp_customize->add_control( new ct_apex_number_input_control(
-		$wp_customize, 'excerpt_length', array(
-			'label'          => __( 'Excerpt word count', 'apex' ),
-			'section'        => 'apex_blog',
-			'settings'       => 'excerpt_length',
-			'type'           => 'number',
-		)
+	$wp_customize->add_control( 'excerpt_length', array(
+		'label'          => __( 'Excerpt word count', 'apex' ),
+		'section'        => 'apex_blog',
+		'settings'       => 'excerpt_length',
+		'type'           => 'number',
 	) );
 
 	/***** Custom CSS *****/
