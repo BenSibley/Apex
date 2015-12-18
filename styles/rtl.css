@@ -354,12 +354,7 @@ a img {
 .archive-header h2 {
   font-size: 1em;
   line-height: 1.5;
-  font-weight: 400;
   color: #6B6B6B;
-}
-.archive-header span {
-  font-weight: 700;
-  color: #333333;
 }
 .archive-header p {
   font-style: italic;
