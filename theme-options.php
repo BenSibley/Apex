@@ -12,7 +12,7 @@ function ct_apex_options_content(){
 	$customizer_url = add_query_arg(
 		array(
 			'url'    => site_url(),
-			'return' => admin_url('themes.php?page=apex-options')
+			'return' => add_query_arg( 'page', 'apex-options', admin_url( 'themes.php' ) )
 		),
 		admin_url('customize.php')
 	);
