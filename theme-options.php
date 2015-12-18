@@ -2,7 +2,7 @@
 
 /* create theme options page */
 function ct_apex_register_theme_page(){
-	add_theme_page( 'Apex Dashboard', 'Apex Dashboard', 'edit_theme_options', 'apex-options', 'ct_apex_options_content', 'ct_apex_options_content');
+	add_theme_page( __( 'Apex Dashboard', 'apex' ), __( 'Apex Dashboard', 'apex' ), 'edit_theme_options', 'apex-options', 'ct_apex_options_content', 'ct_apex_options_content');
 }
 add_action( 'admin_menu', 'ct_apex_register_theme_page' );
 
