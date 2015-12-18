@@ -24,46 +24,10 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	/***** Add Custom Controls *****/
 
 	/* Ad Controls */
-	class apex_description_header_image_control extends WP_Customize_Control {
+	class apex_description_control extends WP_Customize_Control {
 
 		public function render_content() {
-			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> for advanced header image functionality.', 'apex'), $link ) . "</p>";
-		}
-	}
-	class apex_description_color_control extends WP_Customize_Control {
-
-		public function render_content() {
-			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your colors.', 'apex'), $link ) . "</p>";
-		}
-	}
-	class apex_description_font_control extends WP_Customize_Control {
-
-		public function render_content() {
-			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your font.', 'apex'), $link ) . "</p>";
-		}
-	}
-	class apex_description_display_control_control extends WP_Customize_Control {
-
-		public function render_content() {
-			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to get hide/show controls.', 'apex'), $link ) . "</p>";
-		}
-	}
-	class apex_description_footer_text_control extends WP_Customize_Control {
-
-		public function render_content() {
-			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to customize the footer text.', 'apex'), $link ) . "</p>";
-		}
-	}
-	class apex_description_layout_control extends WP_Customize_Control {
-
-		public function render_content() {
-			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your layout.', 'apex'), $link ) . "</p>";
+			echo $this->description;
 		}
 	}
 
@@ -241,10 +205,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'absint'
 	) );
 	// control
-	$wp_customize->add_control( new apex_description_header_image_control(
+	$wp_customize->add_control( new apex_description_control(
 		$wp_customize, 'header_image_ad', array(
 			'section'        => 'apex_header_image',
-			'settings'       => 'header_image_ad'
+			'settings'       => 'header_image_ad',
+			'description'  => sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> for advanced header image functionality.', 'apex'), 'https://www.competethemes.com/apex-pro/' )
 		)
 	) );
 
@@ -260,10 +225,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'absint'
 	) );
 	// control
-	$wp_customize->add_control( new apex_description_color_control(
+	$wp_customize->add_control( new apex_description_control(
 		$wp_customize, 'colors_ad', array(
 			'section'        => 'apex_colors',
-			'settings'       => 'colors_ad'
+			'settings'       => 'colors_ad',
+			'description'  => sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your colors.', 'apex'), 'https://www.competethemes.com/apex-pro/' )
 		)
 	) );
 
@@ -279,10 +245,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'absint'
 	) );
 	// control
-	$wp_customize->add_control( new apex_description_font_control(
+	$wp_customize->add_control( new apex_description_control(
 		$wp_customize, 'font_ad', array(
 			'section'        => 'apex_font',
-			'settings'       => 'font_ad'
+			'settings'       => 'font_ad',
+			'description'  => sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your font.', 'apex'), 'https://www.competethemes.com/apex-pro/' )
 		)
 	) );
 
@@ -298,10 +265,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'absint'
 	) );
 	// control
-	$wp_customize->add_control( new apex_description_display_control_control(
+	$wp_customize->add_control( new apex_description_control(
 		$wp_customize, 'display_control_ad', array(
 			'section'        => 'apex_display_control',
-			'settings'       => 'display_control_ad'
+			'settings'       => 'display_control_ad',
+			'description'  => sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to get hide/show controls.', 'apex'), 'https://www.competethemes.com/apex-pro/' )
 		)
 	) );
 
@@ -317,10 +285,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'absint'
 	) );
 	// control
-	$wp_customize->add_control( new apex_description_footer_text_control(
+	$wp_customize->add_control( new apex_description_control(
 		$wp_customize, 'footer_text_ad', array(
 			'section'        => 'apex_footer_text',
-			'settings'       => 'footer_text_ad'
+			'settings'       => 'footer_text_ad',
+			'description'  => sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to customize the footer text.', 'apex'), 'https://www.competethemes.com/apex-pro/' )
 		)
 	) );
 
@@ -336,10 +305,11 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'absint'
 	) );
 	// control
-	$wp_customize->add_control( new apex_description_layout_control(
+	$wp_customize->add_control( new apex_description_control(
 		$wp_customize, 'layout_ad', array(
 			'section'        => 'apex_layout',
-			'settings'       => 'layout_text_ad'
+			'settings'       => 'layout_text_ad',
+			'description' => sprintf( __('Activate the <a target="_blank" href="%s">Apex Pro Plugin</a> to change your layout.', 'apex'), 'https://www.competethemes.com/apex-pro/' )
 		)
 	) );
 }
