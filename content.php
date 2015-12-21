@@ -5,12 +5,7 @@
 	    <div class="post-container">
 		    <div class='post-header'>
 		        <h2 class='post-title'><?php the_title(); ?></h2>
-			    <span class="post-date">
-					<?php
-					$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date('r') ) );
-					printf( __( 'Published %s', 'apex' ), $date );
-					?>
-				</span>
+			    <?php get_template_part( 'content/post-byline' ); ?>
 		    </div>
 		    <div class="post-content">
 		        <?php the_content(); ?>
