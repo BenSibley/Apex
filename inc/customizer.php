@@ -193,12 +193,36 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'type'           => 'number'
 	) );
 
+	/***** Additional Options *****/
+
+	// section
+	$wp_customize->add_section( 'apex_additional', array(
+		'title'    => __( 'Additional Options', 'apex' ),
+		'priority' => 70
+	) );
+	// author byline - setting
+	$wp_customize->add_setting( 'author_byline', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_apex_sanitize_yes_no_settings'
+	) );
+	// author byline - control
+	$wp_customize->add_control( 'author_byline', array(
+		'label'    => __( 'Display post author name in byline?', 'apex' ),
+		'section'  => 'apex_additional',
+		'settings' => 'author_byline',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'apex' ),
+			'no'  => __( 'No', 'apex' )
+		)
+	) );
+
 	/***** Custom CSS *****/
 
 	// section
 	$wp_customize->add_section( 'apex_custom_css', array(
 		'title'      => __( 'Custom CSS', 'apex' ),
-		'priority'   => 70
+		'priority'   => 75
 	) );
 	// setting
 	$wp_customize->add_setting( 'custom_css', array(
