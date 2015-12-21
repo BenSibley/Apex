@@ -891,22 +891,25 @@ li.pingback {
   }
   .menu-primary-items ul a:hover ~ ul, .menu-primary-items ul a:active ~ ul, .menu-primary-items ul a:focus ~ ul {
     top: -12px;
-    left: calc(100% - 24px);
+    left: 100%;
+    left: calc(100% + 2px);
   }
   .menu-primary-items ul a:hover:after, .menu-primary-items ul a:active:after {
     top: 0;
     height: 36px;
     width: 72px;
     left: 100%;
+    left: calc(100% + 2px);
   }
   .menu-primary-items ul ul {
     left: 100%;
-    left: calc(100% - 18px);
+    left: calc(100% + 8px);
     top: -12px;
   }
   .menu-primary-items ul ul:hover, .menu-primary-items ul ul.focused {
     top: -12px;
-    left: calc(100% - 24px);
+    left: 100%;
+    left: calc(100% + 2px);
   }
   .menu-primary-items li {
     position: relative;

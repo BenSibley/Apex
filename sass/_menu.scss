@@ -193,7 +193,8 @@
           }
           ~ ul {
             top: -12px;
-            left: calc(100% - 24px);
+            left: 100%;
+            left: calc(100% + 2px);
           }
         }
         &:hover,
@@ -204,18 +205,20 @@
             height: 36px;
             width: 72px;
             left: 100%;
+            left: calc(100% + 2px);
           }
         }
       }
       ul {
         left: 100%;
-        left: calc(100% - 18px);
+        left: calc(100% + 8px);
         top: -12px;
 
         &:hover,
         &.focused {
           top: -12px;
-          left: calc(100% - 24px);
+          left: 100%;
+          left: calc(100% + 2px);
         }
       }
     }
