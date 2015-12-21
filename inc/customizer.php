@@ -398,28 +398,6 @@ function ct_apex_sanitize_email( $input ) {
 	return sanitize_email( $input );
 }
 
-// sanitize comment display multi-check
-function ct_apex_sanitize_comments_setting($input){
-
-	$valid = array(
-		'post'   => __('Posts', 'apex'),
-		'page'  => __('Pages', 'apex'),
-		'attachment'  => __('Attachments', 'apex'),
-		'none'  => __('Do not show', 'apex')
-	);
-
-	// loop through array
-	foreach( $input as $selection ) {
-
-		// if it's in the valid data, return it
-		if ( array_key_exists( $selection, $valid ) ) {
-			return $input;
-		} else {
-			return '';
-		}
-	}
-}
-
 // sanitize yes/no settings
 function ct_apex_sanitize_yes_no_settings($input){
 
