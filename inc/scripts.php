@@ -5,7 +5,7 @@
  */
 function ct_apex_load_scripts_styles() {
 
-	wp_register_style( 'ct-apex-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700|Satisfy');
+	wp_enqueue_style( 'ct-apex-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700|Satisfy');
 
 	// main JS file
 	wp_enqueue_script('ct-apex-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
@@ -15,9 +15,6 @@ function ct_apex_load_scripts_styles() {
 		'openChildMenu'  => __( 'open dropdown menu', 'apex' ),
 		'closeChildMenu' => __( 'close dropdown menu', 'apex' )
 	) );
-
-	// Google Fonts
-	wp_enqueue_style('ct-apex-google-fonts');
 
 	// Font Awesome
 	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
