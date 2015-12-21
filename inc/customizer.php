@@ -192,6 +192,18 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		'settings'       => 'excerpt_length',
 		'type'           => 'number'
 	) );
+	// Read More text - setting
+	$wp_customize->add_setting( 'read_more_text', array(
+		'default'           => __( 'Continue reading', 'apex' ),
+		'sanitize_callback' => 'ct_apex_sanitize_text'
+	) );
+	// Read More text - control
+	$wp_customize->add_control( 'read_more_text', array(
+		'label'    => __( 'Read More button text', 'apex' ),
+		'section'  => 'apex_blog',
+		'settings' => 'read_more_text',
+		'type'     => 'text'
+	) );
 
 	/***** Additional Options *****/
 
@@ -427,6 +439,10 @@ function ct_apex_sanitize_yes_no_settings($input){
 	} else {
 		return '';
 	}
+}
+
+function ct_apex_sanitize_text( $input ) {
+	return wp_kses_post( force_balance_tags( $input ) );
 }
 
 /***** Helper Functions *****/
