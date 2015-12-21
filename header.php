@@ -21,13 +21,9 @@
 			<header class="site-header" id="site-header" role="banner">
 
 				<div id="menu-primary-container" class="menu-primary-container">
-
-					<!-- Primary Menu -->
 					<?php get_template_part( 'menu', 'primary' ); ?>
-
-					<!-- Social Icons -->
+					<?php get_template_part( 'content/search-bar' ); ?>
 					<?php ct_apex_social_icons_output('header'); ?>
-
 				</div>
 
 				<button id="toggle-navigation" class="toggle-navigation">
