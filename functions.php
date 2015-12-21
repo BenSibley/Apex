@@ -179,29 +179,29 @@ add_action('comment_form_defaults', 'ct_apex_remove_comments_notes_after');
 if( ! function_exists( 'ct_apex_excerpt' ) ) {
 	function ct_apex_excerpt() {
 
-		// make post variable available
 		global $post;
-
-		// check for the more tag
+		$read_more_text = get_theme_mod( 'read_more_text' );
+		$show_full_post = get_theme_mod( 'full_post' );
 		$ismore = strpos( $post->post_content, '<!--more-->' );
 
-		// get the show full post setting
-		$show_full_post = get_theme_mod( 'full_post' );
-
-		// if show full post is on and not on a search results page
 		if ( ( $show_full_post == 'yes' ) && ! is_search() ) {
-
-			// use the read more link if present
 			if ( $ismore ) {
-				the_content( __( 'Continue reading', 'apex' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+				// Has to be written this way because i18n text CANNOT be stored in a variable
+				if ( ! empty( $read_more_text ) ) {
+					the_content( $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+				} else {
+					the_content( __( 'Continue reading', 'apex' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+				}
 			} else {
 				the_content();
 			}
-		} // use the read more link if present
-		elseif ( $ismore ) {
-			the_content( __( 'Continue reading', 'apex' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
-		} // otherwise the excerpt is automatic, so output it
-		else {
+		} elseif ( $ismore ) {
+			if ( ! empty( $read_more_text ) ) {
+				the_content( $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+			} else {
+				the_content( __( 'Continue reading', 'apex' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+			}
+		} else {
 			the_excerpt();
 		}
 	}
@@ -210,9 +210,14 @@ if( ! function_exists( 'ct_apex_excerpt' ) ) {
 // filter the link on excerpts
 if( ! function_exists( 'ct_apex_excerpt_read_more_link' ) ) {
 	function ct_apex_excerpt_read_more_link( $output ) {
-		global $post;
 
-		return $output . "<p><a class='more-link' href='" . esc_url( get_permalink() ) . "'>" . __( 'Continue reading', 'apex' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+		$read_more_text = get_theme_mod( 'read_more_text' );
+
+		if ( ! empty( $read_more_text ) ) {
+			return $output . "<p><a class='more-link' href='" . esc_url( get_permalink() ) . "'>" . $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+		} else {
+			return $output . "<p><a class='more-link' href='" . esc_url( get_permalink() ) . "'>" . __( 'Continue reading', 'apex' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+		}
 	}
 }
 add_filter('the_excerpt', 'ct_apex_excerpt_read_more_link');
