@@ -133,6 +133,30 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		$priority = $priority + 5;
 	}
 
+	/***** Search Bar *****/
+
+	// section
+	$wp_customize->add_section( 'apex_search_bar', array(
+		'title'    => __( 'Search Bar', 'apex' ),
+		'priority' => 37
+	) );
+	// setting
+	$wp_customize->add_setting( 'search_bar', array(
+		'default'           => 'hide',
+		'sanitize_callback' => 'ct_apex_sanitize_all_show_hide_settings'
+	) );
+	// control
+	$wp_customize->add_control( 'search_bar', array(
+		'type'    => 'radio',
+		'label'   => __( 'Show search bar at top of site?', 'apex' ),
+		'section' => 'apex_search_bar',
+		'setting' => 'search_bar',
+		'choices' => array(
+			'show' => __( 'Show', 'apex' ),
+			'hide' => __( 'Hide', 'apex' )
+		),
+	) );
+
 	/***** Blog *****/
 
 	// section
