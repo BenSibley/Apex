@@ -403,14 +403,10 @@ function ct_apex_sanitize_yes_no_settings($input){
 
 	$valid = array(
 		'yes'   => __('Yes', 'apex'),
-		'no'  => __('No', 'apex'),
+		'no'  => __('No', 'apex')
 	);
 
-	if ( array_key_exists( $input, $valid ) ) {
-		return $input;
-	} else {
-		return '';
-	}
+	return array_key_exists( $input, $valid ) ? $input : '';
 }
 
 function ct_apex_sanitize_text( $input ) {

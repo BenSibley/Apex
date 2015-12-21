@@ -108,21 +108,10 @@ if( ! function_exists( ( 'ct_apex_customize_comments' ) ) ) {
 if( ! function_exists( 'ct_apex_update_fields' ) ) {
     function ct_apex_update_fields( $fields ) {
 
-        // get commenter object
-        $commenter = wp_get_current_commenter();
-
-        // are name and email required?
-        $req = get_option( 'require_name_email' );
-
-        // required or optional label to be added
-        if ( $req == 1 ) {
-            $label = '*';
-        } else {
-            $label = ' ' . __("optional", "apex");
-        }
-
-        // adds aria required tag if required
-        $aria_req = ( $req ? " aria-required='true'" : '' );
+	    $commenter = wp_get_current_commenter();
+	    $req       = get_option( 'require_name_email' );
+	    $label     = $req ? '*' : ' ' . __( '(optional)', 'apex' );
+	    $aria_req  = $req ? "aria-required='true'" : '';
 
         $fields['author'] =
             '<p class="comment-form-author">
@@ -228,15 +217,11 @@ if( ! function_exists( 'ct_apex_custom_excerpt_length' ) ) {
 
 		$new_excerpt_length = get_theme_mod('excerpt_length');
 
-		// if there is a new length set and it's not 15, change it
 		if( ! empty( $new_excerpt_length ) && $new_excerpt_length != 25 ){
 			return $new_excerpt_length;
-		}
-		// return 0 if user explicitly sets it to 0
-		elseif ( $new_excerpt_length === 0 ) {
+		} elseif ( $new_excerpt_length === 0 ) {
 			return 0;
-		}
-		else {
+		} else {
 			return 25;
 		}
 	}
@@ -247,17 +232,10 @@ add_filter( 'excerpt_length', 'ct_apex_custom_excerpt_length', 99 );
 if( ! function_exists( 'ct_apex_new_excerpt_more' ) ) {
 	function ct_apex_new_excerpt_more( $more ) {
 
-		// get user set excerpt length
 		$new_excerpt_length = get_theme_mod('excerpt_length');
+		$excerpt_more       = ( $new_excerpt_length === 0 ) ? '' : '&#8230;';
 
-		// if set to 0, return nothing
-		if ( $new_excerpt_length === 0 ) {
-			return '';
-		}
-		// else add the ellipsis
-		else {
-			return '&#8230;';
-		}
+		return $excerpt_more;
 	}
 }
 add_filter('excerpt_more', 'ct_apex_new_excerpt_more');
