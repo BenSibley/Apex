@@ -71,10 +71,10 @@ add_action('customize_controls_enqueue_scripts','ct_apex_enqueue_customizer_scri
  * Script for live updating with customizer options. Has to be loaded separately on customize_preview_init hook
  * transport => postMessage
  */
-function apex_enqueue_customizer_post_message_scripts(){
+function ct_apex_enqueue_customizer_post_message_scripts(){
 
 	// JS for live updating with customizer input
 	wp_enqueue_script('ct-apex-customizer-post-message-js', get_template_directory_uri() . '/js/build/postMessage.min.js',array('jquery'),'',true);
 
 }
-add_action('customize_preview_init','apex_enqueue_customizer_post_message_scripts');
+add_action('customize_preview_init','ct_apex_enqueue_customizer_post_message_scripts');
