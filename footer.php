@@ -5,15 +5,15 @@
 
 <footer class="site-footer" role="contentinfo">
 	<?php do_action( 'footer_top' ); ?>
-    <div class="design-credit">
+	<div class="design-credit">
         <span>
             <?php
-                $footer_text = sprintf( __( '<a href="%s">Apex WordPress Theme</a> by Compete Themes', 'apex' ), 'https://www.competethemes.com/apex/' );
-                $footer_text = apply_filters( 'ct_apex_footer_text', $footer_text );
-                echo wp_kses_post( $footer_text );
+            $footer_text = sprintf( __( '<a href="%s">Apex WordPress Theme</a> by Compete Themes', 'apex' ), 'https://www.competethemes.com/apex/' );
+            $footer_text = apply_filters( 'ct_apex_footer_text', $footer_text );
+            echo wp_kses_post( $footer_text );
             ?>
         </span>
-    </div>
+	</div>
 </footer>
 </div>
 </div><!-- .overflow-container -->

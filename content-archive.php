@@ -12,7 +12,7 @@
 			</div>
 			<div class="post-content">
 				<?php ct_apex_excerpt(); ?>
-				<?php get_template_part('content/comments-link'); ?>
+				<?php get_template_part( 'content/comments-link' ); ?>
 			</div>
 		</div>
 	</article>

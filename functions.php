@@ -11,7 +11,7 @@ if ( ! isset( $content_width ) ) {
 }
 
 // theme setup
-if( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
+if ( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
 	function ct_apex_theme_setup() {
 
 		// add functionality from WordPress core
@@ -24,7 +24,11 @@ if( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
 		 * to output valid HTML5.
 		 */
 		add_theme_support( 'html5', array(
-			'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption'
 		) );
 
 		// adds support for Jetpack infinite scroll feature
@@ -54,107 +58,108 @@ if( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
 add_action( 'after_setup_theme', 'ct_apex_theme_setup', 10 );
 
 // register widget areas
-function ct_apex_register_widget_areas(){
+function ct_apex_register_widget_areas() {
 
-    /* register after post content widget area */
-    register_sidebar( array(
-        'name'         => __( 'Primary Sidebar', 'apex' ),
-        'id'           => 'primary',
-        'description'  => __( 'Widgets in this area will be shown in the sidebar next to the main post content', 'apex' ),
-        'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title'  => '</h2>'
-    ) );
+	/* register after post content widget area */
+	register_sidebar( array(
+		'name'          => __( 'Primary Sidebar', 'apex' ),
+		'id'            => 'primary',
+		'description'   => __( 'Widgets in this area will be shown in the sidebar next to the main post content', 'apex' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>'
+	) );
 }
-add_action('widgets_init','ct_apex_register_widget_areas');
+
+add_action( 'widgets_init', 'ct_apex_register_widget_areas' );
 
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
-if( ! function_exists( ( 'ct_apex_customize_comments' ) ) ) {
+if ( ! function_exists( ( 'ct_apex_customize_comments' ) ) ) {
 	function ct_apex_customize_comments( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment;
 		global $post;
 		?>
 		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-			<article id="comment-<?php comment_ID(); ?>" class="comment">
-				<div class="comment-author">
-					<?php
-						echo get_avatar( get_comment_author_email(), 48, '', get_comment_author() );
-					?>
-					<span class="author-name"><?php comment_author_link(); ?></span>
-				</div>
-				<div class="comment-content">
-					<?php if ( $comment->comment_approved == '0' ) : ?>
-						<em><?php _e( 'Your comment is awaiting moderation.', 'apex' ) ?></em>
-						<br/>
-					<?php endif; ?>
-					<?php comment_text(); ?>
-				</div>
-				<div class="comment-footer">
-					<span class="comment-date"><?php comment_date(); ?></span>
-					<?php comment_reply_link( array_merge( $args, array(
-						'reply_text' => __( 'Reply', 'apex' ),
-						'depth'      => $depth,
-						'max_depth'  => $args['max_depth']
-					) ) ); ?>
-					<?php edit_comment_link( __('Edit', 'apex' ) ); ?>
-				</div>
-			</article>
-	<?php
+		<article id="comment-<?php comment_ID(); ?>" class="comment">
+			<div class="comment-author">
+				<?php
+				echo get_avatar( get_comment_author_email(), 48, '', get_comment_author() );
+				?>
+				<span class="author-name"><?php comment_author_link(); ?></span>
+			</div>
+			<div class="comment-content">
+				<?php if ( $comment->comment_approved == '0' ) : ?>
+					<em><?php _e( 'Your comment is awaiting moderation.', 'apex' ) ?></em>
+					<br/>
+				<?php endif; ?>
+				<?php comment_text(); ?>
+			</div>
+			<div class="comment-footer">
+				<span class="comment-date"><?php comment_date(); ?></span>
+				<?php comment_reply_link( array_merge( $args, array(
+					'reply_text' => __( 'Reply', 'apex' ),
+					'depth'      => $depth,
+					'max_depth'  => $args['max_depth']
+				) ) ); ?>
+				<?php edit_comment_link( __( 'Edit', 'apex' ) ); ?>
+			</div>
+		</article>
+		<?php
 	}
 }
 
 /* added HTML5 placeholders for each default field and aria-required to required */
-if( ! function_exists( 'ct_apex_update_fields' ) ) {
-    function ct_apex_update_fields( $fields ) {
+if ( ! function_exists( 'ct_apex_update_fields' ) ) {
+	function ct_apex_update_fields( $fields ) {
 
-	    $commenter = wp_get_current_commenter();
-	    $req       = get_option( 'require_name_email' );
-	    $label     = $req ? '*' : ' ' . __( '(optional)', 'apex' );
-	    $aria_req  = $req ? "aria-required='true'" : '';
+		$commenter = wp_get_current_commenter();
+		$req       = get_option( 'require_name_email' );
+		$label     = $req ? '*' : ' ' . __( '(optional)', 'apex' );
+		$aria_req  = $req ? "aria-required='true'" : '';
 
-        $fields['author'] =
-            '<p class="comment-form-author">
+		$fields['author'] =
+			'<p class="comment-form-author">
 	            <label for="author">' . __( "Name", "apex" ) . $label . '</label>
 	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-            '" size="30" ' . $aria_req . ' />
+			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
-        $fields['email'] =
-            '<p class="comment-form-email">
+		$fields['email'] =
+			'<p class="comment-form-email">
 	            <label for="email">' . __( "Email", "apex" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
-            '" size="30" ' . $aria_req . ' />
+			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
-        $fields['url'] =
-            '<p class="comment-form-url">
+		$fields['url'] =
+			'<p class="comment-form-url">
 	            <label for="url">' . __( "Website", "apex" ) . '</label>
 	            <input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
-            '" size="30" />
+			'" size="30" />
 	            </p>';
 
-        return $fields;
-    }
+		return $fields;
+	}
 }
-add_filter('comment_form_default_fields','ct_apex_update_fields');
+add_filter( 'comment_form_default_fields', 'ct_apex_update_fields' );
 
-if( ! function_exists( 'ct_apex_update_comment_field' ) ) {
-    function ct_apex_update_comment_field( $comment_field ) {
+if ( ! function_exists( 'ct_apex_update_comment_field' ) ) {
+	function ct_apex_update_comment_field( $comment_field ) {
 
-        $comment_field =
-            '<p class="comment-form-comment">
+		$comment_field =
+			'<p class="comment-form-comment">
 	            <label for="comment">' . __( "Comment", "apex" ) . '</label>
 	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
-        return $comment_field;
-    }
+		return $comment_field;
+	}
 }
-add_filter('comment_form_field_comment','ct_apex_update_comment_field');
+add_filter( 'comment_form_field_comment', 'ct_apex_update_comment_field' );
 
 // remove allowed tags text after comment form
-if( ! function_exists( 'ct_apex_remove_comments_notes_after' ) ) {
+if ( ! function_exists( 'ct_apex_remove_comments_notes_after' ) ) {
 	function ct_apex_remove_comments_notes_after( $defaults ) {
 
 		$defaults['comment_notes_after'] = '';
@@ -162,16 +167,16 @@ if( ! function_exists( 'ct_apex_remove_comments_notes_after' ) ) {
 		return $defaults;
 	}
 }
-add_action('comment_form_defaults', 'ct_apex_remove_comments_notes_after');
+add_action( 'comment_form_defaults', 'ct_apex_remove_comments_notes_after' );
 
 // excerpt handling
-if( ! function_exists( 'ct_apex_excerpt' ) ) {
+if ( ! function_exists( 'ct_apex_excerpt' ) ) {
 	function ct_apex_excerpt() {
 
 		global $post;
 		$read_more_text = get_theme_mod( 'read_more_text' );
 		$show_full_post = get_theme_mod( 'full_post' );
-		$ismore = strpos( $post->post_content, '<!--more-->' );
+		$ismore         = strpos( $post->post_content, '<!--more-->' );
 
 		if ( ( $show_full_post == 'yes' ) && ! is_search() ) {
 			if ( $ismore ) {
@@ -197,7 +202,7 @@ if( ! function_exists( 'ct_apex_excerpt' ) ) {
 }
 
 // filter the link on excerpts
-if( ! function_exists( 'ct_apex_excerpt_read_more_link' ) ) {
+if ( ! function_exists( 'ct_apex_excerpt_read_more_link' ) ) {
 	function ct_apex_excerpt_read_more_link( $output ) {
 
 		$read_more_text = get_theme_mod( 'read_more_text' );
@@ -209,15 +214,15 @@ if( ! function_exists( 'ct_apex_excerpt_read_more_link' ) ) {
 		}
 	}
 }
-add_filter('the_excerpt', 'ct_apex_excerpt_read_more_link');
+add_filter( 'the_excerpt', 'ct_apex_excerpt_read_more_link' );
 
 // change the length of the excerpts
-if( ! function_exists( 'ct_apex_custom_excerpt_length' ) ) {
+if ( ! function_exists( 'ct_apex_custom_excerpt_length' ) ) {
 	function ct_apex_custom_excerpt_length( $length ) {
 
-		$new_excerpt_length = get_theme_mod('excerpt_length');
+		$new_excerpt_length = get_theme_mod( 'excerpt_length' );
 
-		if( ! empty( $new_excerpt_length ) && $new_excerpt_length != 25 ){
+		if ( ! empty( $new_excerpt_length ) && $new_excerpt_length != 25 ) {
 			return $new_excerpt_length;
 		} elseif ( $new_excerpt_length === 0 ) {
 			return 0;
@@ -229,19 +234,19 @@ if( ! function_exists( 'ct_apex_custom_excerpt_length' ) ) {
 add_filter( 'excerpt_length', 'ct_apex_custom_excerpt_length', 99 );
 
 // switch [...] to ellipsis on automatic excerpt
-if( ! function_exists( 'ct_apex_new_excerpt_more' ) ) {
+if ( ! function_exists( 'ct_apex_new_excerpt_more' ) ) {
 	function ct_apex_new_excerpt_more( $more ) {
 
-		$new_excerpt_length = get_theme_mod('excerpt_length');
+		$new_excerpt_length = get_theme_mod( 'excerpt_length' );
 		$excerpt_more       = ( $new_excerpt_length === 0 ) ? '' : '&#8230;';
 
 		return $excerpt_more;
 	}
 }
-add_filter('excerpt_more', 'ct_apex_new_excerpt_more');
+add_filter( 'excerpt_more', 'ct_apex_new_excerpt_more' );
 
 // turns of the automatic scrolling to the read more link
-if( ! function_exists( 'ct_apex_remove_more_link_scroll' ) ) {
+if ( ! function_exists( 'ct_apex_remove_more_link_scroll' ) ) {
 	function ct_apex_remove_more_link_scroll( $link ) {
 		$link = preg_replace( '|#more-[0-9]+|', '', $link );
 
@@ -251,7 +256,7 @@ if( ! function_exists( 'ct_apex_remove_more_link_scroll' ) ) {
 add_filter( 'the_content_more_link', 'ct_apex_remove_more_link_scroll' );
 
 // for displaying featured images
-if( ! function_exists( 'ct_apex_featured_image' ) ) {
+if ( ! function_exists( 'ct_apex_featured_image' ) ) {
 	function ct_apex_featured_image() {
 
 		// get post object
@@ -273,14 +278,14 @@ if( ! function_exists( 'ct_apex_featured_image' ) ) {
 		// allow videos to be added
 		$featured_image = apply_filters( 'ct_apex_featured_image', $featured_image );
 
-		if( $featured_image ) {
+		if ( $featured_image ) {
 			echo $featured_image;
 		}
 	}
 }
 
 // associative array of social media sites
-if ( !function_exists( 'ct_apex_social_array' ) ) {
+if ( ! function_exists( 'ct_apex_social_array' ) ) {
 	function ct_apex_social_array() {
 
 		$social_sites = array(
@@ -331,56 +336,73 @@ if ( !function_exists( 'ct_apex_social_array' ) ) {
 }
 
 // output social icons
-if( ! function_exists('ct_apex_social_icons_output') ) {
-    function ct_apex_social_icons_output($source) {
+if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
+	function ct_apex_social_icons_output( $source ) {
 
-        // get social sites array
-        $social_sites = ct_apex_social_array();
+		// get social sites array
+		$social_sites = ct_apex_social_array();
 
-	    // icons that should use a special square icon
-	    $square_icons = array('linkedin', 'twitter', 'vimeo', 'youtube', 'pinterest', 'rss', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook');
+		// icons that should use a special square icon
+		$square_icons = array(
+			'linkedin',
+			'twitter',
+			'vimeo',
+			'youtube',
+			'pinterest',
+			'rss',
+			'reddit',
+			'tumblr',
+			'steam',
+			'xing',
+			'github',
+			'google-plus',
+			'behance',
+			'facebook'
+		);
 
-        // store the site name and url
-        foreach ( $social_sites as $social_site => $profile ) {
+		// store the site name and url
+		foreach ( $social_sites as $social_site => $profile ) {
 
-            if ( strlen( get_theme_mod( $social_site ) ) > 0 ) {
-                $active_sites[$social_site] = $social_site;
-            }
-        }
+			if ( strlen( get_theme_mod( $social_site ) ) > 0 ) {
+				$active_sites[ $social_site ] = $social_site;
+			}
+		}
 
-        // for each active social site, add it as a list item
-        if ( ! empty( $active_sites ) ) {
+		// for each active social site, add it as a list item
+		if ( ! empty( $active_sites ) ) {
 
-            echo "<ul class='social-media-icons'>";
+			echo "<ul class='social-media-icons'>";
 
-            foreach ( $active_sites as $key => $active_site ) {
+			foreach ( $active_sites as $key => $active_site ) {
 
-	            // get the square or plain class
-	            if ( in_array( $active_site, $square_icons ) ) {
-		            $class = 'fa fa-' . $active_site . '-square';
-	            } else {
-		            $class = 'fa fa-' . $active_site;
-	            }
+				// get the square or plain class
+				if ( in_array( $active_site, $square_icons ) ) {
+					$class = 'fa fa-' . $active_site . '-square';
+				} else {
+					$class = 'fa fa-' . $active_site;
+				}
 
-                if ( $active_site == 'email' ) {
-                    ?>
-                    <li>
-                        <a class="email" target="_blank" href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
-                            <i class="fa fa-envelope" title="<?php esc_attr_e('email', 'apex'); ?>"></i>
-                        </a>
-                    </li>
-                <?php } else { ?>
-                    <li>
-                        <a class="<?php echo esc_attr( $active_site ); ?>" target="_blank" href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
-                            <i class="<?php echo esc_attr( $class ); ?>" title="<?php esc_attr( $active_site ); ?>"></i>
-                        </a>
-                    </li>
-                <?php
-                }
-            }
-            echo "</ul>";
-        }
-    }
+				if ( $active_site == 'email' ) {
+					?>
+					<li>
+						<a class="email" target="_blank"
+						   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
+							<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'apex' ); ?>"></i>
+						</a>
+					</li>
+				<?php } else { ?>
+					<li>
+						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
+						   href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
+							<i class="<?php echo esc_attr( $class ); ?>" title="<?php esc_attr( $active_site ); ?>"></i>
+						</a>
+					</li>
+					<?php
+				}
+			}
+			echo "</ul>";
+		}
+	}
 }
 
 /*
@@ -388,54 +410,60 @@ if( ! function_exists('ct_apex_social_icons_output') ) {
  * making styling difficult and confusing. Using this wrapper to add a unique class to make styling easier.
  */
 function ct_apex_wp_page_menu() {
-    wp_page_menu(array(
-            "menu_class" => "menu-unset",
-            "depth"      => -1
-        )
-    );
+	wp_page_menu( array(
+			"menu_class" => "menu-unset",
+			"depth"      => - 1
+		)
+	);
 }
 
 if ( ! function_exists( '_wp_render_title_tag' ) ) :
-    function ct_apex_add_title_tag() {
-        ?>
-        <title><?php wp_title( ' | ' ); ?></title>
-    <?php
-    }
-    add_action( 'wp_head', 'ct_apex_add_title_tag' );
+	function ct_apex_add_title_tag() {
+		?>
+		<title><?php wp_title( ' | ' ); ?></title>
+		<?php
+	}
+
+	add_action( 'wp_head', 'ct_apex_add_title_tag' );
 endif;
 
 function ct_apex_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
 
-	if ( 'primary' == $args->theme_location) {
+	if ( 'primary' == $args->theme_location ) {
 
-		if( in_array('menu-item-has-children', $item->classes ) || in_array('page_item_has_children', $item->classes ) ) {
-			$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . __("open dropdown menu", "apex") . '</span></button>', $item_output );
+		if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
+			$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . __( "open dropdown menu", "apex" ) . '</span></button>', $item_output );
 		}
 	}
 
 	return $item_output;
 }
+
 add_filter( 'walker_nav_menu_start_el', 'ct_apex_nav_dropdown_buttons', 10, 4 );
 
 function ct_apex_sticky_post_marker() {
 
 	// sticky_post_status only included in content-archive, so it will only show on the blog
-	if( is_sticky() && !is_archive() ) {
-		echo '<div class="sticky-status"><span>' . __("Featured Post", "apex") . '</span></div>';
+	if ( is_sticky() && ! is_archive() ) {
+		echo '<div class="sticky-status"><span>' . __( "Featured Post", "apex" ) . '</span></div>';
 	}
 }
+
 add_action( 'sticky_post_status', 'ct_apex_sticky_post_marker' );
 
 function ct_apex_reset_customizer_options() {
 
-	if( empty( $_POST['apex_reset_customizer'] ) || 'apex_reset_customizer_settings' !== $_POST['apex_reset_customizer'] )
+	if ( empty( $_POST['apex_reset_customizer'] ) || 'apex_reset_customizer_settings' !== $_POST['apex_reset_customizer'] ) {
 		return;
+	}
 
-	if( ! wp_verify_nonce( $_POST['apex_reset_customizer_nonce'], 'apex_reset_customizer_nonce' ) )
+	if ( ! wp_verify_nonce( $_POST['apex_reset_customizer_nonce'], 'apex_reset_customizer_nonce' ) ) {
 		return;
+	}
 
-	if( ! current_user_can( 'edit_theme_options' ) )
+	if ( ! current_user_can( 'edit_theme_options' ) ) {
 		return;
+	}
 
 	$mods_array = array(
 		'logo_upload',
@@ -465,8 +493,10 @@ function ct_apex_reset_customizer_options() {
 	$redirect = add_query_arg( 'apex_status', 'deleted', $redirect );
 
 	// safely redirect
-	wp_safe_redirect( $redirect ); exit;
+	wp_safe_redirect( $redirect );
+	exit;
 }
+
 add_action( 'admin_init', 'ct_apex_reset_customizer_options' );
 
 function ct_apex_delete_settings_notice() {
@@ -476,9 +506,10 @@ function ct_apex_delete_settings_notice() {
 		<div class="updated">
 			<p><?php _e( 'Customizer settings deleted', 'apex' ); ?>.</p>
 		</div>
-	<?php
+		<?php
 	}
 }
+
 add_action( 'admin_notices', 'ct_apex_delete_settings_notice' );
 
 function ct_apex_body_class( $classes ) {
@@ -486,23 +517,23 @@ function ct_apex_body_class( $classes ) {
 	global $post;
 
 	/* get full post setting */
-	$full_post = get_theme_mod('full_post');
+	$full_post = get_theme_mod( 'full_post' );
 
 	/* if full post setting on */
-	if( $full_post == 'yes' ) {
+	if ( $full_post == 'yes' ) {
 		$classes[] = 'full-post';
 	}
 
 	// add all historic singular classes
 	if ( is_singular() ) {
 		$classes[] = 'singular';
-		if ( is_singular('page') ) {
+		if ( is_singular( 'page' ) ) {
 			$classes[] = 'singular-page';
 			$classes[] = 'singular-page-' . $post->ID;
-		} elseif ( is_singular('post') ) {
+		} elseif ( is_singular( 'post' ) ) {
 			$classes[] = 'singular-post';
 			$classes[] = 'singular-post-' . $post->ID;
-		} elseif ( is_singular('attachment') ) {
+		} elseif ( is_singular( 'attachment' ) ) {
 			$classes[] = 'singular-attachment';
 			$classes[] = 'singular-attachment-' . $post->ID;
 		}
@@ -510,6 +541,7 @@ function ct_apex_body_class( $classes ) {
 
 	return $classes;
 }
+
 add_filter( 'body_class', 'ct_apex_body_class' );
 
 // add class to all posts that isn't on body
@@ -519,13 +551,14 @@ function ct_apex_post_class( $classes ) {
 
 	return $classes;
 }
+
 add_filter( 'post_class', 'ct_apex_post_class' );
 
-function ct_apex_svg_output($type) {
+function ct_apex_svg_output( $type ) {
 
 	$svg = '';
 
-	if( $type == 'toggle-navigation' ) {
+	if ( $type == 'toggle-navigation' ) {
 
 		$svg = '<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -546,18 +579,19 @@ function ct_apex_svg_output($type) {
 }
 
 // custom css output
-function ct_apex_custom_css_output(){
+function ct_apex_custom_css_output() {
 
-	$custom_css = get_theme_mod('custom_css');
+	$custom_css = get_theme_mod( 'custom_css' );
 
 	/* output custom css */
-	if( $custom_css ) {
+	if ( $custom_css ) {
 		$custom_css = wp_filter_nohtml_kses( $custom_css );
 		wp_add_inline_style( 'ct-apex-style', $custom_css );
 		wp_add_inline_style( 'ct-apex-style-rtl', $custom_css );
 	}
 }
-add_action('wp_enqueue_scripts', 'ct_apex_custom_css_output', 20);
+
+add_action( 'wp_enqueue_scripts', 'ct_apex_custom_css_output', 20 );
 
 // Adds useful meta tags
 function ct_apex_add_meta_elements() {
@@ -577,14 +611,15 @@ function ct_apex_add_meta_elements() {
 
 	echo $meta_elements;
 }
+
 add_action( 'wp_head', 'ct_apex_add_meta_elements', 1 );
 
 /* Move the WordPress generator to a better priority. */
 remove_action( 'wp_head', 'wp_generator' );
 add_action( 'wp_head', 'wp_generator', 1 );
 
-function ct_apex_infinite_scroll_render(){
-	while( have_posts() ) {
+function ct_apex_infinite_scroll_render() {
+	while ( have_posts() ) {
 		the_post();
 		get_template_part( 'content', 'archive' );
 	}
@@ -593,26 +628,21 @@ function ct_apex_infinite_scroll_render(){
 function ct_apex_get_content_template() {
 
 	/* Blog */
-	if( is_home() ) {
+	if ( is_home() ) {
 		get_template_part( 'content', 'archive' );
-	}
-	/* Post */
-	elseif( is_singular( 'post' ) ) {
+	} /* Post */
+	elseif ( is_singular( 'post' ) ) {
 		get_template_part( 'content' );
-	}
-	/* Page */
-	elseif( is_page() ) {
+	} /* Page */
+	elseif ( is_page() ) {
 		get_template_part( 'content', 'page' );
-	}
-	/* Attachment */
-	elseif( is_attachment() ) {
+	} /* Attachment */
+	elseif ( is_attachment() ) {
 		get_template_part( 'content', 'attachment' );
-	}
-	/* Archive */
-	elseif( is_archive() ) {
+	} /* Archive */
+	elseif ( is_archive() ) {
 		get_template_part( 'content', 'archive' );
-	}
-	/* Custom Post Type */
+	} /* Custom Post Type */
 	else {
 		get_template_part( 'content' );
 	}
