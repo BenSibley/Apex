@@ -234,6 +234,18 @@ a img {
   border: none;
 }
 
+#breadcrumbs {
+  margin-top: 0;
+  padding: 0 $column * 2;
+}
+
+@media all and (min-width: $nine-hundred) {
+
+  #breadcrumbs {
+    padding: 0;
+  }
+}
+
 // stop iphone from zooming in on landscape view
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape)
 {
