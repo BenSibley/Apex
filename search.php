@@ -1,33 +1,31 @@
 <?php get_header(); ?>
-
-	<div class="post-header search-box">
-		<h1 class="post-title">
-			<?php
-			global $wp_query;
-			$total_results = $wp_query->found_posts;
-			$s             = htmlentities( $s );
-			if ( $total_results ) {
-				printf( _n( '%d search result for "%s"', '%d search results for "%s"', $total_results, 'apex' ), $total_results, $s );
-			} else {
-				printf( __( 'No search results for "%s"', 'apex' ), $s );
-			}
-			?>
-		</h1>
-		<?php get_search_form(); ?>
-	</div>
-
-	<div id="loop-container" class="loop-container">
+<div class="post-header search-box">
+	<h1 class="post-title">
 		<?php
-		if ( have_posts() ) :
-			while ( have_posts() ) :
-				the_post();
-				get_template_part( 'content', 'archive' );
-			endwhile;
-		endif;
+		global $wp_query;
+		$total_results = $wp_query->found_posts;
+		$s             = htmlentities( $s );
+		if ( $total_results ) {
+			printf( _n( '%d search result for "%s"', '%d search results for "%s"', $total_results, 'apex' ), $total_results, $s );
+		} else {
+			printf( __( 'No search results for "%s"', 'apex' ), $s );
+		}
 		?>
-	</div>
-
+	</h1>
+	<?php get_search_form(); ?>
+</div>
+<div id="loop-container" class="loop-container">
+	<?php
+	if ( have_posts() ) :
+		while ( have_posts() ) :
+			the_post();
+			get_template_part( 'content', 'archive' );
+		endwhile;
+	endif;
+	?>
+</div>
 <?php
+
 the_posts_pagination();
 
 // only display bottom search bar if there are search results

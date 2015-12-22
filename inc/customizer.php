@@ -1,6 +1,5 @@
 <?php
 
-/* Add customizer panels, sections, settings, and controls */
 add_action( 'customize_register', 'ct_apex_add_customizer_content' );
 
 function ct_apex_add_customizer_content( $wp_customize ) {
@@ -398,7 +397,6 @@ function ct_apex_sanitize_email( $input ) {
 	return sanitize_email( $input );
 }
 
-// sanitize yes/no settings
 function ct_apex_sanitize_yes_no_settings( $input ) {
 
 	$valid = array(
