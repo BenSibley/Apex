@@ -37,11 +37,23 @@
 .full-post {
 
   // if more link, keep next to button
-  .entry:not(.has-more-link) {
+  .entry {
 
     .comments-link {
       display: block;
       margin: $baseline-height * 2 0;
+    }
+  }
+  &.blog,
+  &.archive,
+  &.search {
+
+    .post-content {
+
+      p:last-of-type {
+        display: block;
+        margin: $baseline-height 0;
+      }
     }
   }
 }

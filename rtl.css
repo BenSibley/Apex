@@ -1009,9 +1009,13 @@ li.pingback {
   color: #333333;
 }
 
-.full-post .entry:not(.has-more-link) .comments-link {
+.full-post .entry .comments-link {
   display: block;
   margin: 3em 0;
+}
+.full-post.blog .post-content p:last-of-type, .full-post.archive .post-content p:last-of-type, .full-post.search .post-content p:last-of-type {
+  display: block;
+  margin: 1.5em 0;
 }
 
 .blog .post-content p:last-of-type,
