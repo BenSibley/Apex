@@ -1,0 +1,480 @@
+# Copyright (C) 2015 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Apex 1.12\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2016-01-09 19:00+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-01-10 14:40+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi_FI\n"
+
+#: 404.php:7
+msgid "404: Page Not Found"
+msgstr ""
+
+#: 404.php:10
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+
+#: comments.php:11 comments.php:30 comments.php:51
+msgid "Be First to Comment"
+msgstr "Jätä ensimmäinen kommentti"
+
+#: comments.php:11 comments.php:30 comments.php:51
+msgid "One Comment"
+msgstr "Yksi Kommentti"
+
+#: comments.php:11 comments.php:30 comments.php:51 content/comments-link.php:5
+#: content/comments-link.php:8
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:43
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: comments.php:64 comments.php:70
+msgid "Comments are closed."
+msgstr "Kommentointi on suljettu."
+
+#: content/archive-header.php:6
+msgid "You are viewing the <span>%s</span> category archive."
+msgstr ""
+
+#: content/archive-header.php:16
+msgid "You are viewing the <span>%s</span> tag archive."
+msgstr ""
+
+#: content/archive-header.php:26
+msgid "You are viewing <span>%s</span>'s post archive."
+msgstr ""
+
+#: content/archive-header.php:36
+msgid "You are viewing the date archive for <span>%s</span>."
+msgstr ""
+
+#: content/comments-link.php:2
+msgid "comment icon"
+msgstr ""
+
+#: content/comments-link.php:5
+msgid "Comments closed"
+msgstr "Kommentointi suljettu"
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "1 Comment"
+msgstr "1 kommentti"
+
+#: content/comments-link.php:8
+msgid "Leave a Comment"
+msgstr "Kommentoi"
+
+#: content/post-categories.php:16
+msgid "Published in"
+msgstr "Julkaistu"
+
+#: content/post-categories.php:24
+msgid "View all posts in %s"
+msgstr "Näytä kaikki artikkelit kategoriasta %s"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr ""
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr ""
+
+#: content/post-nav.php:11
+msgid "Previous Post"
+msgstr "Edellinen kirjoitus"
+
+#: content/post-nav.php:13
+msgid "The Previous Post"
+msgstr ""
+
+#: content/post-nav.php:20
+msgid "No Older Posts"
+msgstr "Ei vanhempia kirjoituksia"
+
+#: content/post-nav.php:22 content/post-nav.php:48
+msgid "Return to Blog"
+msgstr "Palaa blogiin"
+
+#: content/post-nav.php:37
+msgid "Next Post"
+msgstr "Seuraava kirjoitus"
+
+#: content/post-nav.php:39
+msgid "The Next Post"
+msgstr ""
+
+#: content/post-nav.php:46
+msgid "No Newer Posts"
+msgstr "Ei uudempia kirjoituksia"
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr ""
+
+#: content-archive.php:14 content.php:11
+msgid "Published %s"
+msgstr "Julkaistu"
+
+#: content-page.php:11 content.php:17
+msgid "Pages:"
+msgstr ""
+
+#: footer.php:12
+msgid "<a href=\"%s\">Apex WordPress Theme</a> by Compete Themes"
+msgstr ""
+
+#: functions.php:50
+msgid "Primary"
+msgstr ""
+
+#: functions.php:61
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions.php:63
+msgid ""
+"Widgets in this area will be shown in the sidebar next to the main post "
+"content"
+msgstr ""
+
+#: functions.php:88
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa hyväksyntää"
+
+#: functions.php:96
+msgid "Reply"
+msgstr "Vastaa"
+
+#: functions.php:100
+msgid "Edit"
+msgstr ""
+
+#: functions.php:121
+msgid "optional"
+msgstr ""
+
+#: functions.php:129
+msgid "Name"
+msgstr "Nimi"
+
+#: functions.php:136
+msgid "Email"
+msgstr "Sähköposti"
+
+#: functions.php:143
+msgid "Website"
+msgstr "www-sivu"
+
+#: functions.php:158
+msgid "Comment"
+msgstr "Kommentti"
+
+#: functions.php:196 functions.php:202 functions.php:215
+msgid "Continue reading"
+msgstr "Jatka lukemista"
+
+#: functions.php:386
+msgid "email icon"
+msgstr ""
+
+#: functions.php:429 inc/scripts.php:15
+msgid "open dropdown menu"
+msgstr ""
+
+#: functions.php:441
+msgid "Featured Post"
+msgstr ""
+
+#: functions.php:476
+msgid "Customizer settings deleted"
+msgstr ""
+
+#: header.php:16
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:34 inc/scripts.php:13
+msgid "open menu"
+msgstr ""
+
+#: inc/customizer.php:12
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> for "
+"advanced header image functionality."
+msgstr ""
+
+#: inc/customizer.php:100
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your colors."
+msgstr ""
+
+#: inc/customizer.php:107
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your font."
+msgstr ""
+
+#: inc/customizer.php:114
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to get "
+"hide/show controls."
+msgstr ""
+
+#: inc/customizer.php:121
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to "
+"customize the footer text."
+msgstr ""
+
+#: inc/customizer.php:128
+msgid ""
+"Activate the <a target=\"_blank\" href=\"%s\">Apex Pro Plugin</a> to change "
+"your layout."
+msgstr ""
+
+#: inc/customizer.php:136
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:151
+msgid "Upload custom logo."
+msgstr ""
+
+#: inc/customizer.php:167
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:169
+msgid "Add the URL for each of your social profiles."
+msgstr ""
+
+#: inc/customizer.php:185
+msgid "Email Address"
+msgstr ""
+
+#: inc/customizer.php:247
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:260
+msgid "Show full posts on blog?"
+msgstr ""
+
+#: inc/customizer.php:265 inc/customizer.php:503
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:266 inc/customizer.php:504
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:279
+msgid "Excerpt length"
+msgstr ""
+
+#: inc/customizer.php:290
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:304
+msgid "Add Custom CSS Here:"
+msgstr ""
+
+#: inc/customizer.php:318
+msgid "Header Image"
+msgstr ""
+
+#: inc/customizer.php:340
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer.php:362
+msgid "Font"
+msgstr ""
+
+#: inc/customizer.php:384
+msgid "Display Controls"
+msgstr ""
+
+#: inc/customizer.php:406
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer.php:428
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:456
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:457
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer.php:481
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer.php:482
+msgid "Pages"
+msgstr ""
+
+#: inc/customizer.php:483
+msgid "Attachments"
+msgstr ""
+
+#: inc/customizer.php:484
+msgid "Do not show"
+msgstr ""
+
+#: inc/scripts.php:14
+msgid "close menu"
+msgstr ""
+
+#: inc/scripts.php:16
+msgid "close dropdown menu"
+msgstr ""
+
+#: search.php:10
+msgid "%d search result for \"%s\""
+msgid_plural "%d search results for \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:12
+msgid "No search results for \"%s\""
+msgstr ""
+
+#: search.php:43
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr "Etkö löydä etsimääsi? Yritä tarkentaa hakuasi. "
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Etsi"
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:5
+msgid "Go"
+msgstr ""
+
+#: theme-options.php:22
+msgid "Apex Dashboard"
+msgstr ""
+
+#: theme-options.php:25
+msgid "Customization"
+msgstr ""
+
+#: theme-options.php:26
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Apex"
+msgstr ""
+
+#: theme-options.php:28
+msgid "Use Customizer"
+msgstr ""
+
+#: theme-options.php:32
+msgid "Support"
+msgstr ""
+
+#: theme-options.php:33
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"Apex Support Center"
+msgstr ""
+
+#: theme-options.php:35
+msgid "Visit Support Center"
+msgstr ""
+
+#: theme-options.php:39
+msgid "Get More Features & Flexibility"
+msgstr ""
+
+#: theme-options.php:40
+msgid ""
+"Download the Apex Pro plugin and unlock custom colors, new layouts, a "
+"flexible header image, and more"
+msgstr ""
+
+#: theme-options.php:42
+msgid "See Full Feature List"
+msgstr ""
+
+#: theme-options.php:46
+msgid "WordPress Resources"
+msgstr ""
+
+#: theme-options.php:47
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr ""
+
+#: theme-options.php:49
+msgid "View Resources"
+msgstr ""
+
+#: theme-options.php:53 theme-options.php:63
+msgid "Reset Customizer Settings"
+msgstr ""
+
+#: theme-options.php:56
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase your current "
+"settings in the <a href=\"%s\">Customizer</a>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Apex"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.competethemes.com/apex/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Apex is a sophisticated, minimalist theme. It looks great and performs "
+"wonderfully on phones, tablets, laptops, and everything in between. As a "
+"fast, responsive, accessibility-ready, and translation-ready theme, Apex is "
+"a theme you can trust to present your content to the world. See our fully "
+"setup demo here: https://www.competethemes.com/apex-live-demo/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Compete Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.competethemes.com/"
+msgstr ""
