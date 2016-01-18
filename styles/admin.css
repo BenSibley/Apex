@@ -3,57 +3,51 @@
 #apex-dashboard-wrap h2 {
   margin-bottom: 24px;
 }
-
-.content {
+#apex-dashboard-wrap .content {
   margin-top: 12px;
   padding: 12px 24px 24px;
   border: solid 1px #e5e5e5;
   background: white;
 }
-.content .button-primary {
+#apex-dashboard-wrap .content .button-primary {
   margin: 12px 0;
 }
-.content ul {
+#apex-dashboard-wrap .content ul {
   list-style: disc;
   margin-left: 36px;
 }
 
 /* 600px */
 @media all and (min-width: 37.5em) {
-  .content {
+  #apex-dashboard-wrap .content {
     width: 39%;
     float: left;
   }
-  .content p {
+  #apex-dashboard-wrap .content p {
     min-height: 57px;
   }
-
-  .content-premium-upgrade p {
+  #apex-dashboard-wrap .content-premium-upgrade p {
     min-height: 0px;
   }
-
-  .content-customization,
-  .content-premium-upgrade {
+  #apex-dashboard-wrap .content-customization,
+  #apex-dashboard-wrap .content-premium-upgrade {
     margin-right: 2%;
   }
 }
 /* 1100px */
 @media all and (min-width: 68.75em) {
-  .content {
+  #apex-dashboard-wrap .content {
     width: 27%;
   }
-
-  .content-resources {
+  #apex-dashboard-wrap .content-resources {
     clear: left;
   }
-
-  .content-customization,
-  .content-support,
-  .content-resources {
+  #apex-dashboard-wrap .content-customization,
+  #apex-dashboard-wrap .content-support,
+  #apex-dashboard-wrap .content-resources {
     margin-right: 1%;
   }
-
-  .content-premium-upgrade {
+  #apex-dashboard-wrap .content-premium-upgrade {
     margin-right: 0;
   }
 }
