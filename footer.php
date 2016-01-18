@@ -3,7 +3,7 @@
 
 <?php get_sidebar( 'primary' ); ?>
 
-<footer class="site-footer" role="contentinfo">
+<footer id="site-footer" class="site-footer" role="contentinfo">
 	<?php do_action( 'footer_top' ); ?>
 	<div class="design-credit">
         <span>
