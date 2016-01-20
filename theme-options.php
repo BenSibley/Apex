@@ -54,7 +54,7 @@ function ct_apex_options_content() {
 			<h3><?php _e( 'Reset Customizer Settings', 'apex' ); ?></h3>
 			<p>
 				<?php
-				printf( __( "<strong>Warning:</strong> Clicking this button will erase the Apex theme's current settings in the <a href='%s'>Customizer</a>", 'apex' ), esc_url( $customizer_url ) );
+				printf( __( "<strong>Warning:</strong> Clicking this button will erase the Apex theme's current settings in the <a href='%s'>Customizer</a>.", 'apex' ), esc_url( $customizer_url ) );
 				?>
 			</p>
 			<form method="post">
