@@ -39,11 +39,18 @@
     .content-premium-upgrade {
 
       p {
-        min-height: 0px;
+        min-height: 0;
+      }
+    }
+    .content-review {
+
+      p {
+        min-height: 75px;
       }
     }
     .content-customization,
-    .content-premium-upgrade {
+    .content-premium-upgrade,
+    .content-review {
       margin-right: 2%;
     }
   }
@@ -61,7 +68,8 @@
     }
     .content-customization,
     .content-support,
-    .content-resources {
+    .content-resources,
+    .content-review {
       margin-right: 1%;
     }
     .content-premium-upgrade {

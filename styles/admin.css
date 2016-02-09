@@ -27,10 +27,14 @@
     min-height: 57px;
   }
   #apex-dashboard-wrap .content-premium-upgrade p {
-    min-height: 0px;
+    min-height: 0;
+  }
+  #apex-dashboard-wrap .content-review p {
+    min-height: 75px;
   }
   #apex-dashboard-wrap .content-customization,
-  #apex-dashboard-wrap .content-premium-upgrade {
+  #apex-dashboard-wrap .content-premium-upgrade,
+  #apex-dashboard-wrap .content-review {
     margin-right: 2%;
   }
 }
@@ -44,7 +48,8 @@
   }
   #apex-dashboard-wrap .content-customization,
   #apex-dashboard-wrap .content-support,
-  #apex-dashboard-wrap .content-resources {
+  #apex-dashboard-wrap .content-resources,
+  #apex-dashboard-wrap .content-review {
     margin-right: 1%;
   }
   #apex-dashboard-wrap .content-premium-upgrade {
