@@ -35,7 +35,7 @@ function ct_apex_options_content() {
 			</p>
 		</div>
 		<div class="content content-premium-upgrade">
-			<h3><?php _e( 'Get More Features & Flexibility', 'apex' ); ?></h3>
+			<h3><?php _e( 'Apex Pro', 'apex' ); ?></h3>
 			<p><?php _e( 'Download the Apex Pro plugin and unlock custom colors, new layouts, a flexible header image, and more', 'apex' ); ?>...</p>
 			<p>
 				<a target="_blank" class="button-primary"
