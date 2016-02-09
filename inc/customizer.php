@@ -105,11 +105,20 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 				$label = 'PayPal';
 			}
 
-			// setting
-			$wp_customize->add_setting( $social_site, array(
-				'sanitize_callback' => 'esc_url_raw',
-				'transport'         => 'postMessage'
-			) );
+			if ( $social_site == 'skype' ) {
+				// setting
+				$wp_customize->add_setting( $social_site, array(
+					'sanitize_callback' => 'ct_apex_sanitize_skype',
+					'transport'         => 'postMessage'
+				) );
+			} else {
+				// setting
+				$wp_customize->add_setting( $social_site, array(
+					'sanitize_callback' => 'esc_url_raw',
+					'transport'         => 'postMessage'
+				) );
+			}
+
 			// control
 			$wp_customize->add_control( $social_site, array(
 				'type'     => 'url',
@@ -275,6 +284,10 @@ function ct_apex_sanitize_yes_no_settings( $input ) {
 
 function ct_apex_sanitize_text( $input ) {
 	return wp_kses_post( force_balance_tags( $input ) );
+}
+
+function ct_apex_sanitize_skype( $input ) {
+	return esc_url_raw( $input, array( 'http', 'https', 'skype' ) );
 }
 
 function ct_apex_sanitize_css( $css ) {

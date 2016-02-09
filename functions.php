@@ -348,6 +348,13 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 								<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'apex' ); ?>"></i>
 							</a>
 						</li>
+					<?php } elseif ( $active_site == 'skype' ) { ?>
+						<li>
+							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
+							   href="<?php echo esc_url( get_theme_mod( $key ), array( 'http', 'https', 'skype' ) ); ?>">
+								<i class="<?php echo esc_attr( $class ); ?>" title="<?php esc_attr( $active_site ); ?>"></i>
+							</a>
+						</li>
 					<?php } else { ?>
 						<li>
 							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
@@ -582,3 +589,10 @@ function ct_apex_get_content_template() {
 		get_template_part( 'content' );
 	}
 }
+
+// allow skype URIs to be used
+function ct_apex_allow_skype_protocol( $protocols ){
+	$protocols[] = 'skype';
+	return $protocols;
+}
+add_filter( 'kses_allowed_protocols' , 'ct_apex_allow_skype_protocol' );
