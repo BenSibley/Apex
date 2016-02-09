@@ -293,7 +293,8 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'tencent-weibo' => 'apex_tencent_weibo_profile',
 			'500px'         => 'apex_500px_profile',
 			'paypal'        => 'apex_paypal_profile',
-			'email'         => 'apex_email_profile'
+			'email'         => 'apex_email_profile',
+			'email-form'    => 'apex_email_form_profile'
 		);
 
 		return apply_filters( 'ct_apex_social_array_filter', $social_sites );
@@ -339,6 +340,9 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 						$class = 'fa fa-' . $active_site . '-square';
 					} else {
 						$class = 'fa fa-' . $active_site;
+					}
+					if ( $active_site == 'email-form' ) {
+						$class = 'fa fa-envelope-o';
 					}
 
 					if ( $active_site == 'email' ) { ?>

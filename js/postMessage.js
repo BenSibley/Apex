@@ -95,6 +95,7 @@
 
         // convert email-address to email
         if ( site === 'email-address') site = 'email';
+        if ( site === 'contact-form') site = 'email-form';
 
         // when a social site value is updated
         wp.customize( site, function (value) {
@@ -126,6 +127,9 @@
                             var siteClass = 'fa fa-' + siteName + '-square';
                         } else {
                             var siteClass = 'fa fa-' + siteName;
+                        }
+                        if ( siteName == 'email-form' ) {
+                            siteClass = 'fa fa-envelope-o';
                         }
 
                         // output the content for the icon
