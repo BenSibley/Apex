@@ -71,7 +71,9 @@ if ( comments_open() ) { ?>
 	</section>
 	<?php
 } else { ?>
-	<p class="comments-closed">
-		<?php _e( 'Comments are closed.', 'apex' ); ?>
-	</p>
+	<section id="comments" class="comments">
+		<p class="comments-closed">
+			<?php _e( 'Comments are closed.', 'apex' ); ?>
+		</p>
+	</section>
 <?php }
