@@ -1103,6 +1103,15 @@ li.pingback {
   -ms-transform: translateX(50%) translateY(-50%);
   transform: translateX(50%) translateY(-50%);
 }
+.featured-image .ccfic {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 12px 4px 4px;
+  font-size: 13px;
+}
 
 .post-container {
   padding: 0 6.25%;
