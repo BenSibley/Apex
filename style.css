@@ -42,7 +42,7 @@ h3, .post-title {
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
 textarea, input[type="submit"], .comment-respond label, #cancel-comment-reply-link, .comment-footer a,
-.comment-footer span, .site-footer .design-credit span, .tagline, .more-link, .comments-link, .sticky-status, .post-byline, .post-tags a, .further-reading span, .widget > * {
+.comment-footer span, .site-footer .design-credit span, .tagline, .more-link, .comments-link, .sticky-status, .post-byline, .post-tags a, .further-reading span, .widget > *, .singular-attachment .attachment-caption {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -1467,6 +1467,10 @@ li.pingback {
     margin-bottom: 3em;
   }
 }
+.singular-attachment .attachment-container img {
+  display: block;
+}
+
 /*
 
 ATTENTION:
