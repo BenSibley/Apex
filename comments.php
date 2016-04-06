@@ -8,9 +8,9 @@ if ( comments_open() ) { ?>
 
 	<section id="comments" class="comments">
 		<div class="comments-number">
-			<h3>
+			<h2>
 				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), __( '% Comments', 'apex' ) ); ?>
-			</h3>
+			</h2>
 		</div>
 		<ol class="comment-list">
 			<?php wp_list_comments( array( 'callback' => 'ct_apex_customize_comments', 'max_depth' => '3' ) ); ?>
@@ -28,9 +28,9 @@ if ( comments_open() ) { ?>
 } elseif ( ! comments_open() && have_comments() && pings_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
-			<h3>
+			<h2>
 				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), __( '% Comments', 'apex' ) ); ?>
-			</h3>
+			</h2>
 		</div>
 		<ol class="comment-list">
 			<?php wp_list_comments( array( 'callback' => 'ct_apex_customize_comments', 'max_depth' => '3' ) ); ?>
@@ -50,9 +50,9 @@ if ( comments_open() ) { ?>
 } elseif ( ! comments_open() && have_comments() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
-			<h3>
+			<h2>
 				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), __( '% Comments', 'apex' ) ); ?>
-			</h3>
+			</h2>
 		</div>
 		<ol class="comment-list">
 			<?php wp_list_comments( array( 'callback' => 'ct_apex_customize_comments', 'max_depth' => '3' ) ); ?>
