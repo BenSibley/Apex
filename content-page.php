@@ -4,7 +4,7 @@
 		<?php ct_apex_featured_image(); ?>
 		<div class="post-container">
 			<div class='post-header'>
-				<h2 class='post-title'><?php the_title(); ?></h2>
+				<h1 class='post-title'><?php the_title(); ?></h1>
 			</div>
 			<div class="post-content">
 				<?php the_content(); ?>

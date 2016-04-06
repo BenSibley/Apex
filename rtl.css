@@ -33,7 +33,7 @@ h2, .site-title {
   /* 37px */
 }
 
-h3, .post-title {
+h3, .comments-number h2, .post-title {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -361,7 +361,7 @@ a img {
   margin: 3em 0 1.5em;
   padding: 0 6.25%;
 }
-.archive-header h2 {
+.archive-header h1 {
   font-size: 1em;
   line-height: 1.5;
   color: #6B6B6B;
