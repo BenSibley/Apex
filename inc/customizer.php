@@ -310,7 +310,7 @@ function ct_apex_sanitize_css( $css ) {
 
 function ct_apex_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/apex-pro/\" target=\"_blank\">Unlock new layouts, colors, and more <span>&rarr;</span></a></div>')</script>";
+	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/apex-pro/\" target=\"_blank\">Get More Features with Apex Pro <span>&rarr;</span></a></div>')</script>";
 	echo apply_filters( 'ct_apex_customizer_ad', $content );
 }
 
