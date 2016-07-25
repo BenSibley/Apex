@@ -935,6 +935,11 @@ li.pingback {
     -ms-transform: translate(0, 2px);
     transform: translate(0, 2px);
   }
+  .menu-primary-items li.open > ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+  }
   .menu-primary-items a {
     position: relative;
     z-index: 19;

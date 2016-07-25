@@ -68,48 +68,45 @@ jQuery(document).ready(function($){
 
     // display the dropdown menus
     function openDropdownMenu() {
+        
+        // get the buttons parent (li)
+        var menuItem = $(this).parent();
 
-        if( window.innerWidth < 800 ) {
+        // if already opened
+        if (menuItem.hasClass('open')) {
 
-            // get the buttons parent (li)
-            var menuItem = $(this).parent();
+            // remove open class
+            menuItem.removeClass('open');
 
-            // if already opened
-            if (menuItem.hasClass('open')) {
+            $(this).siblings('ul').css('max-height', 0);
 
-                // remove open class
-                menuItem.removeClass('open');
+            // change screen reader text
+            $(this).children('span').text(objectL10n.openChildMenu);
 
-                $(this).siblings('ul').css('max-height', 0);
+            // change aria text
+            $(this).attr('aria-expanded', 'false');
+        } else {
 
-                // change screen reader text
-                $(this).children('span').text(objectL10n.openChildMenu);
+            // add class to open the menu
+            menuItem.addClass('open');
 
-                // change aria text
-                $(this).attr('aria-expanded', 'false');
-            } else {
+            var ulHeight = 0;
 
-                // add class to open the menu
-                menuItem.addClass('open');
+            $(this).siblings('ul').find('li').each(function () {
+                ulHeight = ulHeight + $(this).height() + ( $(this).height() * 1.5 );
+            });
 
-                var ulHeight = 0;
+            $(this).siblings('ul').css('max-height', ulHeight);
 
-                $(this).siblings('ul').find('li').each(function () {
-                    ulHeight = ulHeight + $(this).height() + ( $(this).height() * 1.5 );
-                });
+            // expand entire menu for dropdowns
+            // doesn't need to be precise. Just needs to allow the menu to get taller
+            menuPrimaryContainer.css('max-height', 9999);
 
-                $(this).siblings('ul').css('max-height', ulHeight);
+            // change screen reader text
+            $(this).children('span').text(objectL10n.closeChildMenu);
 
-                // expand entire menu for dropdowns
-                // doesn't need to be precise. Just needs to allow the menu to get taller
-                menuPrimaryContainer.css('max-height', 9999);
-
-                // change screen reader text
-                $(this).children('span').text(objectL10n.closeChildMenu);
-
-                // change aria text
-                $(this).attr('aria-expanded', 'true');
-            }
+            // change aria text
+            $(this).attr('aria-expanded', 'true');
         }
     }
 
