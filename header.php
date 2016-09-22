@@ -25,7 +25,7 @@
 				<div id="title-container" class="title-container">
 					<?php get_template_part( 'logo' ) ?>
 					<?php if ( get_bloginfo( 'description' ) ) {
-						echo '<p class="tagline">' . get_bloginfo( 'description' ) . '</p>';
+						echo '<p class="tagline">' . esc_html( get_bloginfo( 'description' ) ) . '</p>';
 					} ?>
 				</div>
 			</header>
