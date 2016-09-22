@@ -1,5 +1,10 @@
 <?php
 
+require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
+foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
+	include $filename;
+}
+
 if ( ! function_exists( ( 'ct_apex_set_content_width' ) ) ) {
 	function ct_apex_set_content_width() {
 		if ( ! isset( $content_width ) ) {
@@ -27,11 +32,6 @@ if ( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
 			'footer'    => 'overflow-container',
 			'render'    => 'ct_apex_infinite_scroll_render'
 		) );
-
-		require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
-		foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
-			include $filename;
-		}
 
 		load_theme_textdomain( 'apex', get_template_directory() . '/languages' );
 
