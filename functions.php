@@ -389,15 +389,6 @@ function ct_apex_wp_page_menu() {
 	);
 }
 
-if ( ! function_exists( '_wp_render_title_tag' ) ) :
-	function ct_apex_add_title_tag() {
-		?>
-		<title><?php wp_title( ' | ' ); ?></title>
-		<?php
-	}
-	add_action( 'wp_head', 'ct_apex_add_title_tag' );
-endif;
-
 function ct_apex_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
 
 	if ( $args->theme_location == 'primary' ) {
