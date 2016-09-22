@@ -42,18 +42,20 @@ if ( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
 }
 add_action( 'after_setup_theme', 'ct_apex_theme_setup', 10 );
 
-function ct_apex_register_widget_areas() {
+if ( ! function_exists( ( 'ct_apex_register_widget_areas' ) ) ) {
+	function ct_apex_register_widget_areas() {
 
-	// after post content
-	register_sidebar( array(
-		'name'          => esc_html__( 'Primary Sidebar', 'apex' ),
-		'id'            => 'primary',
-		'description'   => esc_html__( 'Widgets in this area will be shown in the sidebar next to the main post content', 'apex' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>'
-	) );
+		// after post content
+		register_sidebar( array(
+			'name'          => esc_html__( 'Primary Sidebar', 'apex' ),
+			'id'            => 'primary',
+			'description'   => esc_html__( 'Widgets in this area will be shown in the sidebar next to the main post content', 'apex' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>'
+		) );
+	}
 }
 add_action( 'widgets_init', 'ct_apex_register_widget_areas' );
 
@@ -381,135 +383,151 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
  * WP will apply the ".menu-primary-items" class & id to the containing <div> instead of <ul>
  * making styling difficult and confusing. Using this wrapper to add a unique class to make styling easier.
  */
-function ct_apex_wp_page_menu() {
-	wp_page_menu( array(
-			"menu_class" => "menu-unset",
-			"depth"      => - 1
-		)
-	);
+if ( ! function_exists( ( 'ct_apex_wp_page_menu' ) ) ) {
+	function ct_apex_wp_page_menu() {
+		wp_page_menu( array(
+				"menu_class" => "menu-unset",
+				"depth"      => - 1
+			)
+		);
+	}
 }
 
-function ct_apex_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
+if ( ! function_exists( ( 'ct_apex_nav_dropdown_buttons' ) ) ) {
+	function ct_apex_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
 
-	if ( $args->theme_location == 'primary' ) {
+		if ( $args->theme_location == 'primary' ) {
 
-		if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-			$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . __( "open dropdown menu", "apex" ) . '</span></button>', $item_output );
+			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . __( "open dropdown menu", "apex" ) . '</span></button>', $item_output );
+			}
 		}
-	}
 
-	return $item_output;
+		return $item_output;
+	}
 }
 add_filter( 'walker_nav_menu_start_el', 'ct_apex_nav_dropdown_buttons', 10, 4 );
 
-function ct_apex_sticky_post_marker() {
+if ( ! function_exists( ( 'ct_apex_sticky_post_marker' ) ) ) {
+	function ct_apex_sticky_post_marker() {
 
-	if ( is_sticky() && ! is_archive() ) {
-		echo '<div class="sticky-status"><span>' . __( "Featured Post", "apex" ) . '</span></div>';
+		if ( is_sticky() && ! is_archive() ) {
+			echo '<div class="sticky-status"><span>' . __( "Featured Post", "apex" ) . '</span></div>';
+		}
 	}
 }
 add_action( 'sticky_post_status', 'ct_apex_sticky_post_marker' );
 
-function ct_apex_reset_customizer_options() {
+if ( ! function_exists( ( 'ct_apex_reset_customizer_options' ) ) ) {
+	function ct_apex_reset_customizer_options() {
 
-	if ( empty( $_POST['apex_reset_customizer'] ) || 'apex_reset_customizer_settings' !== $_POST['apex_reset_customizer'] ) {
-		return;
+		if ( empty( $_POST['apex_reset_customizer'] ) || 'apex_reset_customizer_settings' !== $_POST['apex_reset_customizer'] ) {
+			return;
+		}
+
+		if ( ! wp_verify_nonce( $_POST['apex_reset_customizer_nonce'], 'apex_reset_customizer_nonce' ) ) {
+			return;
+		}
+
+		if ( ! current_user_can( 'edit_theme_options' ) ) {
+			return;
+		}
+
+		$mods_array = array(
+			'logo_upload',
+			'search_bar',
+			'full_post',
+			'excerpt_length',
+			'read_more_text',
+			'full_width_post',
+			'author_byline',
+			'custom_css'
+		);
+
+		$social_sites = ct_apex_social_array();
+
+		// add social site settings to mods array
+		foreach ( $social_sites as $social_site => $value ) {
+			$mods_array[] = $social_site;
+		}
+
+		$mods_array = apply_filters( 'ct_apex_mods_to_remove', $mods_array );
+
+		foreach ( $mods_array as $theme_mod ) {
+			remove_theme_mod( $theme_mod );
+		}
+
+		$redirect = admin_url( 'themes.php?page=apex-options' );
+		$redirect = add_query_arg( 'apex_status', 'deleted', $redirect );
+
+		// safely redirect
+		wp_safe_redirect( $redirect );
+		exit;
 	}
-
-	if ( ! wp_verify_nonce( $_POST['apex_reset_customizer_nonce'], 'apex_reset_customizer_nonce' ) ) {
-		return;
-	}
-
-	if ( ! current_user_can( 'edit_theme_options' ) ) {
-		return;
-	}
-
-	$mods_array = array(
-		'logo_upload',
-		'search_bar',
-		'full_post',
-		'excerpt_length',
-		'read_more_text',
-		'full_width_post',
-		'author_byline',
-		'custom_css'
-	);
-
-	$social_sites = ct_apex_social_array();
-
-	// add social site settings to mods array
-	foreach ( $social_sites as $social_site => $value ) {
-		$mods_array[] = $social_site;
-	}
-
-	$mods_array = apply_filters( 'ct_apex_mods_to_remove', $mods_array );
-
-	foreach ( $mods_array as $theme_mod ) {
-		remove_theme_mod( $theme_mod );
-	}
-
-	$redirect = admin_url( 'themes.php?page=apex-options' );
-	$redirect = add_query_arg( 'apex_status', 'deleted', $redirect );
-
-	// safely redirect
-	wp_safe_redirect( $redirect );
-	exit;
 }
 add_action( 'admin_init', 'ct_apex_reset_customizer_options' );
 
-function ct_apex_delete_settings_notice() {
+if ( ! function_exists( ( 'ct_apex_delete_settings_notice' ) ) ) {
+	function ct_apex_delete_settings_notice() {
 
-	if ( isset( $_GET['apex_status'] ) ) {
-		?>
-		<div class="updated">
-			<p><?php _e( 'Customizer settings deleted', 'apex' ); ?>.</p>
-		</div>
-		<?php
+		if ( isset( $_GET['apex_status'] ) ) {
+			?>
+			<div class="updated">
+				<p><?php _e( 'Customizer settings deleted', 'apex' ); ?>.</p>
+			</div>
+			<?php
+		}
 	}
 }
 add_action( 'admin_notices', 'ct_apex_delete_settings_notice' );
 
-function ct_apex_body_class( $classes ) {
+if ( ! function_exists( ( 'ct_apex_body_class' ) ) ) {
+	function ct_apex_body_class( $classes ) {
 
-	global $post;
-	$full_post = get_theme_mod( 'full_post' );
+		global $post;
+		$full_post = get_theme_mod( 'full_post' );
 
-	if ( $full_post == 'yes' ) {
-		$classes[] = 'full-post';
-	}
-
-	// add all historic singular classes
-	if ( is_singular() ) {
-		$classes[] = 'singular';
-		if ( is_singular( 'page' ) ) {
-			$classes[] = 'singular-page';
-			$classes[] = 'singular-page-' . $post->ID;
-		} elseif ( is_singular( 'post' ) ) {
-			$classes[] = 'singular-post';
-			$classes[] = 'singular-post-' . $post->ID;
-		} elseif ( is_singular( 'attachment' ) ) {
-			$classes[] = 'singular-attachment';
-			$classes[] = 'singular-attachment-' . $post->ID;
+		if ( $full_post == 'yes' ) {
+			$classes[] = 'full-post';
 		}
-	}
 
-	return $classes;
+		// add all historic singular classes
+		if ( is_singular() ) {
+			$classes[] = 'singular';
+			if ( is_singular( 'page' ) ) {
+				$classes[] = 'singular-page';
+				$classes[] = 'singular-page-' . $post->ID;
+			} elseif ( is_singular( 'post' ) ) {
+				$classes[] = 'singular-post';
+				$classes[] = 'singular-post-' . $post->ID;
+			} elseif ( is_singular( 'attachment' ) ) {
+				$classes[] = 'singular-attachment';
+				$classes[] = 'singular-attachment-' . $post->ID;
+			}
+		}
+
+		return $classes;
+	}
 }
 add_filter( 'body_class', 'ct_apex_body_class' );
 
-function ct_apex_post_class( $classes ) {
-	$classes[] = 'entry';
-	return $classes;
+if ( ! function_exists( ( 'ct_apex_post_class' ) ) ) {
+	function ct_apex_post_class( $classes ) {
+		$classes[] = 'entry';
+
+		return $classes;
+	}
 }
 add_filter( 'post_class', 'ct_apex_post_class' );
 
-function ct_apex_svg_output( $type ) {
+if ( ! function_exists( ( 'ct_apex_svg_output' ) ) ) {
+	function ct_apex_svg_output( $type ) {
 
-	$svg = '';
+		$svg = '';
 
-	if ( $type == 'toggle-navigation' ) {
+		if ( $type == 'toggle-navigation' ) {
 
-		$svg = '<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			$svg = '<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 				        <g transform="translate(-148.000000, -36.000000)" fill="#6B6B6B">
 				            <g transform="translate(123.000000, 25.000000)">
@@ -522,35 +540,40 @@ function ct_apex_svg_output( $type ) {
 				        </g>
 				    </g>
 				</svg>';
-	}
+		}
 
-	return $svg;
+		return $svg;
+	}
 }
 
-function ct_apex_custom_css_output() {
+if ( ! function_exists( ( 'ct_apex_custom_css_output' ) ) ) {
+	function ct_apex_custom_css_output() {
 
-	$custom_css = get_theme_mod( 'custom_css' );
+		$custom_css = get_theme_mod( 'custom_css' );
 
-	if ( $custom_css ) {
-		$custom_css = ct_apex_sanitize_css( $custom_css );
-		wp_add_inline_style( 'ct-apex-style', $custom_css );
-		wp_add_inline_style( 'ct-apex-style-rtl', $custom_css );
+		if ( $custom_css ) {
+			$custom_css = ct_apex_sanitize_css( $custom_css );
+			wp_add_inline_style( 'ct-apex-style', $custom_css );
+			wp_add_inline_style( 'ct-apex-style-rtl', $custom_css );
+		}
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ct_apex_custom_css_output', 20 );
 
-function ct_apex_add_meta_elements() {
+if ( ! function_exists( ( 'ct_apex_add_meta_elements' ) ) ) {
+	function ct_apex_add_meta_elements() {
 
-	$meta_elements = '';
+		$meta_elements = '';
 
-	$meta_elements .= sprintf( '<meta charset="%s" />' . "\n", esc_attr( get_bloginfo( 'charset' ) ) );
-	$meta_elements .= '<meta name="viewport" content="width=device-width, initial-scale=1" />' . "\n";
+		$meta_elements .= sprintf( '<meta charset="%s" />' . "\n", esc_attr( get_bloginfo( 'charset' ) ) );
+		$meta_elements .= '<meta name="viewport" content="width=device-width, initial-scale=1" />' . "\n";
 
-	$theme    = wp_get_theme( get_template() );
-	$template = sprintf( '<meta name="template" content="%s %s" />' . "\n", esc_attr( $theme->get( 'Name' ) ), esc_attr( $theme->get( 'Version' ) ) );
-	$meta_elements .= $template;
+		$theme    = wp_get_theme( get_template() );
+		$template = sprintf( '<meta name="template" content="%s %s" />' . "\n", esc_attr( $theme->get( 'Name' ) ), esc_attr( $theme->get( 'Version' ) ) );
+		$meta_elements .= $template;
 
-	echo $meta_elements;
+		echo $meta_elements;
+	}
 }
 add_action( 'wp_head', 'ct_apex_add_meta_elements', 1 );
 
@@ -558,10 +581,12 @@ add_action( 'wp_head', 'ct_apex_add_meta_elements', 1 );
 remove_action( 'wp_head', 'wp_generator' );
 add_action( 'wp_head', 'wp_generator', 1 );
 
-function ct_apex_infinite_scroll_render() {
-	while ( have_posts() ) {
-		the_post();
-		get_template_part( 'content', 'archive' );
+if ( ! function_exists( ( 'ct_apex_infinite_scroll_render' ) ) ) {
+	function ct_apex_infinite_scroll_render() {
+		while ( have_posts() ) {
+			the_post();
+			get_template_part( 'content', 'archive' );
+		}
 	}
 }
 
@@ -591,8 +616,11 @@ if ( ! function_exists( 'ct_apex_get_content_template' ) ) {
 }
 
 // allow skype URIs to be used
-function ct_apex_allow_skype_protocol( $protocols ){
-	$protocols[] = 'skype';
-	return $protocols;
+if ( ! function_exists( ( 'ct_apex_allow_skype_protocol' ) ) ) {
+	function ct_apex_allow_skype_protocol( $protocols ) {
+		$protocols[] = 'skype';
+
+		return $protocols;
+	}
 }
 add_filter( 'kses_allowed_protocols' , 'ct_apex_allow_skype_protocol' );
