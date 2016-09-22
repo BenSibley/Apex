@@ -97,7 +97,7 @@ a {
   color: #333333;
   text-decoration: none;
   -webkit-transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
-  transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+          transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
 }
 a:link, a:visited {
   color: #333333;
@@ -234,7 +234,7 @@ textarea {
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
 }
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]):focus,
 textarea:focus {
@@ -257,7 +257,7 @@ input[type="submit"] {
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-transition: background 0.1s ease-in-out;
-  transition: background 0.1s ease-in-out;
+          transition: background 0.1s ease-in-out;
 }
 input[type="submit"]:hover {
   cursor: pointer;
@@ -336,7 +336,7 @@ a img {
   padding: 1.5em;
   background: #333333;
   -webkit-transition: top 0.2s ease-in-out;
-  transition: top 0.2s ease-in-out;
+          transition: top 0.2s ease-in-out;
 }
 .skip-content:focus {
   top: 0;
@@ -625,7 +625,7 @@ li.pingback {
   color: #6B6B6B;
   margin: 0 8px;
   -webkit-transition: color 0.1s ease-in-out;
-  transition: color 0.1s ease-in-out;
+          transition: color 0.1s ease-in-out;
 }
 .social-media-icons a:link, .social-media-icons a:visited {
   color: #6B6B6B;
@@ -655,7 +655,7 @@ li.pingback {
     float: left;
     margin: 0;
     -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
   }
   .social-media-icons li:last-child a {
     margin-left: 0;
@@ -663,8 +663,7 @@ li.pingback {
   .social-media-icons.fade {
     opacity: 0;
     -webkit-transform: translateX(4px);
-    -ms-transform: translateX(4px);
-    transform: translateX(4px);
+            transform: translateX(4px);
   }
 }
 @media all and (min-width: 56.25em) {
@@ -742,7 +741,7 @@ li.pingback {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in-out;
-  transition: max-height 0.2s ease-in-out;
+          transition: max-height 0.2s ease-in-out;
 }
 .menu-primary-container.open {
   max-height: 999px;
@@ -786,7 +785,7 @@ li.pingback {
   border: none;
   color: #6B6B6B;
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
-  transition: transform 0.1s ease-in-out;
+          transition: transform 0.1s ease-in-out;
 }
 .toggle-dropdown:hover {
   cursor: pointer;
@@ -803,7 +802,7 @@ li.pingback {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in-out;
-  transition: max-height 0.2s ease-in-out;
+          transition: max-height 0.2s ease-in-out;
 }
 .menu-primary-items ul li {
   margin: 1.5em 0;
@@ -816,8 +815,7 @@ li.pingback {
 }
 .menu-primary-items li.open > button {
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 @media all and (min-width: 50em) {
@@ -846,7 +844,7 @@ li.pingback {
     display: inline-block;
     margin: 0 0 0 20px;
     -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+            transform-style: preserve-3d;
   }
   .menu-primary a {
     font-size: 0.75em;
@@ -855,7 +853,7 @@ li.pingback {
     /* 18px */
     display: inline-block;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   .menu-primary a:hover, .menu-primary a:active, .menu-primary a:focus {
     color: #333333;
@@ -875,11 +873,11 @@ li.pingback {
     top: calc(100% + 6px);
     right: -1.5em;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+            backface-visibility: hidden;
     background: white;
     padding: 0 1.5em 0.75em;
     -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
   }
   .menu-primary-items ul:hover, .menu-primary-items ul.focused {
     visibility: visible;
@@ -892,16 +890,14 @@ li.pingback {
   }
   .menu-primary-items ul li:hover > button {
     -webkit-transform: translate(2px, 0);
-    -ms-transform: translate(2px, 0);
-    transform: translate(2px, 0);
+            transform: translate(2px, 0);
   }
   .menu-primary-items ul .toggle-dropdown:after {
     content: '\f105';
   }
   .menu-primary-items ul a:hover + button, .menu-primary-items ul a:active + button, .menu-primary-items ul a:focus + button {
     -webkit-transform: translate(2px, 0);
-    -ms-transform: translate(2px, 0);
-    transform: translate(2px, 0);
+            transform: translate(2px, 0);
   }
   .menu-primary-items ul a:hover ~ ul, .menu-primary-items ul a:active ~ ul, .menu-primary-items ul a:focus ~ ul {
     top: -12px;
@@ -932,8 +928,7 @@ li.pingback {
   }
   .menu-primary-items li:hover > button {
     -webkit-transform: translate(0, 2px);
-    -ms-transform: translate(0, 2px);
-    transform: translate(0, 2px);
+            transform: translate(0, 2px);
   }
   .menu-primary-items li.open > ul {
     visibility: visible;
@@ -946,8 +941,7 @@ li.pingback {
   }
   .menu-primary-items a:hover + button, .menu-primary-items a:active + button, .menu-primary-items a:focus + button {
     -webkit-transform: translate(0, 2px);
-    -ms-transform: translate(0, 2px);
-    transform: translate(0, 2px);
+            transform: translate(0, 2px);
   }
   .menu-primary-items a:hover ~ ul, .menu-primary-items a:active ~ ul, .menu-primary-items a:focus ~ ul {
     visibility: visible;
@@ -976,16 +970,14 @@ li.pingback {
 
   .rtl .menu-primary-items ul .menu-item-has-children:hover > button {
     -webkit-transform: translate(-2px, 0);
-    -ms-transform: translate(-2px, 0);
-    transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
   }
   .rtl .menu-primary-items ul .menu-item-has-children .toggle-dropdown:after {
     content: '\f104';
   }
   .rtl .menu-primary-items ul .menu-item-has-children a:hover + button, .rtl .menu-primary-items ul .menu-item-has-children a:active + button, .rtl .menu-primary-items ul .menu-item-has-children a:focus + button {
     -webkit-transform: translate(-2px, 0);
-    -ms-transform: translate(-2px, 0);
-    transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
   }
 }
 .entry {
@@ -998,7 +990,7 @@ li.pingback {
   margin-left: 18px;
   border: solid 1px #333333;
   -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
 }
 .more-link:hover, .more-link:active, .more-link:focus {
   background: #333333;
@@ -1008,7 +1000,7 @@ li.pingback {
 .comments-link {
   color: #333333;
   -webkit-transition: color 0.1s ease-in-out;
-  transition: color 0.1s ease-in-out;
+          transition: color 0.1s ease-in-out;
 }
 .comments-link i {
   margin-left: 3px;
@@ -1080,7 +1072,7 @@ li.pingback {
   background: white;
   opacity: 0;
   -webkit-transition: opacity 0.1s ease-in-out;
-  transition: opacity 0.1s ease-in-out;
+          transition: opacity 0.1s ease-in-out;
 }
 .featured-image > a:focus:after {
   opacity: 0.2;
@@ -1091,7 +1083,8 @@ li.pingback {
   right: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .featured-image > img.no-object-fit,
 .featured-image > a > img.no-object-fit {
@@ -1105,8 +1098,7 @@ li.pingback {
   left: 50%;
   right: auto;
   -webkit-transform: translateX(50%) translateY(-50%);
-  -ms-transform: translateX(50%) translateY(-50%);
-  transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
 }
 .featured-image .ccfic {
   position: absolute;
@@ -1299,7 +1291,7 @@ li.pingback {
   padding-top: 6px;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease-in-out, right 0.15s ease-in-out;
-  transition: opacity 0.15s ease-in-out, right 0.15s ease-in-out;
+          transition: opacity 0.15s ease-in-out, right 0.15s ease-in-out;
 }
 .site-header .search-form-container .search-field {
   max-width: none !important;
