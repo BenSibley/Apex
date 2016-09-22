@@ -1,13 +1,13 @@
 <?php
 
-/*
- * Reviewer note:
- * ct in function prefix = Compete Themes. Added to lessen chance of conflict.
- */
-
-if ( ! isset( $content_width ) ) {
-	$content_width = 882;
+if ( ! function_exists( ( 'ct_apex_set_content_width' ) ) ) {
+	function ct_apex_set_content_width() {
+		if ( ! isset( $content_width ) ) {
+			$content_width = 882;
+		}
+	}
 }
+add_action( 'after_setup_theme', 'ct_apex_set_content_width', 0 );
 
 if ( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
 	function ct_apex_theme_setup() {
