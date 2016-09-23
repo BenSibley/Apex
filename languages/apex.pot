@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Apex 1.17\n"
+"Project-Id-Version: Apex 1.20\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-04-07 13:19:17+00:00\n"
+"POT-Creation-Date: 2016-09-23 11:50:11+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -146,65 +146,65 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: functions.php:49
+#: functions.php:50
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:51
+#: functions.php:52
 msgid ""
 "Widgets in this area will be shown in the sidebar next to the main post "
 "content"
 msgstr ""
 
-#: functions.php:75
+#: functions.php:77
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:83
+#: functions.php:85
 msgid "Reply"
 msgstr ""
 
-#: functions.php:87
+#: functions.php:89
 msgid "Edit"
 msgstr ""
 
-#: functions.php:99
+#: functions.php:101
 msgid "(optional)"
 msgstr ""
 
-#: functions.php:104
+#: functions.php:106
 msgid "Name"
 msgstr ""
 
-#: functions.php:111
+#: functions.php:113
 msgid "Email"
 msgstr ""
 
-#: functions.php:118
+#: functions.php:120
 msgid "Website"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:135
 msgid "Comment"
 msgstr ""
 
-#: functions.php:164 functions.php:173 functions.php:189 inc/customizer.php:204
+#: functions.php:166 functions.php:175 functions.php:191 inc/customizer.php:243
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:352 functions.php:353
+#: functions.php:354 functions.php:355
 msgid "email"
 msgstr ""
 
-#: functions.php:406 inc/scripts.php:12
+#: functions.php:402 inc/scripts.php:18
 msgid "open dropdown menu"
 msgstr ""
 
-#: functions.php:417
+#: functions.php:415
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:474
+#: functions.php:476
 msgid "Customizer settings deleted"
 msgstr ""
 
@@ -212,7 +212,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:22 inc/scripts.php:10
+#: header.php:22 inc/scripts.php:16
 msgid "open menu"
 msgstr ""
 
@@ -220,93 +220,127 @@ msgstr ""
 msgid "Front Page"
 msgstr ""
 
-#: inc/customizer.php:27
+#: inc/customizer.php:28
+msgid ""
+"<a target=\"_blank\" href=\"%s\">Apex Pro</a> is the plugin that makes "
+"advanced customization simple - and fun too."
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Custom Colors"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "7 New Layouts"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Featured Videos"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "+ 7 more features"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "Download the Apex Pro Plugin to get started now."
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Get Apex Pro"
+msgstr ""
+
+#: inc/customizer.php:46 theme-options.php:38
+msgid "Apex Pro"
+msgstr ""
+
+#: inc/customizer.php:66
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer.php:38
+#: inc/customizer.php:77
 msgid "Upload custom logo."
 msgstr ""
 
-#: inc/customizer.php:54
+#: inc/customizer.php:93
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:56
+#: inc/customizer.php:95
 msgid "Add the URL for each of your social profiles."
 msgstr ""
 
-#: inc/customizer.php:70
+#: inc/customizer.php:109
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer.php:120
+#: inc/customizer.php:159
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:147
+#: inc/customizer.php:186
 msgid "Search Bar"
 msgstr ""
 
-#: inc/customizer.php:158
+#: inc/customizer.php:197
 msgid "Show search bar at top of site?"
 msgstr ""
 
-#: inc/customizer.php:162 inc/customizer.php:269
+#: inc/customizer.php:201 inc/customizer.php:308
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:163 inc/customizer.php:270
+#: inc/customizer.php:202 inc/customizer.php:309
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:171
+#: inc/customizer.php:210
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:181
+#: inc/customizer.php:220
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:186 inc/customizer.php:234 inc/customizer.php:287
+#: inc/customizer.php:225 inc/customizer.php:273 inc/customizer.php:326
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:187 inc/customizer.php:235 inc/customizer.php:288
+#: inc/customizer.php:226 inc/customizer.php:274 inc/customizer.php:327
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:197
+#: inc/customizer.php:236
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:209
+#: inc/customizer.php:248
 msgid "Read More button text"
 msgstr ""
 
-#: inc/customizer.php:219
+#: inc/customizer.php:258
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:229
+#: inc/customizer.php:268
 msgid "Display post author name in byline?"
 msgstr ""
 
-#: inc/customizer.php:243
+#: inc/customizer.php:282
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:254
+#: inc/customizer.php:293
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/scripts.php:11
+#: inc/scripts.php:17
 msgid "close menu"
 msgstr ""
 
-#: inc/scripts.php:13
+#: inc/scripts.php:19
 msgid "close dropdown menu"
 msgstr ""
 
@@ -366,10 +400,6 @@ msgstr ""
 
 #: theme-options.php:34
 msgid "Visit Support Center"
-msgstr ""
-
-#: theme-options.php:38
-msgid "Apex Pro"
 msgstr ""
 
 #: theme-options.php:39
