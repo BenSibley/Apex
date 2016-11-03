@@ -624,3 +624,16 @@ if ( ! function_exists( ( 'ct_apex_allow_skype_protocol' ) ) ) {
 	}
 }
 add_filter( 'kses_allowed_protocols' , 'ct_apex_allow_skype_protocol' );
+
+// trigger theme switch on link click and send to Appearance menu
+function ct_apex_welcome_redirect() {
+
+	$welcome_url = add_query_arg(
+		array(
+			'page' => 'apex-options'
+		),
+		admin_url( 'themes.php' )
+	);
+	wp_redirect( esc_url( $welcome_url ) );
+}
+add_action( 'after_switch_theme', 'ct_apex_welcome_redirect' );

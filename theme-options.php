@@ -14,10 +14,18 @@ function ct_apex_options_content() {
 		),
 		admin_url( 'customize.php' )
 	);
+	$support_url = 'https://www.competethemes.com/documentation/apex-support-center/';
 	?>
 	<div id="apex-dashboard-wrap" class="wrap">
 		<h2><?php _e( 'Apex Dashboard', 'apex' ); ?></h2>
 		<?php do_action( 'theme_options_before' ); ?>
+		<div class="welcome">
+			<h3><?php _e( 'Thanks for Choosing Apex!', 'apex' ); ?></h3>
+			<p>
+				<?php printf( __( 'If you need help getting started, there are detailed tutorials in the <a href="%s">Apex Support Center</a>.', 'apex' ), $support_url ); ?>
+				<?php printf( __( 'Otherwise, you can dive right in with the <a href="%s">Customizer</a>.', 'apex' ), esc_url($customizer_url) ); ?>
+			</p>
+		</div>
 		<div class="content content-customization">
 			<h3><?php _e( 'Customization', 'apex' ); ?></h3>
 			<p><?php _e( 'Click the "Customize" link in your menu, or use the button below to get started customizing Apex', 'apex' ); ?>.</p>
