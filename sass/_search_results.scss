@@ -1,3 +1,9 @@
+.search {
+
+  .sticky-status {
+    display: none;
+  }
+}
 .search-box {
   margin: $baseline-height * 2 0 $baseline-height;
   padding: 0 $column * 2;

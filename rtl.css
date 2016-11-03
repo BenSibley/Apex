@@ -1331,6 +1331,10 @@ li.pingback {
     left: 0;
   }
 }
+.search .sticky-status {
+  display: none;
+}
+
 .search-box {
   margin: 3em 0 1.5em;
   padding: 0 6.25%;
