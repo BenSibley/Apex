@@ -22,7 +22,7 @@ function ct_apex_options_content() {
 		<div class="welcome">
 			<h3><?php _e( 'Thanks for Choosing Apex!', 'apex' ); ?></h3>
 			<p>
-				<?php printf( __( 'If you need help getting started, there are detailed tutorials in the <a href="%s">Apex Support Center</a>.', 'apex' ), $support_url ); ?>
+				<?php printf( __( 'If you need help getting started, there are detailed tutorials in the <a target="_blank" href="%s">Apex Support Center</a>.', 'apex' ), $support_url ); ?>
 				<?php printf( __( 'Otherwise, you can dive right in with the <a href="%s">Customizer</a>.', 'apex' ), esc_url($customizer_url) ); ?>
 			</p>
 		</div>
