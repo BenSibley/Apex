@@ -6,10 +6,10 @@
 		$total_results = $wp_query->found_posts;
 		$s             = htmlentities( $s );
 		if ( $total_results ) {
-			printf( esc_html( _n( '%1$d search result for "%2$s"', '%1d$ search results for "%2$s"', $total_results, 'apex' ) ), $total_results, $s );
+			printf( esc_html( _n( '%1$d search result for "%2$s"', '%1$d search results for "%2$s"', $total_results, 'apex' ) ), $total_results, $s );
 		} else {
 			printf( esc_html__( 'No search results for "%s"', 'apex' ), $s );
-		}w
+		}
 		?>
 	</h1>
 	<?php get_search_form(); ?>
