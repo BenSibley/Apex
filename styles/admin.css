@@ -4,61 +4,48 @@
   margin-bottom: 24px;
 }
 #apex-dashboard-wrap .content {
+  box-sizing: border-box;
   margin-top: 12px;
   padding: 12px 24px 24px;
   border: solid 1px #e5e5e5;
   background: white;
 }
-#apex-dashboard-wrap .content .button-primary {
+#apex-dashboard-wrap .content .button-primary,
+#apex-dashboard-wrap .content #delete {
   margin: 12px 0;
 }
 #apex-dashboard-wrap .content ul {
   list-style: disc;
   margin-left: 36px;
 }
-#apex-dashboard-wrap .welcome {
-  margin-top: 12px;
-  padding: 12px 24px 24px;
-  border: solid 1px #e5e5e5;
-  background: #E0FBFF;
-}
 
 /* 600px */
 @media all and (min-width: 37.5em) {
   #apex-dashboard-wrap .content {
-    width: 39%;
+    width: 49%;
     float: left;
+    margin-right: 2%;
+    min-height: 250px;
+  }
+  #apex-dashboard-wrap .content:nth-child(2n) {
+    margin-right: 0;
   }
   #apex-dashboard-wrap .content p {
     min-height: 57px;
-  }
-  #apex-dashboard-wrap .content-premium-upgrade p {
-    min-height: 0;
-  }
-  #apex-dashboard-wrap .content-review p {
-    min-height: 75px;
-  }
-  #apex-dashboard-wrap .content-customization,
-  #apex-dashboard-wrap .content-premium-upgrade,
-  #apex-dashboard-wrap .content-review {
-    margin-right: 2%;
   }
 }
 /* 1100px */
 @media all and (min-width: 68.75em) {
   #apex-dashboard-wrap .content {
-    width: 27%;
+    width: 32%;
   }
-  #apex-dashboard-wrap .content-resources {
-    clear: left;
+  #apex-dashboard-wrap .content:nth-child(2n) {
+    margin-right: 2%;
   }
-  #apex-dashboard-wrap .content-customization,
-  #apex-dashboard-wrap .content-support,
-  #apex-dashboard-wrap .content-resources,
-  #apex-dashboard-wrap .content-review {
-    margin-right: 1%;
-  }
-  #apex-dashboard-wrap .content-premium-upgrade {
+  #apex-dashboard-wrap .content:nth-child(3n) {
     margin-right: 0;
+  }
+  #apex-dashboard-wrap .content:nth-child(4n) {
+    clear: left;
   }
 }

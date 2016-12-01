@@ -19,64 +19,45 @@ function ct_apex_options_content() {
 	<div id="apex-dashboard-wrap" class="wrap">
 		<h2><?php _e( 'Apex Dashboard', 'apex' ); ?></h2>
 		<?php do_action( 'theme_options_before' ); ?>
-		<div class="welcome">
-			<h3><?php _e( 'Thanks for Choosing Apex!', 'apex' ); ?></h3>
-			<p>
-				<?php printf( __( 'If you need help getting started, there are detailed tutorials in the <a target="_blank" href="%s">Apex Support Center</a>.', 'apex' ), $support_url ); ?>
-				<?php printf( __( 'Otherwise, you can dive right in with the <a href="%s">Customizer</a>.', 'apex' ), esc_url($customizer_url) ); ?>
-			</p>
-		</div>
-		<div class="content content-customization">
-			<h3><?php _e( 'Customization', 'apex' ); ?></h3>
-			<p><?php _e( 'Click the "Customize" link in your menu, or use the button below to get started customizing Apex', 'apex' ); ?>.</p>
-			<p>
-				<a class="button-primary"
-				   href="<?php echo esc_url( $customizer_url ); ?>"><?php _e( 'Use Customizer', 'apex' ) ?></a>
-			</p>
-		</div>
-		<div class="content content-support">
-			<h3><?php _e( 'Support', 'apex' ); ?></h3>
-			<p><?php _e( "You can find the knowledgebase, changelog, support forum, and more in the Apex Support Center", "apex" ); ?>.</p>
-			<p>
-				<a target="_blank" class="button-primary"
-				   href="https://www.competethemes.com/documentation/apex-support-center/"><?php _e( 'Visit Support Center', 'apex' ); ?></a>
-			</p>
-		</div>
-		<div class="content content-premium-upgrade">
-			<h3><?php _e( 'Apex Pro', 'apex' ); ?></h3>
-			<p><?php _e( 'Download the Apex Pro plugin and unlock custom colors, new layouts, a flexible header image, and more', 'apex' ); ?>...</p>
-			<p>
-				<a target="_blank" class="button-primary"
-				   href="https://www.competethemes.com/apex-pro/"><?php _e( 'See Full Feature List', 'apex' ); ?></a>
-			</p>
-		</div>
-		<div class="content content-resources">
-			<h3><?php _e( 'WordPress Resources', 'apex' ); ?></h3>
-			<p><?php _e( 'Save time and money searching for WordPress products by following our recommendations', 'apex' ); ?>.</p>
-			<p>
-				<a target="_blank" class="button-primary"
-				   href="https://www.competethemes.com/wordpress-resources/"><?php _e( 'View Resources', 'apex' ); ?></a>
-			</p>
-		</div>
-		<div class="content content-review">
-			<h3><?php _e( 'Leave a Review', 'apex' ); ?></h3>
-			<p><?php _e( 'Help others find Apex by leaving a review on wordpress.org.', 'apex' ); ?></p>
-			<a target="_blank" class="button-primary" href="https://wordpress.org/support/view/theme-reviews/apex"><?php _e( 'Leave a Review', 'apex' ); ?></a>
-		</div>
-		<div class="content content-delete-settings">
-			<h3><?php _e( 'Reset Customizer Settings', 'apex' ); ?></h3>
-			<p>
-				<?php
-				printf( __( "<strong>Warning:</strong> Clicking this button will erase the Apex theme's current settings in the <a href='%s'>Customizer</a>.", 'apex' ), esc_url( $customizer_url ) );
-				?>
-			</p>
-			<form method="post">
-				<input type="hidden" name="apex_reset_customizer" value="apex_reset_customizer_settings"/>
+		<div class="content-boxes">
+			<div class="content content-support">
+				<h3><?php _e( 'Get Started', 'apex' ); ?></h3>
+				<p><?php _e( "Not sure where to start? The <strong>Apex Getting Started Guide</strong> will take you step-by-step through every feature in Apex.", "apex" ); ?></p>
 				<p>
-					<?php wp_nonce_field( 'apex_reset_customizer_nonce', 'apex_reset_customizer_nonce' ); ?>
-					<?php submit_button( __( 'Reset Customizer Settings', 'apex' ), 'delete', 'delete', false ); ?>
+					<a target="_blank" class="button-primary"
+					   href="https://www.competethemes.com/help/getting-started-apex/"><?php _e( 'View Guide', 'apex' ); ?></a>
 				</p>
-			</form>
+			</div>
+			<?php if ( !function_exists( 'ct_apex_pro_init' ) ) : ?>
+				<div class="content content-premium-upgrade">
+					<h3><?php _e( 'Apex Pro', 'apex' ); ?></h3>
+					<p><?php _e( 'Download the Apex Pro plugin and unlock custom colors, new layouts, a flexible header image, and more', 'apex' ); ?>...</p>
+					<p>
+						<a target="_blank" class="button-primary"
+						   href="https://www.competethemes.com/apex-pro/"><?php _e( 'See Full Feature List', 'apex' ); ?></a>
+					</p>
+				</div>
+			<?php endif; ?>
+			<div class="content content-review">
+				<h3><?php _e( 'Leave a Review', 'apex' ); ?></h3>
+				<p><?php _e( 'Help others find Apex by leaving a review on wordpress.org.', 'apex' ); ?></p>
+				<a target="_blank" class="button-primary" href="https://wordpress.org/support/view/theme-reviews/apex"><?php _e( 'Leave a Review', 'apex' ); ?></a>
+			</div>
+			<div class="content content-delete-settings">
+				<h3><?php _e( 'Reset Customizer Settings', 'apex' ); ?></h3>
+				<p>
+					<?php
+					printf( __( "<strong>Warning:</strong> Clicking this button will erase the Apex theme's current settings in the <a href='%s'>Customizer</a>.", 'apex' ), esc_url( $customizer_url ) );
+					?>
+				</p>
+				<form method="post">
+					<input type="hidden" name="apex_reset_customizer" value="apex_reset_customizer_settings"/>
+					<p>
+						<?php wp_nonce_field( 'apex_reset_customizer_nonce', 'apex_reset_customizer_nonce' ); ?>
+						<?php submit_button( __( 'Reset Customizer Settings', 'apex' ), 'delete', 'delete', false ); ?>
+					</p>
+				</form>
+			</div>
 		</div>
 		<?php do_action( 'theme_options_after' ); ?>
 	</div>
