@@ -556,7 +556,11 @@ if ( ! function_exists( ( 'ct_apex_svg_output' ) ) ) {
 if ( ! function_exists( ( 'ct_apex_custom_css_output' ) ) ) {
 	function ct_apex_custom_css_output() {
 
-		$custom_css = get_theme_mod( 'custom_css' );
+		if ( function_exists( 'wp_get_custom_css' ) ) {
+			$custom_css = wp_get_custom_css();
+		} else {
+			$custom_css = get_theme_mod( 'custom_css' );
+		}
 
 		if ( $custom_css ) {
 			$custom_css = ct_apex_sanitize_css( $custom_css );

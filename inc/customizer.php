@@ -278,23 +278,36 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 
 	/***** Custom CSS *****/
 
-	// section
-	$wp_customize->add_section( 'apex_custom_css', array(
-		'title'    => __( 'Custom CSS', 'apex' ),
-		'priority' => 75
-	) );
-	// setting
-	$wp_customize->add_setting( 'custom_css', array(
-		'sanitize_callback' => 'ct_apex_sanitize_css',
-		'transport'         => 'postMessage'
-	) );
-	// control
-	$wp_customize->add_control( 'custom_css', array(
-		'type'     => 'textarea',
-		'label'    => __( 'Add Custom CSS Here:', 'apex' ),
-		'section'  => 'apex_custom_css',
-		'settings' => 'custom_css'
-	) );
+	if ( function_exists( 'wp_update_custom_css_post' ) ) {
+		// Migrate any existing theme CSS to the core option added in WordPress 4.7.
+		$css = get_theme_mod( 'custom_css' );
+		if ( $css ) {
+			$core_css = wp_get_custom_css(); // Preserve any CSS already added to the core option.
+			$return = wp_update_custom_css_post( $core_css . $css );
+			if ( ! is_wp_error( $return ) ) {
+				// Remove the old theme_mod, so that the CSS is stored in only one place moving forward.
+				remove_theme_mod( 'custom_css' );
+			}
+		}
+	} else {
+		// section
+		$wp_customize->add_section( 'apex_custom_css', array(
+			'title'    => __( 'Custom CSS', 'apex' ),
+			'priority' => 75
+		) );
+		// setting
+		$wp_customize->add_setting( 'custom_css', array(
+			'sanitize_callback' => 'ct_apex_sanitize_css',
+			'transport'         => 'postMessage'
+		) );
+		// control
+		$wp_customize->add_control( 'custom_css', array(
+			'type'     => 'textarea',
+			'label'    => __( 'Add Custom CSS Here:', 'apex' ),
+			'section'  => 'apex_custom_css',
+			'settings' => 'custom_css'
+		) );
+	}
 }
 
 /***** Custom Sanitization Functions *****/
