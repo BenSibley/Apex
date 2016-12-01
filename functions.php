@@ -285,6 +285,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'digg'          => 'apex_digg_profile',
 			'github'        => 'apex_github_profile',
 			'hacker-news'   => 'apex_hacker-news_profile',
+			'snapchat'      => 'apex_snapchat_profile',
 			'bandcamp'      => 'apex_bandcamp_profile',
 			'etsy'          => 'apex_etsy_profile',
 			'quora'         => 'apex_quora_profile',
