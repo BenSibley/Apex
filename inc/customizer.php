@@ -44,7 +44,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	if ( !function_exists( 'ct_apex_pro_init' ) ) {
 		// section
 		$wp_customize->add_section( 'ct_apex_pro', array(
-			'title'    => __( 'Customize More', 'apex' ),
+			'title'    => __( 'Apex Pro', 'apex' ),
 			'priority' => 1
 		) );
 		// Upload - setting
