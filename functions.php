@@ -492,7 +492,7 @@ if ( ! function_exists( ( 'ct_apex_delete_settings_notice' ) ) ) {
 			} else if ( $_GET['apex_status'] == 'activated' ) {
 				?>
 				<div class="updated">
-					<p><?php _e( 'Apex successfully activated!', 'apex' ); ?></p>
+					<p><?php printf( __( '%s successfully activated!', 'apex' ), wp_get_theme( get_template() ) ); ?></p>
 				</div>
 				<?php
 			}
