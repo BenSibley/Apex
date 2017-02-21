@@ -277,6 +277,22 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 			'no'  => __( 'No', 'apex' )
 		)
 	) );
+	// comments link - setting
+	$wp_customize->add_setting( 'comments_link', array(
+		'default'           => 'yes',
+		'sanitize_callback' => 'ct_apex_sanitize_yes_no_settings'
+	) );
+	// comments link - control
+	$wp_customize->add_control( 'comments_link', array(
+		'label'    => __( 'Display comments link after posts?', 'apex' ),
+		'section'  => 'apex_additional',
+		'settings' => 'comments_link',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'apex' ),
+			'no'  => __( 'No', 'apex' )
+		)
+	) );
 
 	/***** Custom CSS *****/
 

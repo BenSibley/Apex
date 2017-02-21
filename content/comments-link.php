@@ -1,3 +1,7 @@
+<?php if ( get_theme_mod( 'comments_link' ) == 'no' ) {
+	return;
+}
+?>
 <span class="comments-link">
 	<i class="fa fa-comment" title="<?php esc_attr_e( 'comment icon', 'apex' ); ?>"></i>
 	<?php
