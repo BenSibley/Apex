@@ -210,7 +210,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'apex_blog', array(
-		'title'    => __( 'Blog', 'apex' ),
+		'title'    => _x( 'Blog', 'noun: the blog section', 'apex' ),
 		'priority' => 45
 	) );
 	// setting

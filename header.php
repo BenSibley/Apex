@@ -19,7 +19,7 @@
 					<?php ct_apex_social_icons_output( 'header' ); ?>
 				</div>
 				<button id="toggle-navigation" class="toggle-navigation">
-					<span class="screen-reader-text"><?php _e( 'open menu', 'apex' ); ?></span>
+					<span class="screen-reader-text"><?php _ex( 'open menu', 'verb: open the menu', 'apex' ); ?></span>
 					<?php echo ct_apex_svg_output( 'toggle-navigation' ); ?>
 				</button>
 				<div id="title-container" class="title-container">

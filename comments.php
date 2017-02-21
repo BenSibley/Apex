@@ -9,7 +9,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), __( '% Comments', 'apex' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), _x( '% Comments', 'noun: 5 comments', 'apex' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -29,7 +29,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), __( '% Comments', 'apex' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), _x( '% Comments', 'noun: 5 comments', 'apex' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -51,7 +51,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), __( '% Comments', 'apex' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'apex' ), __( 'One Comment', 'apex' ), _x( '% Comments', 'noun: 5 comments', 'apex' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">

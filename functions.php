@@ -82,11 +82,11 @@ if ( ! function_exists( ( 'ct_apex_customize_comments' ) ) ) {
 			<div class="comment-footer">
 				<span class="comment-date"><?php comment_date(); ?></span>
 				<?php comment_reply_link( array_merge( $args, array(
-					'reply_text' => __( 'Reply', 'apex' ),
+					'reply_text' => _x( 'Reply', 'verb: reply to this comment', 'apex' ),
 					'depth'      => $depth,
 					'max_depth'  => $args['max_depth']
 				) ) ); ?>
-				<?php edit_comment_link( __( 'Edit', 'apex' ) ); ?>
+				<?php edit_comment_link( _x( 'Edit', 'verb: edit this comment', 'apex' ) ); ?>
 			</div>
 		</article>
 		<?php
@@ -103,14 +103,14 @@ if ( ! function_exists( 'ct_apex_update_fields' ) ) {
 
 		$fields['author'] =
 			'<p class="comment-form-author">
-	            <label for="author">' . __( "Name", "apex" ) . $label . '</label>
+	            <label for="author">' . _x( "Name", "noun", "apex" ) . $label . '</label>
 	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
 		$fields['email'] =
 			'<p class="comment-form-email">
-	            <label for="email">' . __( "Email", "apex" ) . $label . '</label>
+	            <label for="email">' . _x( "Email", "noun", "apex" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
@@ -132,7 +132,7 @@ if ( ! function_exists( 'ct_apex_update_comment_field' ) ) {
 
 		$comment_field =
 			'<p class="comment-form-comment">
-	            <label for="comment">' . __( "Comment", "apex" ) . '</label>
+	            <label for="comment">' . _x( "Comment", "noun", "apex" ) . '</label>
 	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
@@ -362,8 +362,8 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 						<li>
 							<a class="email" target="_blank"
 							   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
-								<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'apex' ); ?>"></i>
-								<span class="screen-reader-text"><?php esc_html_e('email', 'apex'); ?></span>
+								<i class="fa fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'apex' ); ?>"></i>
+								<span class="screen-reader-text"><?php echo esc_html_x('email', 'noun', 'apex'); ?></span>
 							</a>
 						</li>
 					<?php } elseif ( $active_site == 'skype' ) { ?>
@@ -410,7 +410,7 @@ if ( ! function_exists( ( 'ct_apex_nav_dropdown_buttons' ) ) ) {
 		if ( $args->theme_location == 'primary' ) {
 
 			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . __( "open dropdown menu", "apex" ) . '</span></button>', $item_output );
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . _x( "open dropdown menu", 'verb: open the dropdown menu', "apex" ) . '</span></button>', $item_output );
 			}
 		}
 
