@@ -984,6 +984,11 @@ li.pingback {
   margin: 3em 0 4.5em;
 }
 
+.more-link-wrapper {
+  display: inline-block;
+  margin-top: 0.75em;
+}
+
 .more-link {
   display: inline-block;
   padding: 8px 20px;
@@ -1013,17 +1018,6 @@ li.pingback {
 .full-post .entry .comments-link {
   display: block;
   margin: 3em 0;
-}
-.full-post.blog .post-content p:last-of-type, .full-post.archive .post-content p:last-of-type, .full-post.search .post-content p:last-of-type {
-  display: block;
-  margin: 1.5em 0;
-}
-
-.blog .post-content p:last-of-type,
-.archive .post-content p:last-of-type,
-.search .post-content p:last-of-type {
-  display: inline-block;
-  margin: 0.75em 0 0;
 }
 
 .sticky-status {

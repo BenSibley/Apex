@@ -1,6 +1,10 @@
 .entry {
   margin: $baseline-height * 2 0 $baseline-height * 3;
 }
+.more-link-wrapper {
+  display: inline-block;
+  margin-top: $baseline-height/2;
+}
 .more-link {
   @extend %twelve-pixels;
   display: inline-block;
@@ -42,31 +46,6 @@
     .comments-link {
       display: block;
       margin: $baseline-height * 2 0;
-    }
-  }
-  &.blog,
-  &.archive,
-  &.search {
-
-    .post-content {
-
-      p:last-of-type {
-        display: block;
-        margin: $baseline-height 0;
-      }
-    }
-  }
-}
-.blog,
-.archive,
-.search {
-
-  .post-content {
-
-    // allow comments to sit next to button
-    p:last-of-type {
-      display: inline-block;
-      margin: $baseline-height / 2 0 0;
     }
   }
 }
