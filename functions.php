@@ -291,6 +291,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'amazon'        => 'apex_amazon_profile',
 			'google-wallet' => 'apex_google_wallet_profile',
 			'yelp'          => 'apex_yelp_profile',
+			'twitch'        => 'apex_twitch_profile',
 			'whatsapp'      => 'apex_whatsapp_profile',
 			'steam'         => 'apex_steam_profile',
 			'qq'            => 'apex_qq_profile',
