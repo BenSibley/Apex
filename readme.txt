@@ -61,10 +61,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Apex also uses:
 
-* Fitvids, by Chris Coyier & Dave Rupert, https://github.com/davatron5000/FitVids.js/, licensed under the WTFPL license.
-* Google Fonts, http://google.com/fonts, licensed under open source licenses, see: https://developers.google.com/fonts/faq#Any_Page_OK.
-* Font Awesome by Dave Gandy, licensed under open source licenses, see: http://fortawesome.github.io/Font-Awesome/license/.
-* HTML5shiv by Alexander Farkas, Jonathan Neal, Paul Irish, John-David Dalton, and Remy Sharp, licensed under MIT/GPL2, see: https://github.com/aFarkas/html5shiv
-* Multiple Select by zhixin wen, licensed under MIT, see: http://wenzhixin.net.cn/p/multiple-select/
-* Respond.js by Scott Jehl, licensed under MIT, see: https://github.com/scottjehl/Respond
-* Golden Gate Bridge image in screenshot.png from http://unsplash.com, licensed under Public Domain
+* Fitvids, https://github.com/davatron5000/FitVids.js/, Copyright 2011, Chris Coyier & Dave Rupert, WTFPL license, http://www.wtfpl.net/.
+* Google Fonts, http://google.com/fonts, Copyright 2010, Google, open source licenses, see: https://developers.google.com/fonts/faq#Any_Page_OK.
+* Font Awesome, http://fontawesome.io/, Copyright 2011, Dave Gandy, MIT license, https://opensource.org/licenses/mit-license.html
+* HTML5shiv, https://github.com/aFarkas/html5shiv, Alexander Farkas, Jonathan Neal, Paul Irish, John-David Dalton, and Remy Sharp, MIT/GPL2, https://opensource.org/licenses/mit-license.html
+* Multiple Select, http://wenzhixin.net.cn/p/multiple-select/, zhixin wen, licensed under MIT license, https://opensource.org/licenses/mit-license.html
+* Respond.js, https://github.com/scottjehl/Respond, Scott Jehl, licensed under MIT license, https://opensource.org/licenses/mit-license.html
+
+* Golden Gate Bridge image in screenshot.png : CC0 by Chris Brignola, https://unsplash.com/search/golden-gate?photo=n7n-nkadHRM
