@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Apex 1.22\n"
+"Project-Id-Version: Apex 1.23\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2017-02-23 16:11:29+00:00\n"
+"POT-Creation-Date: 2017-05-25 15:22:08+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -151,15 +151,15 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:421
+#: functions.php:422
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:484
+#: functions.php:485
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:490
+#: functions.php:491
 msgid "%s successfully activated!"
 msgstr ""
 
@@ -351,11 +351,25 @@ msgstr ""
 msgid "Help others find %s by leaving a review on wordpress.org."
 msgstr ""
 
-#: theme-options.php:47 theme-options.php:57
+#: theme-options.php:47
+msgid "Turn Apex into a Mobile App"
+msgstr ""
+
+#: theme-options.php:48
+msgid ""
+"%s can be converted into a mobile app and listed on the App Store with the "
+"help of PressPad News. Read our tutorial to learn more."
+msgstr ""
+
+#: theme-options.php:49
+msgid "Read Tutorial"
+msgstr ""
+
+#: theme-options.php:52 theme-options.php:62
 msgid "Reset Customizer Settings"
 msgstr ""
 
-#: theme-options.php:50
+#: theme-options.php:55
 msgid ""
 "<strong>Warning:</strong> Clicking this button will erase the %2$s theme's "
 "current settings in the <a href=\"%1$s\">Customizer</a>."
@@ -427,12 +441,12 @@ msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:360 functions.php:361
+#: functions.php:361 functions.php:362
 msgctxt "noun"
 msgid "email"
 msgstr ""
 
-#: functions.php:408 inc/scripts.php:18
+#: functions.php:409 inc/scripts.php:18
 msgctxt "verb: open the dropdown menu"
 msgid "open dropdown menu"
 msgstr ""
