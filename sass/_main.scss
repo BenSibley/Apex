@@ -11,4 +11,11 @@
     width: $column * 20 * 1.103;
     float: left;
   }
+  .page-template-full-width {
+
+    .main {
+      width: 100%;
+      float: none;
+    }
+  }
 }
