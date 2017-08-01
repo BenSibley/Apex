@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Apex 1.23\n"
+"Project-Id-Version: Apex 1.24\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2017-05-25 15:22:08+00:00\n"
+"POT-Creation-Date: 2017-08-01 14:34:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgid ""
 "post\">trackbacks</a> and pingbacks are open."
 msgstr ""
 
-#: comments.php:69 comments.php:76
+#: comments.php:69 comments.php:85
 msgid "Comments are closed."
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Search for:"
 msgstr ""
 
-#: content-page.php:12 content.php:13
+#: content-page.php:12 content.php:13 templates/full-width.php:22
 msgid "Pages:"
 msgstr ""
 
@@ -121,45 +121,52 @@ msgstr ""
 msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
 msgstr ""
 
-#: functions.php:39
+#: functions.php:12
+msgid ""
+"Hey! Sorry to interrupt, but you've been using Apex for a little while now. "
+"If you're happy with this theme, could you take a minute to leave a review? "
+"<i>You won't see this notice again after closing it.</i>"
+msgstr ""
+
+#: functions.php:46
 msgid "Primary"
 msgstr ""
 
-#: functions.php:50
+#: functions.php:59
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:52
+#: functions.php:61
 msgid ""
 "Widgets in this area will be shown in the sidebar next to the main post "
 "content"
 msgstr ""
 
-#: functions.php:77
+#: functions.php:86
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:101
+#: functions.php:110
 msgid "(optional)"
 msgstr ""
 
-#: functions.php:120
+#: functions.php:129
 msgid "Website"
 msgstr ""
 
-#: functions.php:167 inc/customizer.php:246
+#: functions.php:182 inc/customizer.php:246
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:422
+#: functions.php:437
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:485
+#: functions.php:500
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:491
+#: functions.php:506
 msgid "%s successfully activated!"
 msgstr ""
 
@@ -289,6 +296,10 @@ msgstr ""
 msgid "Add Custom CSS Here:"
 msgstr ""
 
+#: inc/review.php:113
+msgid "Click here to leave your review"
+msgstr ""
+
 #: index.php:19
 msgid "Previous"
 msgstr ""
@@ -378,11 +389,18 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "Apex is a sophisticated, minimalist theme. It looks great and performs "
-"wonderfully on phones, tablets, laptops, and everything in between. As a "
-"fast, responsive, accessibility-ready, and translation-ready theme, Apex is "
-"a theme you can trust to present your content to the world. Preview on "
-"desktop, tablets, and mobile with our interactive live demo: "
-"https://www.competethemes.com/demos/?theme=apex"
+"wonderfully on mobile devices, tablets, laptops, and everything in between. "
+"Use it to setup a business blog, newspaper website, fashion magazine, or "
+"travel blog. Now with WooCommerce support, you can even setup an eCommerce "
+"store with Apex. The design of this minimal theme also suits media-rich "
+"sites well like food blogs and personal photography portfolios. As a "
+"simple, responsive, and SEO optimized theme, you can trust Apex to present "
+"your best content to the world. Preview Apex now with the interactive live "
+"demo: https://www.competethemes.com/demos/?theme=apex"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full-width"
 msgstr ""
 
 #: comments.php:12 comments.php:32 comments.php:54 content/comments-link.php:9
@@ -416,37 +434,37 @@ msgctxt "View all posts in post category"
 msgid "View all posts in %s"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:94
 msgctxt "verb: reply to this comment"
 msgid "Reply"
 msgstr ""
 
-#: functions.php:89
+#: functions.php:98
 msgctxt "verb: edit this comment"
 msgid "Edit"
 msgstr ""
 
-#: functions.php:106
+#: functions.php:115
 msgctxt "noun"
 msgid "Name"
 msgstr ""
 
-#: functions.php:113
+#: functions.php:122
 msgctxt "noun"
 msgid "Email"
 msgstr ""
 
-#: functions.php:135
+#: functions.php:150
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:361 functions.php:362
+#: functions.php:376 functions.php:377
 msgctxt "noun"
 msgid "email"
 msgstr ""
 
-#: functions.php:409 inc/scripts.php:18
+#: functions.php:424 inc/scripts.php:18
 msgctxt "verb: open the dropdown menu"
 msgid "open dropdown menu"
 msgstr ""
