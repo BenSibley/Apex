@@ -25,7 +25,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 	class ct_apex_pro_ad extends WP_Customize_Control {
 		public function render_content() {
 			$link = 'https://www.competethemes.com/apex-pro/';
-			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/apex-pro.png' srcset='" . get_template_directory_uri() . "/assets/images/apex-pro-2x.png 2x' /></a>";
+			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/apex-pro.gif' /></a>";
 			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%1$s">%2$s Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'apex'), $link, wp_get_theme( get_template() ) ) . "</p>";
 			echo "<p>" . sprintf( __('%1$s Pro adds the following features to %1$s:', 'apex'), wp_get_theme( get_template() ) ) . "</p>";
 			echo "<ul>
