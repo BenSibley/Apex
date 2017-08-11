@@ -45,7 +45,7 @@ function ct_apex_options_content() {
 			</div>
 			<div class="content content-presspad">
 				<h3><?php _e( 'Turn Apex into a Mobile App', 'apex' ); ?></h3>
-				<p><?php printf( __( '%s can be converted into a mobile app and listed on the App Store with the help of PressPad News. Read our tutorial to learn more.', 'apex' ), wp_get_theme( get_template() ) ); ?></p>
+				<p><?php printf( __( '%s can be converted into a mobile app and listed on the App Store and Google Play Store with the help of PressPad News. Read our tutorial to learn more.', 'apex' ), wp_get_theme( get_template() ) ); ?></p>
 				<a target="_blank" class="button-primary" href="https://www.competethemes.com/help/convert-mobile-app-apex/"><?php _e( 'Read Tutorial', 'apex' ); ?></a>
 			</div>
 			<div class="content content-delete-settings">
