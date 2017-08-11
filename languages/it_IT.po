@@ -1,0 +1,479 @@
+# Copyright (C) 2017 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Apex 1.23\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2017-07-18 11:12+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-07-18 11:46+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it\n"
+
+#: 404.php:6
+msgid "404: Page Not Found"
+msgstr "404 - Pagina Non Trovata"
+
+#: 404.php:9
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"Sembra che non sia stato trovato nulla su questo URL. Verifica nuovamente "
+"che l'URL sia corretto o prova il modulo di ricerca qui sotto per trovare "
+"quello che stavi cercando."
+
+#: comments.php:12 comments.php:32 comments.php:54
+msgid "Be First to Comment"
+msgstr "Commenta per primo"
+
+#: comments.php:12 comments.php:32 comments.php:54
+msgid "One Comment"
+msgstr "Un commento"
+
+#: comments.php:46
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"I commenti sono chiusi, ma <a href=“%s” title=“Trackback URL per questo "
+"post”>trackbacks</a> e pingbacks sono aperti."
+
+#: comments.php:69 comments.php:76
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi."
+
+#: content/comments-link.php:6
+msgid "comment icon"
+msgstr ""
+
+#: content/comments-link.php:9
+msgid "Comments closed"
+msgstr "Commenti chiusi"
+
+#: content/comments-link.php:9 content/comments-link.php:12
+msgid "1 Comment"
+msgstr "1 Commento"
+
+#: content/comments-link.php:12
+msgid "Leave a Comment"
+msgstr "Lascia un Commento"
+
+#: content/post-categories.php:15
+msgid "and"
+msgstr "e"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "Immagine precedente"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "Immagine successiva"
+
+#: content/post-nav.php:9
+msgid "Previous Post"
+msgstr "Post precedente"
+
+#: content/post-nav.php:10
+msgid "The Previous Post"
+msgstr "Il precedente Post"
+
+#: content/post-nav.php:13
+msgid "No Older Posts"
+msgstr "Il Post più vecchio"
+
+#: content/post-nav.php:14 content/post-nav.php:28
+msgid "Return to Blog"
+msgstr "Ritorna al Blog"
+
+#: content/post-nav.php:23
+msgid "Next Post"
+msgstr "Post successivo"
+
+#: content/post-nav.php:24
+msgid "The Next Post"
+msgstr "Il Post successivo"
+
+#: content/post-nav.php:27
+msgid "No Newer Posts"
+msgstr "Nessun nuovo post"
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr "Visualizza tutti i post taggati %s"
+
+#: content/search-bar.php:11 searchform.php:3
+msgid "Search"
+msgstr "Cerca"
+
+#: content/search-bar.php:12
+msgid "Search..."
+msgstr "Cerca…"
+
+#: content/search-bar.php:13 searchform.php:5
+msgid "Search for:"
+msgstr "Cerca per:"
+
+#: content-page.php:12 content.php:13
+msgid "Pages:"
+msgstr "Pagina:"
+
+#: footer.php:11
+msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
+msgstr "<a href=“%1$s”>%2$s  Copyright © 2017</a> - Mohini Pettinato"
+
+#: functions.php:39
+msgid "Primary"
+msgstr ""
+
+#: functions.php:50
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions.php:52
+msgid ""
+"Widgets in this area will be shown in the sidebar next to the main post "
+"content"
+msgstr ""
+
+#: functions.php:77
+msgid "Your comment is awaiting moderation."
+msgstr "Il tuo commento è in attesa di approvazione."
+
+#: functions.php:101
+msgid "(optional)"
+msgstr "(opzionale)"
+
+#: functions.php:120
+msgid "Website"
+msgstr ""
+
+#: functions.php:167 inc/customizer.php:246
+msgid "Continue reading"
+msgstr "Continua a leggere"
+
+#: functions.php:422
+msgid "Featured Post"
+msgstr "Post in evidenza"
+
+#: functions.php:485
+msgid "Customizer settings deleted."
+msgstr ""
+
+#: functions.php:491
+msgid "%s successfully activated!"
+msgstr ""
+
+#: header.php:11
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:14
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer.php:29
+msgid ""
+"<a target=\"_blank\" href=\"%1$s\">%2$s Pro</a> is the plugin that makes "
+"advanced customization simple - and fun too!"
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "%1$s Pro adds the following features to %1$s:"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Custom Colors"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "7 New layouts"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "Featured Videos"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "+ 7 more features"
+msgstr ""
+
+#: inc/customizer.php:37
+msgid "View %s Pro"
+msgstr ""
+
+#: inc/customizer.php:47 theme-options.php:33
+msgid "%s Pro"
+msgstr ""
+
+#: inc/customizer.php:67
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid "Upload custom logo."
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Add the URL for each of your social profiles."
+msgstr ""
+
+#: inc/customizer.php:110
+msgid "Email Address"
+msgstr ""
+
+#: inc/customizer.php:162
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
+msgstr ""
+
+#: inc/customizer.php:189
+msgid "Search Bar"
+msgstr ""
+
+#: inc/customizer.php:200
+msgid "Show search bar at top of site?"
+msgstr ""
+
+#: inc/customizer.php:204 inc/customizer.php:340
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:205 inc/customizer.php:341
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer.php:223
+msgid "Show full posts on blog?"
+msgstr ""
+
+#: inc/customizer.php:228 inc/customizer.php:276 inc/customizer.php:292
+#: inc/customizer.php:358
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:229 inc/customizer.php:277 inc/customizer.php:293
+#: inc/customizer.php:359
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:239
+msgid "Excerpt word count"
+msgstr ""
+
+#: inc/customizer.php:251
+msgid "Read More button text"
+msgstr ""
+
+#: inc/customizer.php:261
+msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:271
+msgid "Display post author name in byline?"
+msgstr ""
+
+#: inc/customizer.php:287
+msgid "Display comments link after posts?"
+msgstr ""
+
+#: inc/customizer.php:313
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:324
+msgid "Add Custom CSS Here:"
+msgstr ""
+
+#: index.php:19
+msgid "Previous"
+msgstr "Precedente"
+
+#: index.php:20
+msgid "Next"
+msgstr "Successivo"
+
+#: search.php:9
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:11
+msgid "No search results for \"%s\""
+msgstr ""
+
+#: search.php:36
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr ""
+
+#: searchform.php:6
+msgid "Go"
+msgstr ""
+
+#: theme-options.php:4 theme-options.php:20
+msgid "%s Dashboard"
+msgstr ""
+
+#: theme-options.php:24
+msgid "Get Started"
+msgstr ""
+
+#: theme-options.php:25
+msgid ""
+"Not sure where to start? The <strong>%1$s Getting Started Guide</strong> "
+"will take you step-by-step through every feature in %1$s."
+msgstr ""
+
+#: theme-options.php:28
+msgid "View Guide"
+msgstr ""
+
+#: theme-options.php:34
+msgid ""
+"Download the %s Pro plugin and unlock custom colors, new layouts, a flexible "
+"header image, and more"
+msgstr ""
+
+#: theme-options.php:37
+msgid "See Full Feature List"
+msgstr ""
+
+#: theme-options.php:42 theme-options.php:44
+msgid "Leave a Review"
+msgstr ""
+
+#: theme-options.php:43
+msgid "Help others find %s by leaving a review on wordpress.org."
+msgstr ""
+
+#: theme-options.php:47
+msgid "Turn Apex into a Mobile App"
+msgstr ""
+
+#: theme-options.php:48
+msgid ""
+"%s can be converted into a mobile app and listed on the App Store with the "
+"help of PressPad News. Read our tutorial to learn more."
+msgstr ""
+
+#: theme-options.php:49
+msgid "Read Tutorial"
+msgstr ""
+
+#: theme-options.php:52 theme-options.php:62
+msgid "Reset Customizer Settings"
+msgstr ""
+
+#: theme-options.php:55
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase the %2$s theme's "
+"current settings in the <a href=\"%1$s\">Customizer</a>."
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Apex is a sophisticated, minimalist theme. It looks great and performs "
+"wonderfully on phones, tablets, laptops, and everything in between. As a "
+"fast, responsive, accessibility-ready, and translation-ready theme, Apex is "
+"a theme you can trust to present your content to the world. Preview on "
+"desktop, tablets, and mobile with our interactive live demo: https://www."
+"competethemes.com/demos/?theme=apex"
+msgstr ""
+
+#: comments.php:12 comments.php:32 comments.php:54 content/comments-link.php:9
+#: content/comments-link.php:12
+msgctxt "noun: 5 comments"
+msgid "% Comments"
+msgstr "% Commenti"
+
+#: content/archive-header.php:4
+msgctxt "noun: Site Title's Posts"
+msgid "Posts"
+msgstr ""
+
+#: content/post-byline.php:5
+msgctxt "Published on this date"
+msgid "Published %s"
+msgstr "Pubblicato %s"
+
+#: content/post-byline.php:12
+msgctxt "Published on a date BY this author"
+msgid "by"
+msgstr "di"
+
+#: content/post-categories.php:10
+msgctxt "Published in post category"
+msgid "Published in"
+msgstr "Pubblicato in"
+
+#: content/post-categories.php:17
+msgctxt "View all posts in post category"
+msgid "View all posts in %s"
+msgstr "Visualizza tutti i post in %s"
+
+#: functions.php:85
+msgctxt "verb: reply to this comment"
+msgid "Reply"
+msgstr ""
+
+#: functions.php:89
+msgctxt "verb: edit this comment"
+msgid "Edit"
+msgstr ""
+
+#: functions.php:106
+msgctxt "noun"
+msgid "Name"
+msgstr "Nome"
+
+#: functions.php:113
+msgctxt "noun"
+msgid "Email"
+msgstr ""
+
+#: functions.php:135
+msgctxt "noun"
+msgid "Comment"
+msgstr "Commento"
+
+#: functions.php:361 functions.php:362
+msgctxt "noun"
+msgid "email"
+msgstr ""
+
+#: functions.php:409 inc/scripts.php:18
+msgctxt "verb: open the dropdown menu"
+msgid "open dropdown menu"
+msgstr ""
+
+#: header.php:22 inc/scripts.php:16
+msgctxt "verb: open the menu"
+msgid "open menu"
+msgstr ""
+
+#: inc/customizer.php:213
+msgctxt "noun: the blog section"
+msgid "Blog"
+msgstr ""
+
+#: inc/scripts.php:17
+msgctxt "verb: close the menu"
+msgid "close menu"
+msgstr ""
+
+#: inc/scripts.php:19
+msgctxt "verb: close the  dropdown menu"
+msgid "close dropdown menu"
+msgstr ""
+
