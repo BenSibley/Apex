@@ -125,6 +125,10 @@
       display: inline-block;
       margin: 0 20px 0 0;
       transform-style: preserve-3d;
+
+      &.menu-item-has-children {
+        z-index: 25;
+      }
     }
     a {
       font-size: 0.75em; /* 12px / 16px */
