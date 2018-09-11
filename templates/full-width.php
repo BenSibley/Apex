@@ -17,7 +17,7 @@ get_header(); ?>
 							<h1 class='post-title'><?php the_title(); ?></h1>
 						</div>
 						<div class="post-content">
-							<?php echo get_the_content(); ?>
+							<?php the_content(); ?>
 							<?php wp_link_pages( array(
 								'before' => '<p class="singular-pagination">' . __( 'Pages:', 'apex' ),
 								'after'  => '</p>',
