@@ -8,7 +8,7 @@
 
 <body id="<?php print get_stylesheet(); ?>" <?php body_class(); ?>>
 	<?php do_action( 'body_top' ); ?>
-	<a class="skip-content" href="#main"><?php _e( 'Skip to content', 'apex' ); ?></a>
+	<a class="skip-content" href="#main"><?php esc_html_e( 'Skip to content', 'apex' ); ?></a>
 	<div id="overflow-container" class="overflow-container">
 		<div id="max-width" class="max-width">
 			<?php do_action( 'before_header' ); ?>
