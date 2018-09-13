@@ -324,6 +324,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'steam'         => 'apex_steam_profile',
 			'qq'            => 'apex_qq_profile',
 			'vk'            => 'apex_vk_profile',
+			'ok-ru'         => 'apex_ok_ru_profile',
 			'weibo'         => 'apex_weibo_profile',
 			'wechat'        => 'apex_wechat_profile',
 			'xing'          => 'apex_xing_profile',
@@ -375,6 +376,8 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 					// get the square or plain class
 					if ( in_array( $active_site, $square_icons ) ) {
 						$class = 'fa fa-' . $active_site . '-square';
+					} elseif ( $active_site == 'ok-ru' ) {
+						$class = 'fa fa-odnoklassniki';
 					} else {
 						$class = 'fa fa-' . $active_site;
 					}

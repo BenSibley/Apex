@@ -105,6 +105,7 @@
         // convert email-address to email
         if ( site === 'email-address') site = 'email';
         if ( site === 'contact-form') site = 'email-form';
+        if ( site === 'ok.ru') site = 'ok-ru';
 
         // when a social site value is updated
         wp.customize( site, function (value) {
@@ -138,6 +139,8 @@
                         // get class based on presence in squareicons list
                         if ( $.inArray( siteName, squareIcons ) > -1 ) {
                             var siteClass = 'fa fa-' + siteName + '-square';
+                        } else if ( siteName == 'ok-ru') {
+                            var siteClass = 'fa fa-odnoklassniki';
                         } else {
                             var siteClass = 'fa fa-' + siteName;
                         }
