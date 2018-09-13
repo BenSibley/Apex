@@ -306,6 +306,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'deviantart'    => 'apex_deviantart_profile',
 			'digg'          => 'apex_digg_profile',
 			'github'        => 'apex_github_profile',
+			'bitbucket'     => 'apex_bitbucket_profile',
 			'hacker-news'   => 'apex_hacker-news_profile',
 			'snapchat'      => 'apex_snapchat_profile',
 			'bandcamp'      => 'apex_bandcamp_profile',
