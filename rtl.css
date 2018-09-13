@@ -874,7 +874,7 @@ li.pingback {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
-  .menu-primary li.menu-item-has-children {
+  .menu-primary li.menu-item-has-children:hover {
     z-index: 25;
   }
   .menu-primary a {

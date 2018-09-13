@@ -126,7 +126,7 @@
       margin: 0 20px 0 0;
       transform-style: preserve-3d;
 
-      &.menu-item-has-children {
+      &.menu-item-has-children:hover {
         z-index: 25;
       }
     }
