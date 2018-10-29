@@ -332,6 +332,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'meetup'        => 'apex_meetup_profile',
 			'mixcloud'      => 'apex_mixcloud_profile',
 			'telegram'      => 'apex_telegram_profile',
+			'patreon'       => 'apex_patreon_profile',
 			'podcast'       => 'apex_podcast_profile',
 			'amazon'        => 'apex_amazon_profile',
 			'google-wallet' => 'apex_google_wallet_profile',
