@@ -159,6 +159,8 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 				$label = __('Tencent Weibo', 'apex');
 			} elseif ( $social_site == 'paypal' ) {
 				$label = __('PayPal', 'apex');
+			} elseif ( $social_site == 'stack-overflow' ) {
+				$label = __('Stack Overflow', 'apex');
 			} elseif ( $social_site == 'email-form' ) {
 				$label = __('Contact Form', 'apex');
 			}
