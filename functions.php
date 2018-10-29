@@ -315,6 +315,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'behance'       => 'apex_behance_profile',
 			'codepen'       => 'apex_codepen_profile',
 			'delicious'     => 'apex_delicious_profile',
+			'discord'     	=> 'apex_discord_profile',
 			'stack-overflow' => 'apex_stack_overflow_profile',
 			'stumbleupon'   => 'apex_stumbleupon_profile',
 			'deviantart'    => 'apex_deviantart_profile',
