@@ -111,6 +111,18 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 				'section'  => 'ct_apex_social_media_icons',
 				'priority' => $priority,
 			) );
+		} else if ( $social_site == 'phone' ) {
+			// setting
+			$wp_customize->add_setting( $social_site, array(
+				'sanitize_callback' => 'ct_apex_sanitize_phone'
+			) );
+			// control
+			$wp_customize->add_control( $social_site, array(
+				'label'    => __( 'Phone', 'apex' ),
+				'section'     => 'ct_apex_social_media_icons',
+				'priority'    => $priority,
+				'type'        => 'text'
+			) );
 		} else {
 
 			$label = ucfirst( $social_site );
@@ -401,4 +413,12 @@ function ct_apex_sanitize_css( $css ) {
 	$css = str_replace( '&gt;', '>', $css );
 
 	return $css;
+}
+
+function ct_apex_sanitize_phone( $input ) {
+	if ( $input != '' ) {
+		return esc_url_raw( 'tel:' . $input, array( 'tel' ) );
+	} else {
+		return '';
+	}
 }

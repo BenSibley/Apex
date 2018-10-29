@@ -337,6 +337,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'500px'         => 'apex_500px_profile',
 			'paypal'        => 'apex_paypal_profile',
 			'email'         => 'apex_email_profile',
+			'phone'         => 'apex_phone_profile',
 			'email-form'    => 'apex_email_form_profile'
 		);
 
@@ -409,6 +410,14 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 							   href="<?php echo esc_url( get_theme_mod( $key ), array( 'http', 'https', 'skype' ) ); ?>">
 								<i class="<?php echo esc_attr( $class ); ?>" title="<?php echo esc_attr( $active_site ); ?>"></i>
+								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
+							</a>
+						</li>
+						<?php } elseif ( $active_site == 'phone' ) { ?>
+						<li>
+							<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
+									href="<?php echo esc_url( get_theme_mod( $active_site ), array( 'tel' ) ); ?>">
+								<i class="<?php echo esc_attr( $class ); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 							</a>
 						</li>
