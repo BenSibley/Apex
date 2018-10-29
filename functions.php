@@ -695,3 +695,15 @@ if ( ! function_exists( 'ct_apex_modify_archive_descriptions' ) ) {
 	}
 }
 add_filter( 'get_the_archive_description', 'ct_apex_modify_archive_descriptions' );
+
+//----------------------------------------------------------------------------------
+// Output the markup for the optional scroll-to-top arrow 
+//----------------------------------------------------------------------------------
+function ct_apex_scroll_to_top_arrow() {
+	$setting = get_theme_mod('scroll_to_top');
+	
+	if ( $setting == 'yes' ) {
+		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. esc_html__('Scroll to the top', 'apex') .'</span><i class="fa fa-arrow-up"></i></button>';
+	}
+}
+add_action( 'body_bottom', 'ct_apex_scroll_to_top_arrow');

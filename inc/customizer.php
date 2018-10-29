@@ -296,6 +296,30 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 		)
 	) );
 
+	/***** Scroll-to-stop Arrow  *****/
+
+	// section
+	$wp_customize->add_section( 'ct_apex_scroll_to_stop', array(
+		'title'    => __( 'Scroll-to-Top Arrow', 'apex' ),
+		'priority' => 73
+	) );
+	// setting - scroll-to-top arrow
+	$wp_customize->add_setting( 'scroll_to_top', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_apex_sanitize_yes_no_settings'
+	) );
+	// control - scroll-to-top arrow
+	$wp_customize->add_control( 'scroll_to_top', array(
+		'label'    => __( 'Display Scroll-to-top arrow?', 'apex' ),
+		'section'  => 'ct_apex_scroll_to_stop',
+		'settings' => 'scroll_to_top',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'apex' ),
+			'no'  => __( 'No', 'apex' )
+		)
+	) );
+
 	/***** Custom CSS *****/
 
 	if ( function_exists( 'wp_update_custom_css_post' ) ) {

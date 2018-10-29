@@ -518,6 +518,38 @@ li.pingback {
   font-weight: 700;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: -45px;
+  left: 0;
+  z-index: 9;
+  background: #333333;
+  border: none;
+  color: #fff;
+  padding: 9px 0;
+  width: 4.6875%;
+  min-width: 40px;
+  -webkit-transition: background 0.2s, -webkit-transform 0.3s;
+          transition: background 0.2s, transform 0.3s;
+}
+.scroll-to-top.visible {
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+}
+.scroll-to-top:hover {
+  cursor: pointer;
+  background: #6B6B6B;
+}
+.scroll-to-top:hover i {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+.scroll-to-top i {
+  font-size: 21px;
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+}
+
 @media all and (min-width: 56.25em) {
   .site-footer {
     padding: 3em 0 0.75em;
