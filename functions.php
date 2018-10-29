@@ -40,7 +40,12 @@ if ( ! function_exists( ( 'ct_apex_theme_setup' ) ) ) {
 			'footer'    => 'overflow-container',
 			'render'    => 'ct_apex_infinite_scroll_render'
 		) );
+		// Add WooCommerce support
 		add_theme_support( 'woocommerce' );
+		// Add support for WooCommerce image gallery features 
+		add_theme_support( 'wc-product-gallery-zoom' ); 
+		add_theme_support( 'wc-product-gallery-lightbox' ); 
+		add_theme_support( 'wc-product-gallery-slider' );
 
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'apex' )
