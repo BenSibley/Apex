@@ -89,7 +89,7 @@
     var socialSitesArray = [];
 
     // icons that should use a special square icon
-    var squareIcons = ['linkedin', 'twitter', 'vimeo', 'youtube', 'pinterest', 'rss', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook'];
+    var squareIcons = ['twitter', 'vimeo', 'youtube', 'pinterest', 'rss', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook'];
 
     // create array from social site controls
     socialSites.each( function() {
@@ -138,19 +138,19 @@
 
                         // get class based on presence in squareicons list
                         if ( $.inArray( siteName, squareIcons ) > -1 ) {
-                            var siteClass = 'fa fa-' + siteName + '-square';
+                            var siteClass = 'fab fa-' + siteName + '-square';
                         } else if ( siteName == 'ok-ru') {
-                            var siteClass = 'fa fa-odnoklassniki';
+                            var siteClass = 'fab fa-odnoklassniki';
                         } else {
-                            var siteClass = 'fa fa-' + siteName;
+                            var siteClass = 'fab fa-' + siteName;
                         }
                         if ( siteName == 'email-form' ) {
-                            siteClass = 'fa fa-envelope-o';
+                            siteClass = 'far fa-envelope';
                         }
 
                         // output the content for the icon
                         if( siteName == 'email' ) {
-                            socialMediaIcons.append( '<li><a target="_blank" href="mailto:' + $(this).val() + '"><i class="fa fa-envelope"></i></a></li>' );
+                            socialMediaIcons.append( '<li><a target="_blank" href="mailto:' + $(this).val() + '"><i class="fas fa-envelope"></i></a></li>' );
                         }
                         else {
                             socialMediaIcons.append('<li><a class="' + siteName + '" target="_blank" href="' + $(this).val() + '"><i class="' + siteClass + '"></i></a></li>');

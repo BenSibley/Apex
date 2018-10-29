@@ -3,7 +3,7 @@
 }
 ?>
 <span class="comments-link">
-	<i class="fa fa-comment" title="<?php esc_attr_e( 'comment icon', 'apex' ); ?>" aria-hidden="true"></i>
+	<i class="fas fa-comment" title="<?php esc_attr_e( 'comment icon', 'apex' ); ?>" aria-hidden="true"></i>
 	<?php
 	if ( ! comments_open() && get_comments_number() < 1 ) :
 		comments_number( esc_html__( 'Comments closed', 'apex' ), esc_html__( '1 Comment', 'apex' ), esc_html_x( '% Comments', 'noun: 5 comments', 'apex' ) );

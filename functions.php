@@ -349,7 +349,6 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 
 		$social_sites = ct_apex_social_array();
 		$square_icons = array(
-			'linkedin',
 			'twitter',
 			'vimeo',
 			'youtube',
@@ -380,21 +379,21 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 
 					// get the square or plain class
 					if ( in_array( $active_site, $square_icons ) ) {
-						$class = 'fa fa-' . $active_site . '-square';
+						$class = 'fab fa-' . $active_site . '-square';
 					} elseif ( $active_site == 'ok-ru' ) {
-						$class = 'fa fa-odnoklassniki';
+						$class = 'fab fa-odnoklassniki';
 					} else {
-						$class = 'fa fa-' . $active_site;
+						$class = 'fab fa-' . $active_site;
 					}
 					if ( $active_site == 'email-form' ) {
-						$class = 'fa fa-envelope-o';
+						$class = 'far fa-envelope';
 					}
 
 					if ( $active_site == 'email' ) { ?>
 						<li>
 							<a class="email" target="_blank"
 							   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
-								<i class="fa fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'apex' ); ?>"></i>
+								<i class="fas fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'apex' ); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html_x('email', 'noun', 'apex'); ?></span>
 							</a>
 						</li>
@@ -708,7 +707,7 @@ function ct_apex_scroll_to_top_arrow() {
 	$setting = get_theme_mod('scroll_to_top');
 	
 	if ( $setting == 'yes' ) {
-		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. esc_html__('Scroll to the top', 'apex') .'</span><i class="fa fa-arrow-up"></i></button>';
+		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. esc_html__('Scroll to the top', 'apex') .'</span><i class="fas fa-arrow-up"></i></button>';
 	}
 }
 add_action( 'body_bottom', 'ct_apex_scroll_to_top_arrow');
