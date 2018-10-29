@@ -319,6 +319,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'quora'         => 'apex_quora_profile',
 			'ravelry'       => 'apex_ravelry_profile',
 			'meetup'        => 'apex_meetup_profile',
+			'mixcloud'      => 'apex_mixcloud_profile',
 			'telegram'      => 'apex_telegram_profile',
 			'podcast'       => 'apex_podcast_profile',
 			'amazon'        => 'apex_amazon_profile',
