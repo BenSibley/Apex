@@ -380,13 +380,20 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 					// get the square or plain class
 					if ( in_array( $active_site, $square_icons ) ) {
 						$class = 'fab fa-' . $active_site . '-square';
+					} elseif ( $active_site == 'rss' ) {
+						$class = 'fas fa-rss';
+					} elseif ( $active_site == 'email-form' ) {
+						$class = 'far fa-envelope';
+					} elseif ( $active_site == 'podcast' ) {
+						$class = 'fas fa-podcast';
 					} elseif ( $active_site == 'ok-ru' ) {
 						$class = 'fab fa-odnoklassniki';
+					} elseif ( $active_site == 'wechat' ) {
+						$class = 'fab fa-weixin';
+					} elseif ( $active_site == 'phone' ) {
+						$class = 'fas fa-phone';
 					} else {
 						$class = 'fab fa-' . $active_site;
-					}
-					if ( $active_site == 'email-form' ) {
-						$class = 'far fa-envelope';
 					}
 
 					if ( $active_site == 'email' ) { ?>
