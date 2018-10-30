@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Apex 1.27\n"
+"Project-Id-Version: Apex 1.28\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2018-09-13 15:17:28+00:00\n"
+"POT-Creation-Date: 2018-10-30 00:11:46+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -121,53 +121,57 @@ msgstr ""
 msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
 msgstr ""
 
-#: functions.php:12
+#: functions.php:20
 msgid ""
 "Hey! Sorry to interrupt, but you've been using Apex for a little while now. "
 "If you're happy with this theme, could you take a minute to leave a review? "
 "<i>You won't see this notice again after closing it.</i>"
 msgstr ""
 
-#: functions.php:46
+#: functions.php:59
 msgid "Primary"
 msgstr ""
 
-#: functions.php:59
+#: functions.php:72
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:61
+#: functions.php:74
 msgid ""
 "Widgets in this area will be shown in the sidebar next to the main post "
 "content"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:99
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:110
+#: functions.php:123
 msgid "(optional)"
 msgstr ""
 
-#: functions.php:129
+#: functions.php:142
 msgid "Website"
 msgstr ""
 
-#: functions.php:182 functions.php:246 inc/customizer.php:248
+#: functions.php:195 functions.php:259 inc/customizer.php:263
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:453
+#: functions.php:485
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:516
+#: functions.php:548
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:522
+#: functions.php:554
 msgid "%s successfully activated!"
+msgstr ""
+
+#: functions.php:738
+msgid "Scroll to the top"
 msgstr ""
 
 #: header.php:11
@@ -232,67 +236,151 @@ msgstr ""
 msgid "Email Address"
 msgstr ""
 
+#: inc/customizer.php:122
+msgid "Phone"
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "Google Plus"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "RSS"
+msgstr ""
+
+#: inc/customizer.php:136
+msgid "SoundCloud"
+msgstr ""
+
+#: inc/customizer.php:138
+msgid "SlideShare"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "CodePen"
+msgstr ""
+
+#: inc/customizer.php:142
+msgid "StumbleUpon"
+msgstr ""
+
+#: inc/customizer.php:144
+msgid "DeviantArt"
+msgstr ""
+
+#: inc/customizer.php:146
+msgid "Google Wallet"
+msgstr ""
+
+#: inc/customizer.php:148
+msgid "Hacker News"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "WhatsApp"
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "QQ"
+msgstr ""
+
+#: inc/customizer.php:154
+msgid "VK"
+msgstr ""
+
+#: inc/customizer.php:156
+msgid "OK.ru"
+msgstr ""
+
+#: inc/customizer.php:158
+msgid "WeChat"
+msgstr ""
+
+#: inc/customizer.php:160
+msgid "Tencent Weibo"
+msgstr ""
+
+#: inc/customizer.php:162
+msgid "PayPal"
+msgstr ""
+
 #: inc/customizer.php:164
+msgid "Stack Overflow"
+msgstr ""
+
+#: inc/customizer.php:166
+msgid "Contact Form"
+msgstr ""
+
+#: inc/customizer.php:179
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:191
+#: inc/customizer.php:206
 msgid "Search Bar"
 msgstr ""
 
-#: inc/customizer.php:202
+#: inc/customizer.php:217
 msgid "Show search bar at top of site?"
 msgstr ""
 
-#: inc/customizer.php:206 inc/customizer.php:342
+#: inc/customizer.php:221 inc/customizer.php:381
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:207 inc/customizer.php:343
+#: inc/customizer.php:222 inc/customizer.php:382
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:225
+#: inc/customizer.php:240
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:230 inc/customizer.php:278 inc/customizer.php:294
-#: inc/customizer.php:360
+#: inc/customizer.php:245 inc/customizer.php:293 inc/customizer.php:309
+#: inc/customizer.php:333 inc/customizer.php:399
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:231 inc/customizer.php:279 inc/customizer.php:295
-#: inc/customizer.php:361
+#: inc/customizer.php:246 inc/customizer.php:294 inc/customizer.php:310
+#: inc/customizer.php:334 inc/customizer.php:400
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:241
+#: inc/customizer.php:256
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:253
+#: inc/customizer.php:268
 msgid "Read More button text"
 msgstr ""
 
-#: inc/customizer.php:263
+#: inc/customizer.php:278
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:273
+#: inc/customizer.php:288
 msgid "Display post author name in byline?"
 msgstr ""
 
-#: inc/customizer.php:289
+#: inc/customizer.php:304
 msgid "Display comments link after posts?"
 msgstr ""
 
-#: inc/customizer.php:315
+#: inc/customizer.php:318
+msgid "Scroll-to-Top Arrow"
+msgstr ""
+
+#: inc/customizer.php:328
+msgid "Display Scroll-to-top arrow?"
+msgstr ""
+
+#: inc/customizer.php:354
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:326
+#: inc/customizer.php:365
 msgid "Add Custom CSS Here:"
 msgstr ""
 
@@ -435,37 +523,37 @@ msgctxt "View all posts in post category"
 msgid "View all posts in %s"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:107
 msgctxt "verb: reply to this comment"
 msgid "Reply"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:111
 msgctxt "verb: edit this comment"
 msgid "Edit"
 msgstr ""
 
-#: functions.php:115
+#: functions.php:128
 msgctxt "noun"
 msgid "Name"
 msgstr ""
 
-#: functions.php:122
+#: functions.php:135
 msgctxt "noun"
 msgid "Email"
 msgstr ""
 
-#: functions.php:150
+#: functions.php:163
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:392 functions.php:393
+#: functions.php:416 functions.php:417
 msgctxt "noun"
 msgid "email"
 msgstr ""
 
-#: functions.php:440 inc/scripts.php:18
+#: functions.php:472 inc/scripts.php:18
 msgctxt "verb: open the dropdown menu"
 msgid "open dropdown menu"
 msgstr ""
@@ -475,7 +563,7 @@ msgctxt "verb: open the menu"
 msgid "open menu"
 msgstr ""
 
-#: inc/customizer.php:215
+#: inc/customizer.php:230
 msgctxt "noun: the blog section"
 msgid "Blog"
 msgstr ""
