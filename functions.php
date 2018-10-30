@@ -367,7 +367,6 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 			'vimeo',
 			'youtube',
 			'pinterest',
-			'rss',
 			'reddit',
 			'tumblr',
 			'steam',

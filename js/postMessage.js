@@ -89,7 +89,7 @@
     var socialSitesArray = [];
 
     // icons that should use a special square icon
-    var squareIcons = ['twitter', 'vimeo', 'youtube', 'pinterest', 'rss', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook'];
+    var squareIcons = ['twitter', 'vimeo', 'youtube', 'pinterest', 'reddit', 'tumblr', 'steam', 'xing', 'github', 'google-plus', 'behance', 'facebook'];
 
     // create array from social site controls
     socialSites.each( function() {
@@ -139,13 +139,20 @@
                         // get class based on presence in squareicons list
                         if ( $.inArray( siteName, squareIcons ) > -1 ) {
                             var siteClass = 'fab fa-' + siteName + '-square';
+                        } else if ( siteName == 'rss') {
+                            var siteClass = 'fas fa-rss';
+                        } else if ( siteName == 'email-form') {
+                            var siteClass = 'far fa-envelope';
+                        } else if ( siteName == 'podcast') {
+                            var siteClass = 'fas fa-podcast';
                         } else if ( siteName == 'ok-ru') {
                             var siteClass = 'fab fa-odnoklassniki';
+                        } else if ( siteName == 'wechat') {
+                            var siteClass = 'fab fa-weixin';
+                        } else if ( siteName == 'phone') {
+                            var siteClass = 'fas fa-phone';
                         } else {
                             var siteClass = 'fab fa-' + siteName;
-                        }
-                        if ( siteName == 'email-form' ) {
-                            siteClass = 'far fa-envelope';
                         }
 
                         // output the content for the icon
