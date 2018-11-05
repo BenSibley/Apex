@@ -14,66 +14,16 @@
   display: none !important;
 }
 
-#accordion-section-ct_apex_pro .accordion-section-title {
-  color: #fff;
+.upgrades-ad a {
+  display: block;
+  padding: 12px 24px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
   background: #05B0E7;
   -webkit-transition: background 0.2s;
           transition: background 0.2s;
 }
-#accordion-section-ct_apex_pro .accordion-section-title:after {
-  color: #fff;
-}
-#accordion-section-ct_apex_pro .accordion-section-title:hover, #accordion-section-ct_apex_pro .accordion-section-title:active, #accordion-section-ct_apex_pro .accordion-section-title:focus {
-  background: #3A96B5 !important;
-  color: #fff !important;
-}
-#accordion-section-ct_apex_pro .accordion-section-title:hover:after, #accordion-section-ct_apex_pro .accordion-section-title:active:after, #accordion-section-ct_apex_pro .accordion-section-title:focus:after {
-  color: #fff !important;
-}
-
-#customize-control-apex_pro {
-  background: white;
-  border: solid 1px #D8D8D8;
-  padding: 6px 24px;
-  box-sizing: border-box;
-}
-#customize-control-apex_pro ul {
-  list-style: disc;
-  padding-left: 15px;
-}
-#customize-control-apex_pro img {
-  position: relative;
-  max-width: none;
-  width: 273px;
-  top: -6px;
-  left: -24px;
-  border-bottom: solid 1px #D8D8D8;
-}
-#customize-control-apex_pro .bold {
-  font-weight: 600;
-  font-size: 16px;
-}
-#customize-control-apex_pro .button-wrapper {
-  text-align: center;
-}
-#customize-control-apex_pro .apex-pro-button {
-  display: inline-block;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 15px 24px;
-  margin: 12px auto;
-  background: #FF931E;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: background 0.2s;
-          transition: background 0.2s;
-}
-#customize-control-apex_pro .apex-pro-button:before {
-  content: '\f06e';
-  font-family: 'FontAwesome';
-  margin-right: 6px;
-}
-#customize-control-apex_pro .apex-pro-button:hover, #customize-control-apex_pro .apex-pro-button:active, #customize-control-apex_pro .apex-pro-button:focus {
-  background: #FF8A23;
+.upgrades-ad a:hover {
+  background: #3FBEE8;
 }

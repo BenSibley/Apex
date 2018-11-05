@@ -425,3 +425,12 @@ function ct_apex_sanitize_phone( $input ) {
 		return '';
 	}
 }
+
+function ct_apex_customize_preview_js() {
+	if ( !function_exists( 'ct_apex_pro_init' ) ) {
+		$url = 'https://www.competethemes.com/apex-pro/?utm_source=wp-dashboard&utm_medium=Customizer&utm_campaign=Apex%20Pro%20-%20Customizer';
+		$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"". $url ."\" target=\"_blank\">Get New Layouts with Apex Pro <span>&rarr;</span></a></div>')</script>";
+		echo apply_filters('ct_apex_customizer_ad', $content);
+	}
+}
+add_action('customize_controls_print_footer_scripts', 'ct_apex_customize_preview_js');
