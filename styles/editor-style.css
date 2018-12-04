@@ -25,60 +25,32 @@ h3 {
   /* 24px */
 }
 
-.wp-caption-text, input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
-textarea, input[type="submit"] {
+.wp-caption-text {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
   /* 18px */
 }
 
-/*===== Basic Styles =====*/
-/* apply a natural box layout model to all elements */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.mce-content-body.wp-editor {
+  margin: 0 auto;
+  padding: 0 24px !important;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  max-width: 882px;
 }
 
 body {
-  height: 100%;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
-  background: white;
+  font-family: "Open Sans", sans-serif;
   color: #6B6B6B;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
-}
-
-.overflow-container {
-  position: relative;
-  overflow: hidden;
-  height: auto;
-  min-height: 100%;
-}
-
-.main {
-  margin: 0 auto;
-}
-
-.loop-container:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
 }
 
 p {
@@ -87,7 +59,6 @@ p {
 
 a {
   color: #333333;
-  text-decoration: none;
   transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
 }
 a:link, a:visited {
@@ -195,7 +166,6 @@ th {
   margin: 1.5em 0;
 }
 
-img,
 .alignright,
 .alignleft,
 .aligncenter,
@@ -211,170 +181,6 @@ img,
 
 .wp-caption-text {
   margin: 0 0 1.5em;
-}
-
-/* Form styles */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
-textarea {
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  padding: 10px 12px;
-  max-width: 27.75em;
-  border: solid 1px #E8E8E8;
-  background: #F2F2F2;
-  border-radius: 0;
-  -webkit-appearance: none;
-  transition: all 0.1s ease-in-out;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-textarea:focus {
-  outline: none;
-  background: white;
-}
-
-textarea {
-  max-width: 41.625em;
-  overflow: auto;
-  /* to hide scrollbar in IE */
-}
-
-input[type="submit"] {
-  font-family: "Open Sans", sans-serif;
-  padding: 10px 12px;
-  color: white;
-  background: #333333;
-  border: none;
-  border-radius: 0;
-  -webkit-appearance: none;
-  transition: background 0.1s ease-in-out;
-}
-input[type="submit"]:hover {
-  cursor: pointer;
-}
-input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  background: #6B6B6B;
-}
-
-input[type="search"] {
-  padding-right: 0.375em;
-  /* so safari 'x' doesn't get cut off */
-}
-
-::-webkit-input-placeholder {
-  color: #6B6B6B;
-}
-
-:-moz-placeholder {
-  color: #6B6B6B;
-}
-
-::-moz-placeholder {
-  color: #6B6B6B;
-}
-
-:-ms-input-placeholder {
-  color: #6B6B6B;
-}
-
-/* ie image border fix */
-a img {
-  border: none;
-}
-
-#breadcrumbs {
-  margin-top: 0;
-  padding: 0 6.25%;
-}
-
-@media all and (min-width: 56.25em) {
-  #breadcrumbs {
-    padding: 0;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
-  html {
-    -webkit-text-size-adjust: none;
-    /* none for no scaling */
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  html {
-    -webkit-text-size-adjust: none;
-    /* none for no scaling */
-  }
-}
-.screen-reader-text {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-}
-
-.skip-content {
-  position: absolute;
-  top: -100%;
-  width: 100%;
-  left: 0;
-  display: block;
-  text-align: center;
-  color: white !important;
-  z-index: 99;
-  padding: 1.5em;
-  background: #333333;
-  transition: top 0.2s ease-in-out;
-}
-.skip-content:focus {
-  top: 0;
-  outline: none;
-}
-
-.admin-bar .skip-content:focus {
-  top: 32px;
-}
-
-.max-width {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.infinite-loader,
-#infinite-handle {
-  clear: both;
-}
-
-.mce-content-body.wp-editor {
-  margin: 0 auto;
-  padding: 0 24px !important;
-  font-size: 16px;
-  line-height: 1.5;
-  -webkit-font-smoothing: subpixel-antialiased !important;
-  background: #fff;
-  font-family: "Open Sans", sans-serif;
-  max-width: 882px;
-}
-
-body {
-  font-size: 16px;
-  line-height: 1.5;
-  background: #fff;
-}
-body:before {
-  display: none;
 }
 
 .wp-block {
