@@ -270,6 +270,22 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 			'no'  => __( 'No', 'apex' )
 		)
 	) );
+	// setting - last updated
+	$wp_customize->add_setting( 'last_updated', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_apex_sanitize_yes_no_settings'
+	) );
+	// control - last updated
+	$wp_customize->add_control( 'last_updated', array(
+		'label'    => __( 'Display the date each post was last updated?', 'apex' ),
+		'section'  => 'apex_additional',
+		'settings' => 'last_updated',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'apex' ),
+			'no'  => __( 'No', 'apex' )
+		)
+	) );
 
 	/***** Scroll-to-stop Arrow  *****/
 

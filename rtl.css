@@ -1244,6 +1244,10 @@ li.pingback {
   color: #6B6B6B;
 }
 
+.last-updated {
+  font-style: italic;
+}
+
 @media all and (min-width: 37.5em) {
   .post-container {
     padding: 0;
