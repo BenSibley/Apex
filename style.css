@@ -817,16 +817,16 @@ li.pingback {
 .menu-primary li {
   margin-bottom: 1.5em;
 }
-.menu-primary li.current-menu-item {
+.menu-primary li.current-menu-item, .menu-primary li.current_page_item {
   font-weight: 700;
 }
-.menu-primary li.current-menu-item a {
+.menu-primary li.current-menu-item a, .menu-primary li.current_page_item a {
   color: #333333;
 }
-.menu-primary li.current-menu-item a:link, .menu-primary li.current-menu-item a:visited, .menu-primary li.current-menu-item a:hover, .menu-primary li.current-menu-item a:active, .menu-primary li.current-menu-item a:focus {
+.menu-primary li.current-menu-item a:link, .menu-primary li.current-menu-item a:visited, .menu-primary li.current-menu-item a:hover, .menu-primary li.current-menu-item a:active, .menu-primary li.current-menu-item a:focus, .menu-primary li.current_page_item a:link, .menu-primary li.current_page_item a:visited, .menu-primary li.current_page_item a:hover, .menu-primary li.current_page_item a:active, .menu-primary li.current_page_item a:focus {
   color: #333333;
 }
-.menu-primary li.current-menu-item li {
+.menu-primary li.current-menu-item li, .menu-primary li.current_page_item li {
   font-weight: 400;
 }
 .menu-primary a {

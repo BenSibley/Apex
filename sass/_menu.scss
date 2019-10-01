@@ -18,7 +18,8 @@
   li {
     margin-bottom: $baseline-height;
 
-    &.current-menu-item {
+    &.current-menu-item,
+    &.current_page_item {
       font-weight: 700;
 
       a {
