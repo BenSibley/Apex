@@ -344,6 +344,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'phone'         => 'apex_phone_profile',
 			'email-form'    => 'apex_email_form_profile',
 			'amazon'        => 'apex_amazon_profile',
+			'artstation'    => 'apex_artstation_profile',
 			'bandcamp'      => 'apex_bandcamp_profile',
 			'behance'       => 'apex_behance_profile',
 			'bitbucket'     => 'apex_bitbucket_profile',
