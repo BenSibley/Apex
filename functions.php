@@ -209,7 +209,7 @@ if ( ! function_exists( 'ct_apex_update_comment_field' ) ) {
 		return $comment_field;
 	}
 }
-add_filter( 'comment_form_field_comment', 'ct_apex_update_comment_field', 77 );
+add_filter( 'comment_form_field_comment', 'ct_apex_update_comment_field', 7 );
 
 if ( ! function_exists( 'ct_apex_remove_comments_notes_after' ) ) {
 	function ct_apex_remove_comments_notes_after( $defaults ) {
