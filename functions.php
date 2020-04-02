@@ -368,6 +368,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'ok-ru'         => 'apex_ok_ru_profile',
 			'patreon'       => 'apex_patreon_profile',
 			'paypal'        => 'apex_paypal_profile',
+			'pocket'        => 'apex_pocket_profile',
 			'podcast'       => 'apex_podcast_profile',
 			'qq'            => 'apex_qq_profile',
 			'quora'         => 'apex_quora_profile',
@@ -449,6 +450,8 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 						$class = 'fab fa-weixin';
 					} elseif ( $active_site == 'phone' ) {
 						$class = 'fas fa-phone';
+					} elseif ( $active_site == 'pocket' ) {
+						$class = 'fab fa-get-pocket';
 					} else {
 						$class = 'fab fa-' . $active_site;
 					}
