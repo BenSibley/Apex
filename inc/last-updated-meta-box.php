@@ -25,7 +25,7 @@ function ct_apex_last_updated_callback( $post ) {
 
   ?>
 	<p>
-		<select name="apex-last-updated" id="apex-last-updated" class="widefat">
+		<select name="apex-last-updated" id="apex-last-updated" style="box-sizing: border-box; width: 100%;">
 			<option value="default"><?php esc_html_e( 'Use Customizer setting', 'apex' ); ?></option>
 			<option value="yes" <?php if ( $display == 'yes' ) {
 				echo 'selected';
