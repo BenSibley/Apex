@@ -6,6 +6,9 @@
     display: block;
     margin-bottom: 6px;
   }
+  .comment-form-cookies-consent label {
+    display: inline-block;
+  }
 }
 #cancel-comment-reply-link {
   @extend %twelve-pixels;

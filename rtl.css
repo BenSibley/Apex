@@ -439,6 +439,9 @@ a img {
   display: block;
   margin-bottom: 6px;
 }
+.comment-respond .comment-form-cookies-consent label {
+  display: inline-block;
+}
 
 #cancel-comment-reply-link {
   margin-right: 12px;
