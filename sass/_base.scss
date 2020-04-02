@@ -155,6 +155,12 @@ th {
   margin: -$baseline-height 0 $baseline-height;
   text-align: center;
 }
+.singular .post-content .wp-block-button {
+
+  a {
+    text-decoration: none;
+  }
+}
 
 /* Images */
 
