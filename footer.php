@@ -3,6 +3,10 @@
 
 <?php get_sidebar( 'primary' ); ?>
 
+<?php 
+// Elementor `footer` location
+if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'footer' ) ) :
+?>
 <footer id="site-footer" class="site-footer" role="contentinfo">
 	<?php do_action( 'footer_top' ); ?>
 	<div class="design-credit">
@@ -15,6 +19,7 @@
         </span>
 	</div>
 </footer>
+<?php endif; ?>
 </div>
 </div><!-- .overflow-container -->
 

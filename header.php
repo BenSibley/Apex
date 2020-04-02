@@ -12,6 +12,10 @@
 	<div id="overflow-container" class="overflow-container">
 		<div id="max-width" class="max-width">
 			<?php do_action( 'before_header' ); ?>
+			<?php
+			// Elementor `header` location
+			if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) :
+			?>
 			<header class="site-header" id="site-header" role="banner">
 				<div id="menu-primary-container" class="menu-primary-container">
 					<?php get_template_part( 'menu', 'primary' ); ?>
@@ -29,6 +33,7 @@
 					} ?>
 				</div>
 			</header>
+			<?php endif; ?>
 			<?php do_action( 'after_header' ); ?>
 			<section id="main" class="main" role="main">
 				<?php do_action( 'main_top' );
