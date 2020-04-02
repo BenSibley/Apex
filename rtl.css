@@ -40,7 +40,9 @@ h3, .comments-number h2, .post-title {
   /* 24px */
 }
 
-.wp-block-table figcaption, .wp-caption-text, input[type="text"],
+.wp-block-table figcaption, .wp-caption-text,
+.gallery-caption,
+.wp-block-image figcaption, input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="number"],
@@ -236,6 +238,10 @@ th {
   margin: 1.5em 0;
 }
 
+.wp-block-image {
+  margin: 1.5em 0;
+}
+
 img,
 .alignright,
 .alignleft,
@@ -250,7 +256,9 @@ img,
   height: auto;
 }
 
-.wp-caption-text {
+.wp-caption-text,
+.gallery-caption,
+.wp-block-image figcaption {
   margin: 0 0 1.5em;
 }
 
