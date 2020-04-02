@@ -359,7 +359,6 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'foursquare'    => 'apex_foursquare_profile',
 			'github'        => 'apex_github_profile',
 			'goodreads'			=> 'apex_goodreads_profile',
-			'google-plus'   => 'apex_googleplus_profile',
 			'google-wallet' => 'apex_google_wallet_profile',
 			'hacker-news'   => 'apex_hacker-news_profile',
 			'medium'        => 'apex_medium_profile',
