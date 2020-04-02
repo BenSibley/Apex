@@ -1,7 +1,13 @@
 <?php
 
 function ct_apex_register_theme_page() {
-	add_theme_page( sprintf( esc_html__( '%s Dashboard', 'apex' ), wp_get_theme() ), sprintf( esc_html__( '%s Dashboard', 'apex' ), wp_get_theme() ), 'edit_theme_options', 'apex-options', 'ct_apex_options_content', 'ct_apex_options_content' );
+	add_theme_page( 
+		sprintf( esc_html__( '%s Dashboard', 'apex' ), wp_get_theme() ), 
+		sprintf( esc_html__( '%s Dashboard', 'apex' ), wp_get_theme() ), 
+		'edit_theme_options', 
+		'apex-options', 
+		'ct_apex_options_content'
+	);
 }
 add_action( 'admin_menu', 'ct_apex_register_theme_page' );
 
