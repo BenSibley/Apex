@@ -4,8 +4,9 @@
 function ct_apex_load_scripts_styles() {
 
 	$font_args = array(
-		'family' => urlencode( 'Open Sans:400,700|Satisfy' ),
-		'subset' => urlencode( 'latin,latin-ext' )
+		'family'  => urlencode( 'Open Sans:400,700|Satisfy' ),
+		'subset'  => urlencode( 'latin,latin-ext' ),
+		'display' => 'swap'
 	);
 	$fonts_url = add_query_arg( $font_args, '//fonts.googleapis.com/css' );
 	
