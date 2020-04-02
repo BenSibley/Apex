@@ -118,18 +118,42 @@ hr {
 
 /* Table styles */
 
+/* Table styles */
 table {
   border-spacing: 0;
   border-collapse: collapse;
   margin: $baseline-height 0;
 }
-td {
-  padding: 0.5em 0.75em;
-  border: solid 1px black;
-}
+td,
 th {
-  padding: 0.5em 0.75em;
-  border: solid 1px black;
+  padding: $baseline-height / 2;
+  border: solid 1px $color-gray-20;
+}
+.wp-block-table {
+  margin: 0;
+
+  thead {
+    background: $color-gray-95;
+  }
+  td,
+  th {
+    border-color: $color-gray-91;
+  }
+}
+.wp-block-table.is-style-stripes {
+
+  thead {
+    background: none;
+  }
+  td,
+  th {
+    border-color: $color-gray-91;
+  }
+}
+.wp-block-table figcaption {
+  @extend %twelve-pixels;
+  margin: -$baseline-height 0 $baseline-height;
+  text-align: center;
 }
 
 /* Images */
