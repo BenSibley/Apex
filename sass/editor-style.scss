@@ -166,6 +166,10 @@ th {
 .alignnone {
   margin: $baseline-height 0;
 }
+.wp-block-image {
+  margin: $baseline-height 0;
+}
+img,
 .alignright,
 .alignleft,
 .aligncenter,
@@ -178,7 +182,9 @@ th {
   max-width: 100%;
   height: auto;
 }
-.wp-caption-text {
+.wp-caption-text,
+.gallery-caption,
+.wp-block-image figcaption {
   @extend %twelve-pixels;
   margin: 0 0 $baseline-height;
 }

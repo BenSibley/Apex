@@ -25,7 +25,9 @@ h3 {
   /* 24px */
 }
 
-.wp-block-table figcaption, .wp-caption-text {
+.wp-block-table figcaption, .wp-caption-text,
+.gallery-caption,
+.wp-block-image figcaption {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -189,6 +191,11 @@ th {
   margin: 1.5em 0;
 }
 
+.wp-block-image {
+  margin: 1.5em 0;
+}
+
+img,
 .alignright,
 .alignleft,
 .aligncenter,
@@ -202,7 +209,9 @@ th {
   height: auto;
 }
 
-.wp-caption-text {
+.wp-caption-text,
+.gallery-caption,
+.wp-block-image figcaption {
   margin: 0 0 1.5em;
 }
 

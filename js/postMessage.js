@@ -151,6 +151,8 @@
                             var siteClass = 'fab fa-weixin';
                         } else if ( siteName == 'phone') {
                             var siteClass = 'fas fa-phone';
+                        } else if ( siteName == 'pocket') {
+                            var siteClass = 'fab fa-get-pocket';
                         } else {
                             var siteClass = 'fab fa-' + siteName;
                         }
