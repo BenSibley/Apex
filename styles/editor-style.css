@@ -25,7 +25,7 @@ h3 {
   /* 24px */
 }
 
-.wp-caption-text {
+.wp-block-table figcaption, .wp-caption-text {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -135,14 +135,37 @@ table {
   margin: 1.5em 0;
 }
 
-td {
-  padding: 0.5em 0.75em;
-  border: solid 1px black;
+td,
+th {
+  padding: 0.75em;
+  border: solid 1px #333333;
 }
 
-th {
-  padding: 0.5em 0.75em;
-  border: solid 1px black;
+.wp-block-table {
+  margin: 0;
+}
+.wp-block-table thead {
+  background: #F2F2F2;
+}
+.wp-block-table td,
+.wp-block-table th {
+  border-color: #E8E8E8;
+}
+
+.wp-block-table.is-style-stripes {
+  border-bottom: none;
+}
+.wp-block-table.is-style-stripes thead {
+  background: none;
+}
+.wp-block-table.is-style-stripes td,
+.wp-block-table.is-style-stripes th {
+  border-color: #E8E8E8;
+}
+
+.wp-block-table figcaption {
+  margin: -1.5em 0 1.5em;
+  text-align: center;
 }
 
 /* Images */

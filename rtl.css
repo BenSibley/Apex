@@ -204,6 +204,9 @@ th {
   border-color: #E8E8E8;
 }
 
+.wp-block-table.is-style-stripes {
+  border-bottom: none;
+}
 .wp-block-table.is-style-stripes thead {
   background: none;
 }
