@@ -1,14 +1,14 @@
-# Copyright (C) 2019 Compete Themes
+# Copyright (C) 2020 Compete Themes
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Apex 1.33\n"
+"Project-Id-Version: Apex 1.34\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2019-10-02 17:09:43+00:00\n"
+"POT-Creation-Date: 2020-04-03 13:44:38+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.4.9\n"
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: footer.php:11
+#: footer.php:15
 msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes"
 msgstr ""
 
@@ -186,23 +186,23 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: functions.php:237 functions.php:301 inc/customizer.php:222
+#: functions.php:237 functions.php:301 inc/customizer.php:220
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:529
+#: functions.php:531
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:592
+#: functions.php:594
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:762
+#: functions.php:764
 msgid "Scroll to the top"
 msgstr ""
 
-#: functions.php:781
+#: functions.php:783
 msgid "Last updated on"
 msgstr ""
 
@@ -235,146 +235,142 @@ msgid "Phone"
 msgstr ""
 
 #: inc/customizer.php:91
-msgid "Google Plus"
-msgstr ""
-
-#: inc/customizer.php:93
 msgid "RSS"
 msgstr ""
 
-#: inc/customizer.php:95
+#: inc/customizer.php:93
 msgid "SoundCloud"
 msgstr ""
 
-#: inc/customizer.php:97
+#: inc/customizer.php:95
 msgid "SlideShare"
 msgstr ""
 
-#: inc/customizer.php:99
+#: inc/customizer.php:97
 msgid "CodePen"
 msgstr ""
 
-#: inc/customizer.php:101
+#: inc/customizer.php:99
 msgid "StumbleUpon"
 msgstr ""
 
-#: inc/customizer.php:103
+#: inc/customizer.php:101
 msgid "DeviantArt"
 msgstr ""
 
-#: inc/customizer.php:105
+#: inc/customizer.php:103
 msgid "Google Wallet"
 msgstr ""
 
-#: inc/customizer.php:107
+#: inc/customizer.php:105
 msgid "Hacker News"
 msgstr ""
 
-#: inc/customizer.php:109
+#: inc/customizer.php:107
 msgid "WhatsApp"
 msgstr ""
 
-#: inc/customizer.php:111
+#: inc/customizer.php:109
 msgid "QQ"
 msgstr ""
 
-#: inc/customizer.php:113
+#: inc/customizer.php:111
 msgid "VK"
 msgstr ""
 
-#: inc/customizer.php:115
+#: inc/customizer.php:113
 msgid "OK.ru"
 msgstr ""
 
-#: inc/customizer.php:117
+#: inc/customizer.php:115
 msgid "WeChat"
 msgstr ""
 
-#: inc/customizer.php:119
+#: inc/customizer.php:117
 msgid "Tencent Weibo"
 msgstr ""
 
-#: inc/customizer.php:121
+#: inc/customizer.php:119
 msgid "PayPal"
 msgstr ""
 
-#: inc/customizer.php:123
+#: inc/customizer.php:121
 msgid "Stack Overflow"
 msgstr ""
 
-#: inc/customizer.php:125
+#: inc/customizer.php:123
 msgid "Contact Form"
 msgstr ""
 
-#: inc/customizer.php:138
+#: inc/customizer.php:136
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:165
+#: inc/customizer.php:163
 msgid "Search Bar"
 msgstr ""
 
-#: inc/customizer.php:176
+#: inc/customizer.php:174
 msgid "Show search bar at top of site?"
 msgstr ""
 
-#: inc/customizer.php:180 inc/customizer.php:348
+#: inc/customizer.php:178 inc/customizer.php:346
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:181 inc/customizer.php:349
+#: inc/customizer.php:179 inc/customizer.php:347
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:199
+#: inc/customizer.php:197
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:204 inc/customizer.php:252 inc/customizer.php:268
-#: inc/customizer.php:284 inc/customizer.php:300 inc/customizer.php:366
+#: inc/customizer.php:202 inc/customizer.php:250 inc/customizer.php:266
+#: inc/customizer.php:282 inc/customizer.php:298 inc/customizer.php:364
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:205 inc/customizer.php:253 inc/customizer.php:269
-#: inc/customizer.php:285 inc/customizer.php:301 inc/customizer.php:367
+#: inc/customizer.php:203 inc/customizer.php:251 inc/customizer.php:267
+#: inc/customizer.php:283 inc/customizer.php:299 inc/customizer.php:365
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:215
+#: inc/customizer.php:213
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:227
+#: inc/customizer.php:225
 msgid "Read More button text"
 msgstr ""
 
-#: inc/customizer.php:237
+#: inc/customizer.php:235
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:247
+#: inc/customizer.php:245
 msgid "Display post author name in byline?"
 msgstr ""
 
-#: inc/customizer.php:263
+#: inc/customizer.php:261
 msgid "Display comments link after posts?"
 msgstr ""
 
-#: inc/customizer.php:279
+#: inc/customizer.php:277
 msgid "Display Scroll-to-top arrow?"
 msgstr ""
 
-#: inc/customizer.php:295
+#: inc/customizer.php:293
 msgid "Display the date each post was last updated?"
 msgstr ""
 
-#: inc/customizer.php:321
+#: inc/customizer.php:319
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:332
+#: inc/customizer.php:330
 msgid "Add Custom CSS Here:"
 msgstr ""
 
@@ -424,7 +420,7 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: theme-options.php:4 theme-options.php:20
+#: theme-options.php:5 theme-options.php:6 theme-options.php:26
 msgid "%s Dashboard"
 msgstr ""
 
@@ -502,32 +498,32 @@ msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:460 functions.php:461
+#: functions.php:463
 msgctxt "noun"
 msgid "email"
 msgstr ""
 
-#: functions.php:516 inc/scripts.php:18
+#: functions.php:518 inc/scripts.php:19
 msgctxt "verb: open the dropdown menu"
 msgid "open dropdown menu"
 msgstr ""
 
-#: header.php:22 inc/scripts.php:16
+#: header.php:26 inc/scripts.php:17
 msgctxt "verb: open the menu"
 msgid "open menu"
 msgstr ""
 
-#: inc/customizer.php:189
+#: inc/customizer.php:187
 msgctxt "noun: the blog section"
 msgid "Blog"
 msgstr ""
 
-#: inc/scripts.php:17
+#: inc/scripts.php:18
 msgctxt "verb: close the menu"
 msgid "close menu"
 msgstr ""
 
-#: inc/scripts.php:19
+#: inc/scripts.php:20
 msgctxt "verb: close the  dropdown menu"
 msgid "close dropdown menu"
 msgstr ""
