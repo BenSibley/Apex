@@ -419,6 +419,11 @@ a img {
   clear: both;
 }
 
+.elementor-location-header ~ .main,
+.elementor-location-header ~ .sidebar-primary {
+  margin-top: 2.25em;
+}
+
 .archive-header {
   margin: 3em 0 1.5em;
   padding: 0 6.25%;

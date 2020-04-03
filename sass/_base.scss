@@ -349,3 +349,8 @@ a img {
 #infinite-handle {
   clear: both;
 }
+// Elementor header/footer style fixes
+.elementor-location-header ~ .main,
+.elementor-location-header ~ .sidebar-primary {
+  margin-top: $baseline-height * 1.5;
+}
