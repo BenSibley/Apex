@@ -15,9 +15,6 @@ get_template_part( 'content/archive-header' );
 </div>
 <?php
 
-the_posts_pagination( array(
-	'prev_text' => esc_html__( 'Previous', 'apex' ),
-	'next_text' => esc_html__( 'Next', 'apex' )
-) );
+ct_apex_pagination();
 
 get_footer();

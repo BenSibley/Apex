@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Apex
 Theme URI: https://www.competethemes.com/apex/
@@ -26,31 +27,31 @@ h1 {
   /* 48px */
 }
 
-h2, .site-title {
+.site-title, h2 {
   font-size: 1.75em;
   /* 28px / 16px */
   line-height: 1.321;
   /* 37px */
 }
 
-h3, .comments-number h2, .post-title {
+.post-title, .comments-number h2, h3 {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
   /* 24px */
 }
 
-.wp-block-table figcaption, .wp-caption-text,
+.woocommerce-account .woocommerce-MyAccount-navigation li a, .singular-attachment .attachment-caption, .widget > *, .further-reading span, .post-tags a, .post-byline, .sticky-status, .comments-link, .more-link, .tagline, .site-footer .design-credit span, .comment-footer a,
+.comment-footer span, #cancel-comment-reply-link, .comment-respond label, input[type=submit], input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=url],
+textarea, .wp-caption-text,
 .gallery-caption,
-.wp-block-image figcaption, input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
-textarea, input[type="submit"], .comment-respond label, #cancel-comment-reply-link, .comment-footer a,
-.comment-footer span, .site-footer .design-credit span, .tagline, .more-link, .comments-link, .sticky-status, .post-byline, .post-tags a, .further-reading span, .widget > *, .singular-attachment .attachment-caption, .woocommerce-account .woocommerce-MyAccount-navigation li a {
+.wp-block-image figcaption, .wp-block-table figcaption {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -273,13 +274,13 @@ img,
 }
 
 /* Form styles */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=url],
 textarea {
   width: 100%;
   font-family: "Open Sans", sans-serif;
@@ -292,13 +293,13 @@ textarea {
   -webkit-transition: all 0.1s ease-in-out;
           transition: all 0.1s ease-in-out;
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
 textarea:focus {
   outline: none;
   background: white;
@@ -310,7 +311,7 @@ textarea {
   /* to hide scrollbar in IE */
 }
 
-input[type="submit"] {
+input[type=submit] {
   font-family: "Open Sans", sans-serif;
   padding: 10px 12px;
   color: white;
@@ -321,14 +322,14 @@ input[type="submit"] {
   -webkit-transition: background 0.1s ease-in-out;
           transition: background 0.1s ease-in-out;
 }
-input[type="submit"]:hover {
+input[type=submit]:hover {
   cursor: pointer;
 }
-input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
+input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
   background: #6B6B6B;
 }
 
-input[type="search"] {
+input[type=search] {
   padding-left: 0.375em;
   /* so safari 'x' doesn't get cut off */
 }
@@ -519,7 +520,7 @@ li.pingback {
 .comment-reply-link:after,
 .comment-edit-link:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   right: -12px;
   height: 100%;
@@ -708,7 +709,7 @@ li.pingback {
 }
 
 .site-title {
-  font-family: 'Satisfy', 'Open Sans', 'sans-serif';
+  font-family: "Satisfy", "Open Sans", "sans-serif";
   margin: 0;
 }
 
@@ -901,8 +902,8 @@ li.pingback {
   outline: none;
 }
 .toggle-dropdown:after {
-  content: '\f107';
-  font-family: 'Font Awesome 5 Free';
+  content: "";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
@@ -1004,7 +1005,7 @@ li.pingback {
             transform: translate(2px, 0);
   }
   .menu-primary-items ul .toggle-dropdown:after {
-    content: '\f105';
+    content: "";
   }
   .menu-primary-items ul a:hover + button, .menu-primary-items ul a:active + button, .menu-primary-items ul a:focus + button {
     -webkit-transform: translate(2px, 0);
@@ -1060,7 +1061,7 @@ li.pingback {
     top: 100%;
   }
   .menu-primary-items a:hover:after, .menu-primary-items a:active:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     height: 36px;
@@ -1084,7 +1085,7 @@ li.pingback {
             transform: translate(-2px, 0);
   }
   .rtl .menu-primary-items ul .menu-item-has-children .toggle-dropdown:after {
-    content: '\f104';
+    content: "";
   }
   .rtl .menu-primary-items ul .menu-item-has-children a:hover + button, .rtl .menu-primary-items ul .menu-item-has-children a:active + button, .rtl .menu-primary-items ul .menu-item-has-children a:focus + button {
     -webkit-transform: translate(-2px, 0);
@@ -1168,7 +1169,7 @@ li.pingback {
   font-size: 0;
 }
 .featured-image > a:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1344,20 +1345,20 @@ li.pingback {
   }
 
   .singular .post-header,
-  .error404 .post-header {
+.error404 .post-header {
     margin: 0 0 2.25em;
   }
   .singular .featured-image,
-  .singular .featured-video,
-  .error404 .featured-image,
-  .error404 .featured-video {
+.singular .featured-video,
+.error404 .featured-image,
+.error404 .featured-video {
     margin-bottom: 2.25em;
   }
 }
-.search-form input[type="submit"] {
+.search-form input[type=submit] {
   min-width: 100px;
 }
-.search-form input[type="search"] {
+.search-form input[type=search] {
   margin-bottom: 6px;
 }
 
@@ -1580,7 +1581,6 @@ li.pingback {
 .singular-attachment .attachment-container img {
   display: block;
 }
-
 .woocommerce .product .quantity .qty {
   width: 50px !important;
   font-size: 16px !important;
@@ -1634,7 +1634,7 @@ li.pingback {
   width: 49% !important;
   padding: 10px 12px;
 }
-.woocommerce-cart .coupon input[type="text"] {
+.woocommerce-cart .coupon input[type=text] {
   font-size: 14px !important;
   padding: 7px 12px 8px !important;
 }
@@ -1727,6 +1727,89 @@ li.pingback {
     margin-top: 0;
   }
 }
+div.bbp-breadcrumb {
+  display: inline-block;
+  float: none;
+}
+
+#subscription-toggle {
+  font-weight: 400;
+  margin-right: 6px;
+  text-decoration: underline;
+}
+
+span.bbp-admin-links,
+span.bbp-admin-links a,
+.bbp-reply-header a.bbp-reply-permalink {
+  color: #6B6B6B;
+}
+
+#bbpress-forums p.bbp-topic-meta img.avatar,
+#bbpress-forums ul.bbp-reply-revision-log img.avatar,
+#bbpress-forums ul.bbp-topic-revision-log img.avatar,
+#bbpress-forums div.bbp-template-notice img.avatar,
+#bbpress-forums .widget_display_topics img.avatar,
+#bbpress-forums .widget_display_replies img.avatar {
+  margin: 0 0 -3px;
+  display: inline-block;
+}
+
+.bbp-form textarea {
+  max-width: none;
+}
+
+#bbpress-forums, #bbpress-forums ul.bbp-forums,
+#bbpress-forums ul.bbp-lead-topic,
+#bbpress-forums ul.bbp-replies,
+#bbpress-forums ul.bbp-search-results,
+#bbpress-forums ul.bbp-topics {
+  font-size: 16px;
+}
+
+#bbpress-forums p.bbp-topic-meta img.avatar,
+#bbpress-forums ul.bbp-reply-revision-log img.avatar,
+#bbpress-forums ul.bbp-topic-revision-log img.avatar,
+#bbpress-forums div.bbp-template-notice img.avatar,
+#bbpress-forums .widget_display_topics img.avatar,
+#bbpress-forums .widget_display_replies img.avatar {
+  border-radius: 50%;
+  border: none;
+  margin-left: 4px;
+  vertical-align: initial;
+}
+
+#bbpress-forums div.bbp-reply-author img.avatar,
+#bbpress-forums #bbp-single-user-details #bbp-user-avatar img.avatar {
+  border-radius: 50%;
+}
+
+.bbp-search-form {
+  margin-bottom: 12px;
+}
+
+.bbp-search-form div {
+  display: -webkit-box;
+  display: flex;
+}
+
+#bbp_reply_submit {
+  font-family: "Open Sans", sans-serif;
+  padding: 12px 18px;
+  color: white;
+  background: #333333;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-transition: background 0.1s ease-in-out;
+          transition: background 0.1s ease-in-out;
+}
+#bbp_reply_submit:hover {
+  cursor: pointer;
+}
+#bbp_reply_submit:hover, #bbp_reply_submit:active, #bbp_reply_submit:focus {
+  background: #6B6B6B;
+}
+
 /*
 
 ATTENTION:
