@@ -63,6 +63,12 @@
     padding: 4px 4px 4px 12px;
     font-size: 13px;
   }
+  + .caption {
+    @extend %twelve-pixels;
+    // margin: -$baseline-height 0 $baseline-height;
+    margin-top: 6px;
+    text-align: center;
+  }
 }
 .post-container {
   padding: 0 $column * 2;
@@ -211,6 +217,11 @@
     .featured-image,
     .featured-video {
       margin-bottom: $baseline-height * 1.5;
+
+      + .caption {
+        margin-top: -32px;
+        margin-bottom: 14px;
+      }
     }
   }
 }

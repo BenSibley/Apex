@@ -299,6 +299,22 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 			'no'  => __( 'No', 'apex' )
 		)
 	) );
+	// setting - featured image captions
+	$wp_customize->add_setting( 'featured_image_captions', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_apex_sanitize_yes_no_settings'
+	) );
+	// control - featured image captions
+	$wp_customize->add_control( 'featured_image_captions', array(
+		'label'    => __( 'Show the Featured Image caption on the post page?', 'apex' ),
+		'section'  => 'apex_additional',
+		'settings' => 'featured_image_captions',
+		'type'     => 'radio',
+		'choices' => array(
+			'yes' => __( 'Yes', 'apex' ),
+			'no'  => __( 'No', 'apex' )
+		)
+	) );
 
 	/***** Custom CSS *****/
 

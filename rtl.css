@@ -41,7 +41,7 @@ h1 {
   /* 24px */
 }
 
-.woocommerce-account .woocommerce-MyAccount-navigation li a, .singular-attachment .attachment-caption, .widget > *, .further-reading span, .post-tags a, .post-byline, .sticky-status, .comments-link, .more-link, .tagline, .site-footer .design-credit span, .comment-footer a,
+.woocommerce-account .woocommerce-MyAccount-navigation li a, .singular-attachment .attachment-caption, .widget > *, .further-reading span, .post-tags a, .post-byline, .featured-image + .caption, .sticky-status, .comments-link, .more-link, .tagline, .site-footer .design-credit span, .comment-footer a,
 .comment-footer span, #cancel-comment-reply-link, .comment-respond label, input[type=submit], input[type=text],
 input[type=email],
 input[type=password],
@@ -1215,6 +1215,10 @@ li.pingback {
   padding: 4px 12px 4px 4px;
   font-size: 13px;
 }
+.featured-image + .caption {
+  margin-top: 6px;
+  text-align: center;
+}
 
 .post-container {
   padding: 0 6.25%;
@@ -1353,6 +1357,13 @@ li.pingback {
 .error404 .featured-image,
 .error404 .featured-video {
     margin-bottom: 2.25em;
+  }
+  .singular .featured-image + .caption,
+.singular .featured-video + .caption,
+.error404 .featured-image + .caption,
+.error404 .featured-video + .caption {
+    margin-top: -32px;
+    margin-bottom: 14px;
   }
 }
 .search-form input[type=submit] {
