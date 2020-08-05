@@ -12,4 +12,4 @@ Apex also uses:
 * HTML5shiv, https://github.com/aFarkas/html5shiv, Alexander Farkas, Jonathan Neal, Paul Irish, John-David Dalton, and Remy Sharp, MIT/GPL2, https://opensource.org/licenses/mit-license.html
 * Multiple Select, http://wenzhixin.net.cn/p/multiple-select/, zhixin wen, licensed under MIT license, https://opensource.org/licenses/mit-license.html
 * Respond.js, https://github.com/scottjehl/Respond, Scott Jehl, licensed under MIT license, https://opensource.org/licenses/mit-license.html
-* Golden Gate Bridge image in screenshot.png : CC0 by Chris Brignola, https://unsplash.com/search/golden-gate?photo=n7n-nkadHRM
+* Golden Gate Bridge image in screenshot.png : CC0 by Chris Brignola
