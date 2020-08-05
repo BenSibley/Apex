@@ -52,7 +52,8 @@ span.bbp-admin-links a,
 .bbp-search-form div {
   display: flex;
 }
-#bbp_reply_submit {
+#bbp_reply_submit,
+#bbp_topic_submit {
   font-family: $primary-font-stack;
   padding: 12px 18px;
   color: white;

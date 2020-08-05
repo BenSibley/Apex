@@ -1803,7 +1803,8 @@ span.bbp-admin-links a,
   display: flex;
 }
 
-#bbp_reply_submit {
+#bbp_reply_submit,
+#bbp_topic_submit {
   font-family: "Open Sans", sans-serif;
   padding: 12px 18px;
   color: white;
@@ -1814,10 +1815,14 @@ span.bbp-admin-links a,
   -webkit-transition: background 0.1s ease-in-out;
           transition: background 0.1s ease-in-out;
 }
-#bbp_reply_submit:hover {
+#bbp_reply_submit:hover,
+#bbp_topic_submit:hover {
   cursor: pointer;
 }
-#bbp_reply_submit:hover, #bbp_reply_submit:active, #bbp_reply_submit:focus {
+#bbp_reply_submit:hover, #bbp_reply_submit:active, #bbp_reply_submit:focus,
+#bbp_topic_submit:hover,
+#bbp_topic_submit:active,
+#bbp_topic_submit:focus {
   background: #6B6B6B;
 }
 
