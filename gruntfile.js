@@ -140,7 +140,7 @@ module.exports = function(grunt) {
                 colors: true
             }
         },
-        excludeFiles: '--exclude "*.gitignore" --exclude ".sass-cache/" --exclude "*.DS_Store" --exclude ".git/" --exclude ".idea/" --exclude "gruntfile.js" --exclude "node_modules/" --exclude "package.json" --exclude "sass/"',
+        excludeFiles: '--exclude "*.gitignore" --exclude ".sass-cache/" --exclude "*.DS_Store" --exclude ".git/" --exclude ".idea/" --exclude "gruntfile.js" --exclude "node_modules/" --exclude "package.json" --exclude "sass/" --exclude "style.css.map" --exclude "styles/admin.css.map" --exclude "styles/customizer.css.map" --exclude "styles/editor-style.css.map"',
         shell: {
             zip: {
                 command: [
@@ -148,7 +148,7 @@ module.exports = function(grunt) {
                     'rm -R /Users/bensibley/Documents/compete-themes/dist/apex || true',
                     'rm -R /Users/bensibley/Documents/compete-themes/dist/apex.zip || true',
                     // copy plugin folder without any project/meta files
-                    'rsync -r "/Users/bensibley/Local Sites/apex/app/public/wp-content/themes/apex" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/apex/wp-content/themes/apex" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
                     // open dist folder
                     'cd /Users/bensibley/Documents/compete-themes/dist/',
                     // zip the apex folder
