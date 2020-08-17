@@ -395,6 +395,7 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'tencent-weibo' => 'apex_tencent_weibo_profile',
 			'tumblr'        => 'apex_tumblr_profile',
 			'twitch'        => 'apex_twitch_profile',
+			'untappd'       => 'apex_untappd_profile',
 			'vimeo'         => 'apex_vimeo_profile',
 			'vine'          => 'apex_vine_profile',
 			'vk'            => 'apex_vk_profile',
