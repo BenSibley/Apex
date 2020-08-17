@@ -10,6 +10,9 @@
     display: inline-block;
   }
 }
+.comment-reply-title {
+  @extend h3;
+}
 #cancel-comment-reply-link {
   @extend %twelve-pixels;
   margin-left: 12px;
