@@ -89,6 +89,8 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 
 			if ( $social_site == 'rss' ) {
 				$label = __('RSS', 'apex');
+			} elseif ( $social_site == 'researchgate' ) {
+				$label = __('ResearchGate', 'apex');
 			} elseif ( $social_site == 'soundcloud' ) {
 				$label = __('SoundCloud', 'apex');
 			} elseif ( $social_site == 'slideshare' ) {
