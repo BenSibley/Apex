@@ -145,12 +145,12 @@ module.exports = function(grunt) {
             zip: {
                 command: [
                     // delete existing copies (if they exist)
-                    'rm -R /Users/bensibley/Documents/compete-themes/dist/apex || true',
-                    'rm -R /Users/bensibley/Documents/compete-themes/dist/apex.zip || true',
+                    'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/apex" || true',
+                    'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/apex.zip" || true',
                     // copy plugin folder without any project/meta files
-                    'rsync -r "/Users/bensibley/Sites/apex/wp-content/themes/apex" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/apex/wp-content/themes/apex" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
                     // open dist folder
-                    'cd /Users/bensibley/Documents/compete-themes/dist/',
+                    'cd "/Users/bensibley/Dropbox/Compete Themes/Distribution/"',
                     // zip the apex folder
                     'zip -r apex.zip apex'
                 ].join('&&')
