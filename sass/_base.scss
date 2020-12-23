@@ -169,6 +169,12 @@ th {
     color: #fff;
   }
 }
+.wp-block-group.alignwide,
+.wp-block-group .alignwide,
+.wp-block-group.alignfull,
+.wp-block-group .alignfull {
+  line-height: 1.5;
+}
 
 /* Images */
 
