@@ -733,6 +733,12 @@ li.pingback {
 .social-media-icons {
   list-style: none;
   margin: 2.25em 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 .social-media-icons li {
   display: inline-block;
@@ -748,6 +754,14 @@ li.pingback {
 }
 .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
   color: #333333;
+}
+.social-media-icons .custom-icon img {
+  display: inline-block;
+  vertical-align: sub;
+  line-height: 0;
+  margin: 0;
+  width: 20px;
+  height: auto;
 }
 
 @media all and (min-width: 50em) {

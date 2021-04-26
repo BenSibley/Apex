@@ -29,7 +29,10 @@
 .social-media-icons {
   list-style: none;
   margin: $baseline-height * 1.5 0;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   li {
     display: inline-block;
   }
@@ -46,6 +49,17 @@
     &:active,
     &:focus {
       color: $color-gray-20;
+    }
+  }
+  .custom-icon {
+
+    img {
+      display: inline-block;
+      vertical-align: sub;
+      line-height: 0;
+      margin: 0;
+      width: 20px;
+      height: auto;
     }
   }
 }

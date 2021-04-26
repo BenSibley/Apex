@@ -411,7 +411,10 @@ if ( ! function_exists( 'ct_apex_social_array' ) ) {
 			'xing'          => 'apex_xing_profile',
 			'yahoo'         => 'apex_yahoo_profile',
 			'yelp'          => 'apex_yelp_profile',
-			'500px'         => 'apex_500px_profile'
+			'500px'         => 'apex_500px_profile',
+			'social_icon_custom_1' => 'social_icon_custom_1_profile',
+			'social_icon_custom_2' => 'social_icon_custom_2_profile',
+			'social_icon_custom_3' => 'social_icon_custom_3_profile'
 		);
 
 		return apply_filters( 'ct_apex_social_array_filter', $social_sites );
@@ -493,6 +496,13 @@ if ( ! function_exists( 'ct_apex_social_icons_output' ) ) {
 									href="<?php echo esc_url( get_theme_mod( $active_site ), array( 'tel' ) ); ?>">
 								<i class="<?php echo esc_attr( $class ); ?>" title="<?php echo str_replace( 'tel:', '', esc_url( get_theme_mod( $active_site ), array( 'tel' ) ) ); ?>"></i>
 								<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
+							</a>
+						</li>
+					<?php } elseif ( $active_site == 'social_icon_custom_1' || $active_site == 'social_icon_custom_2' || $active_site == 'social_icon_custom_3' ) { ?>
+						<li>
+							<a class="custom-icon" target="_blank" href="<?php echo esc_url(get_theme_mod( $active_site )); ?>">
+							<img class="icon" src="<?php echo esc_url(get_theme_mod($active_site .'_image')); ?>" style="width: <?php echo absint(get_theme_mod($active_site . '_size', '20')); ?>px;" />
+								<span class="screen-reader-text"><?php echo esc_html(get_theme_mod($active_site .'_name'));  ?></span>
 							</a>
 						</li>
 					<?php } else { ?>
