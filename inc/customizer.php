@@ -89,6 +89,10 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 
 			if ( $social_site == 'rss' ) {
 				$label = __('RSS', 'apex');
+			} elseif ( $social_site == 'diaspora' ) {
+				$label = __('diaspora*', 'apex');
+			} elseif ( $social_site == 'imdb' ) {
+				$label = __('IMDB', 'apex');
 			} elseif ( $social_site == 'researchgate' ) {
 				$label = __('ResearchGate', 'apex');
 			} elseif ( $social_site == 'soundcloud' ) {
