@@ -1,7 +1,7 @@
 <div class="post-byline">
     <span class="post-date">
 		<?php
-		$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date( 'c' ) ) );
+		$date = get_the_date();
 		printf( esc_html_x( 'Published %s', 'Published on this date', 'apex' ), $date );
 		?>
 	</span>
