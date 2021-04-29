@@ -438,6 +438,34 @@ a img {
   margin-top: 2.25em;
 }
 
+.page-template-landing-page .overflow-container,
+.page-template-landing-page-header .overflow-container {
+  padding: 0;
+}
+.page-template-landing-page .max-width,
+.page-template-landing-page-header .max-width {
+  max-width: none;
+}
+.page-template-landing-page .main,
+.page-template-landing-page-header .main {
+  width: 100%;
+  float: none;
+  margin: 0 auto;
+}
+.page-template-landing-page .entry,
+.page-template-landing-page-header .entry {
+  padding: 0;
+}
+.page-template-landing-page .post-content,
+.page-template-landing-page-header .post-content {
+  margin: 0;
+}
+
+.page-template-landing-page-header .site-header {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .archive-header {
   margin: 3em 0 1.5em;
   padding: 0 6.25%;
