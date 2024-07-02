@@ -127,13 +127,14 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 				$label = __('Stack Overflow', 'apex');
 			} elseif ( $social_site == 'email-form' ) {
 				$label = __('Contact Form', 'apex');
+			} elseif ( $social_site == 'twitter' ) {
+				$label = __('X (Twitter)', 'apex');
 			}
 
 			if ( $social_site == 'skype' ) {
 				// setting
 				$wp_customize->add_setting( $social_site, array(
-					'sanitize_callback' => 'ct_apex_sanitize_skype',
-					'transport'         => 'postMessage'
+					'sanitize_callback' => 'ct_apex_sanitize_skype'
 				) );
 				// control
 				$wp_customize->add_control( $social_site, array(
@@ -146,8 +147,7 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 			} else {
 				// setting
 				$wp_customize->add_setting( $social_site, array(
-					'sanitize_callback' => 'esc_url_raw',
-					'transport'         => 'postMessage'
+					'sanitize_callback' => 'esc_url_raw'
 				) );
 				// control
 				$wp_customize->add_control( $social_site, array(

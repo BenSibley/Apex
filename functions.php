@@ -458,7 +458,6 @@ if (! function_exists('ct_apex_social_icons_output')) {
     {
         $social_sites = ct_apex_social_array();
         $square_icons = array(
-            'twitter',
             'vimeo',
             'youtube',
             'pinterest',
@@ -500,6 +499,8 @@ if (! function_exists('ct_apex_social_icons_output')) {
                     $class = 'fas fa-phone';
                 } elseif ($active_site == 'pocket') {
                     $class = 'fab fa-get-pocket';
+                } elseif ($active_site == 'twitter') {
+                    $class = 'fab fa-square-x-twitter';
                 } else {
                     $class = 'fab fa-' . $active_site;
                 }

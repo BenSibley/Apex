@@ -106,6 +106,7 @@
         if ( site === 'email-address') site = 'email';
         if ( site === 'contact-form') site = 'email-form';
         if ( site === 'ok.ru') site = 'ok-ru';
+        if ( site === 'twitter') site = 'square-x-twitter';
 
         // when a social site value is updated
         wp.customize( site, function (value) {
