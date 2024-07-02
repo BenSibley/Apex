@@ -148,7 +148,7 @@ module.exports = function(grunt) {
                     'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/apex" || true',
                     'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/apex.zip" || true',
                     // copy plugin folder without any project/meta files
-                    'rsync -r "/Users/bensibley/Sites/apex/wp-content/themes/apex" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/Compete Themes/apex/wp-content/themes/apex" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
                     // open dist folder
                     'cd "/Users/bensibley/Dropbox/Compete Themes/Distribution/"',
                     // zip the apex folder
