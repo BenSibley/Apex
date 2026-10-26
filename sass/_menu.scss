@@ -300,7 +300,7 @@
 
           // to keep it down when hovering over submenu
           > button {
-            transform: translate(-2px, 0);
+            /* @noflip */ transform: translate(-2px, 0);
           }
         }
         .toggle-dropdown {
@@ -316,7 +316,7 @@
           &:focus {
 
             + button {
-              transform: translate(-2px, 0);
+              /* @noflip */ transform: translate(-2px, 0);
             }
           }
         }
