@@ -365,6 +365,8 @@ if (! function_exists('ct_apex_social_array')) {
             'linkedin'      => 'apex_linkedin_profile',
             'pinterest'     => 'apex_pinterest_profile',
             'youtube'       => 'apex_youtube_profile',
+            'tiktok'        => 'apex_tiktok_profile',
+            'threads'       => 'apex_threads_profile',
             'rss'           => 'apex_rss_profile',
             'email'         => 'apex_email_profile',
             'phone'         => 'apex_phone_profile',

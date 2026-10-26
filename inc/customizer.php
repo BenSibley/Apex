@@ -129,6 +129,8 @@ function ct_apex_add_customizer_content( $wp_customize ) {
 				$label = __('Contact Form', 'apex');
 			} elseif ( $social_site == 'twitter' ) {
 				$label = __('X (Twitter)', 'apex');
+			} elseif ( $social_site == 'tiktok' ) {
+				$label = __('TikTok', 'apex');
 			}
 
 			if ( $social_site == 'skype' ) {
