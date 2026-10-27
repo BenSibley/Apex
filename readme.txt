@@ -2,8 +2,8 @@
 Contributors: bensibley
 Tags: two-columns, right-sidebar, custom-logo, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
 Requires at least: 4.5
-Tested up to: 6.5
-Stable tag: 1.41
+Tested up to: 7.2
+Stable tag: 1.43
 
 Apex is a sophisticated, minimalist theme.
 
